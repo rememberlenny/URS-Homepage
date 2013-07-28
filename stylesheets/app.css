@@ -39,6 +39,8 @@ section.top-bar-section ul {
   width: 274px;
   height: 68px;
   background: url("../images/logo-top.png") no-repeat center center;
+  position: absolute;
+  z-index: 100;
 }
 
 /* line 4, ../sass/state/mainnav-colors.scss */
@@ -46,6 +48,10 @@ nav.main.top-bar ul.right a {
   text-transform: uppercase;
 }
 
+/* line 1, ../sass/state/mainnav-links.scss */
+nav.main.top-bar {
+  margin-bottom: 10px;
+}
 /* line 4, ../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right a {
   text-transform: uppercase;
@@ -80,6 +86,41 @@ nav.main.top-bar ul.right a {
 /* line 3, ../sass/theme/topbar-right-button.scss */
 .top-bar .right li a:not(.button) {
   padding: 0 25.66667px;
+}
+
+/* line 2, ../sass/theme/hero-slider-content.scss */
+.hero-slider .dam {
+  background: url("../images/hero/dam.jpg") no-repeat center top;
+  height: 188px;
+  max-width: 400px;
+}
+/* line 7, ../sass/theme/hero-slider-content.scss */
+.hero-slider .bridge {
+  background: url("../images/hero/bridge.jpg") no-repeat center top;
+  height: 188px;
+  width: 280px;
+  margin-right: 10px;
+}
+/* line 13, ../sass/theme/hero-slider-content.scss */
+.hero-slider .roof {
+  background: url("../images/hero/roof.jpg") no-repeat center top;
+  height: 192px;
+  max-width: 328px;
+  margin-top: 10px;
+}
+/* line 19, ../sass/theme/hero-slider-content.scss */
+.hero-slider .hospital {
+  background: url("../images/hero/building.jpg") no-repeat center top;
+  height: 192px;
+  width: 360px;
+  margin-top: 10px;
+  margin-right: 6px;
+}
+/* line 26, ../sass/theme/hero-slider-content.scss */
+.hero-slider .freeway {
+  background: url("../images/hero/freeway.jpg") no-repeat center top;
+  height: 388px;
+  max-width: 277px;
 }
 
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
