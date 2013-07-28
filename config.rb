@@ -1,4 +1,5 @@
 require 'zurb-foundation'
+require 'compass-growl'
 # Require any additional compass plugins here.
 
 
