@@ -1,0 +1,31 @@
+.hero-slider{
+  .dam{
+    background:url('../images/hero/dam.jpg') no-repeat center top;
+    height:188px;
+    max-width:400px;
+  }
+  .bridge{
+    background:url('../images/hero/bridge.jpg') no-repeat center top;
+    height:188px;
+    width:280px;
+    margin-right: 10px;
+  }
+  .roof{
+    background:url('../images/hero/roof.jpg') no-repeat center top;
+    height:192px;
+    max-width:328px;
+    margin-top: 10px;
+  }
+  .hospital{
+    background:url('../images/hero/building.jpg') no-repeat center top;
+    height:192px;
+    width:360px;
+    margin-top: 10px;
+    margin-right: 6px;
+  }
+  .freeway{
+    background:url('../images/hero/freeway.jpg') no-repeat center top;
+    height:388px;
+    max-width:277px;
+  }
+}
