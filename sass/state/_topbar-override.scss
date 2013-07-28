@@ -4,16 +4,22 @@
 nav.top-bar .left{
   overflow: hidden;
 }
-section.top-bar-section{
+section.top-bar-section {
   ul{
     background: transparent;
+    &.right{
+      margin-right: 20px;
+    }
   }
-} 
-
-.top-bar-section .has-dropdown>a:after {
-  right: 5px !important;
+  .has-dropdown>a:after {
+    right: 5px !important;
+  }
+  li{
+    a:not(.button){
+      margin-bottom: -2px;
+    }
+  }
 }
-
 //
 // Top Bar Variables
 //

@@ -1,7 +1,8 @@
-@import '../element/color-definition';
+@import '../base/color-definition';
 nav.main.top-bar{
   background: $dark-brand-blue;
   ul.right{
+    
     li{
     }
     a{

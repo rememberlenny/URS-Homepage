@@ -1,14 +1,24 @@
-/* line 16, ../../sass/element/color-definition.scss */
+/* line 19, ../../sass/base/color-definition.scss */
+#wrapper {
+  background: white;
+}
+
+/* line 23, ../../sass/base/color-definition.scss */
 span.positive-color {
   color: #0d9900;
 }
 
-/* line 20, ../../sass/element/color-definition.scss */
+/* line 27, ../../sass/base/color-definition.scss */
 .lightest {
   color: #9e9e9e;
 }
 
-/* line 24, ../../sass/element/color-definition.scss */
+/* line 31, ../../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+
+/* line 35, ../../sass/base/color-definition.scss */
 .dark-color {
   color: #454545 !important;
 }
@@ -17,7 +27,7 @@ span.positive-color {
 nav.main.top-bar {
   background: #003268;
 }
-/* line 7, ../../sass/state/mainnav-colors.scss */
+/* line 8, ../../sass/state/mainnav-colors.scss */
 nav.main.top-bar ul.right a {
   background: #003268;
   text-transform: uppercase;
