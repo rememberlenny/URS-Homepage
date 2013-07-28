@@ -1,10 +1,23 @@
+@media only screen and (min-width: 58.75em){
+  nav.top-bar{
+    overflow: hidden;
+  }
+}
+
+section.top-bar-section{
+  ul{
+    background: transparent;
+  }
+} 
+
+
 //
 // Top Bar Variables
 //
 
 // Background color for the top bar
 
-// $topbar-bg: #111 !default;
+$topbar-bg: #4c4c4c !default;
 
 // Height and margin
 
@@ -31,7 +44,7 @@ $topbar-input-height: 26px;
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #fff;
+$topbar-link-color: #dedede;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
 $topbar-link-weight: light;
@@ -63,8 +76,8 @@ $topbar-dropdown-label-font-size: 10px;
 
 // Divider Styles
 
-// $topbar-divider-border-bottom: solid 1px lighten($topbar-bg, 10%);
-// $topbar-divider-border-top: solid 1px darken($topbar-bg, 10%);
+$topbar-divider-border-bottom: solid 1px #5e5e5a;
+$topbar-divider-border-top: solid 1px #444549;
 
 // Sticky Class
 

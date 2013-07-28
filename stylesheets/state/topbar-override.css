@@ -1,0 +1,10 @@
+@media only screen and (min-width: 58.75em) {
+  /* line 2, ../../sass/state/topbar-override.scss */
+  nav.top-bar {
+    overflow: hidden;
+  }
+}
+/* line 8, ../../sass/state/topbar-override.scss */
+section.top-bar-section ul {
+  background: transparent;
+}
