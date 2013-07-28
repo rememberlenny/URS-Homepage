@@ -9,29 +9,46 @@
   border-radius: 0 0px 8px 0px;
 }
 
-/* line 4, ../sass/element/color-definition.scss */
+/* line 7, ../sass/element/color-definition.scss */
 span.positive-color {
   color: #0d9900;
 }
 
-/* line 8, ../sass/element/color-definition.scss */
+/* line 11, ../sass/element/color-definition.scss */
 .lightest {
   color: #9e9e9e;
 }
 
-/* line 4, ../sass/state/topbar-override.scss */
-nav.top-bar .left {
+/* line 4, ../sass/state/_topbar-override.scss */
+nav.top-bar.secondary-bar .left {
   overflow: hidden;
 }
 
-/* line 8, ../sass/state/topbar-override.scss */
+/* line 8, ../sass/state/_topbar-override.scss */
 section.top-bar-section ul {
   background: transparent;
 }
 
-/* line 13, ../sass/state/topbar-override.scss */
+/* line 13, ../sass/state/_topbar-override.scss */
 .top-bar-section .has-dropdown > a:after {
   right: 5px !important;
+}
+
+/* line 2, ../sass/state/mainnav-logo.scss */
+.main.top-bar .name {
+  width: 274px;
+  height: 68px;
+  background: url("../images/logo-top.png") no-repeat center center;
+}
+
+/* line 4, ../sass/state/mainnav-colors.scss */
+nav.main.top-bar ul.right a {
+  text-transform: uppercase;
+}
+
+/* line 4, ../sass/state/mainnav-links.scss */
+nav.main.top-bar ul.right a {
+  text-transform: uppercase;
 }
 
 /* line 2, ../sass/theme/topbar-button-search.scss */
@@ -54,9 +71,15 @@ section.top-bar-section ul {
   font-size: 10.5px;
 }
 
+/* line 1, ../sass/theme/topbar-country-dropdown.scss */
+.top-bar .right li.country a:not(.button) {
+  padding: 0px;
+  float: right;
+}
+
 /* line 3, ../sass/theme/topbar-right-button.scss */
 .top-bar .right li a:not(.button) {
-  padding: 0 32.66667px;
+  padding: 0 25.66667px;
 }
 
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
