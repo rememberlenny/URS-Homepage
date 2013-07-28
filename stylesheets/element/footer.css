@@ -1,0 +1,90 @@
+/* line 20, ../../sass/base/color-definition.scss */
+#wrapper {
+  background: white;
+}
+
+/* line 24, ../../sass/base/color-definition.scss */
+span.positive-color {
+  color: #0d9900;
+}
+
+/* line 28, ../../sass/base/color-definition.scss */
+.lightest {
+  color: #9e9e9e;
+}
+
+/* line 32, ../../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+/* line 34, ../../sass/base/color-definition.scss */
+.bright-white:hover {
+  color: #214b93 !important;
+}
+
+/* line 39, ../../sass/base/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
+}
+
+/* line 3, ../../sass/element/footer.scss */
+div.footer {
+  background: #4c4c4c;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 2em solid #424242;
+}
+/* line 9, ../../sass/element/footer.scss */
+div.footer h2 {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 1.3em;
+}
+/* line 14, ../../sass/element/footer.scss */
+div.footer a, div.footer p, div.footer li {
+  color: #fefefe;
+  font-size: 12px;
+  line-height: 1.2em;
+}
+/* line 19, ../../sass/element/footer.scss */
+div.footer li {
+  font-size: 10px;
+  line-height: 2em;
+  text-transform: uppercase;
+  opacity: .8;
+}
+/* line 25, ../../sass/element/footer.scss */
+div.footer a {
+  font-weight: 600;
+}
+/* line 28, ../../sass/element/footer.scss */
+div.footer p {
+  font-weight: 200;
+}
+/* line 31, ../../sass/element/footer.scss */
+div.footer .social-feed {
+  opacity: .9;
+}
+/* line 34, ../../sass/element/footer.scss */
+div.footer .terms-use {
+  opacity: .4;
+}
+/* line 36, ../../sass/element/footer.scss */
+div.footer .terms-use a, div.footer .terms-use p {
+  font-weight: 200;
+  font-size: 10px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+/* line 42, ../../sass/element/footer.scss */
+div.footer .terms-use.copyright {
+  line-height: 1em;
+}
+/* line 46, ../../sass/element/footer.scss */
+div.footer ul {
+  margin-right: 2em;
+}
+/* line 48, ../../sass/element/footer.scss */
+div.footer ul li {
+  margin-bottom: .5em;
+}

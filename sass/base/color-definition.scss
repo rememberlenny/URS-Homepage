@@ -1,0 +1,41 @@
+$lightest-text: #dedede;
+$positive-color: #0d9900;
+$light-grey: #f4f5f5;
+
+$font-white: #fefefe;
+
+$brand-blue: #214b93;
+$dark-brand-blue: #003268;
+
+$dark-grey: #454545;
+$grey-base: #4c4c4c;
+
+// Colors
+
+$primary-color: $brand-blue;
+// $secondary-color: #e9e9e9;
+// $alert-color: #c60f13;
+// $success-color: #5da423;
+
+#wrapper{
+  background: white;
+}
+
+span.positive-color{
+  color: $positive-color;
+}
+
+.lightest{
+  color: darken($lightest-text, 25%);
+}
+
+.bright-white{
+  color: $font-white !important;
+  &:hover{
+    color: $brand-blue !important;
+  }
+}
+
+.dark-color{
+  color: $dark-grey!important;
+}

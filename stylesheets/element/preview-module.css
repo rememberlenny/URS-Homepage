@@ -1,0 +1,56 @@
+/* line 20, ../../sass/base/color-definition.scss */
+#wrapper {
+  background: white;
+}
+
+/* line 24, ../../sass/base/color-definition.scss */
+span.positive-color {
+  color: #0d9900;
+}
+
+/* line 28, ../../sass/base/color-definition.scss */
+.lightest {
+  color: #9e9e9e;
+}
+
+/* line 32, ../../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+/* line 34, ../../sass/base/color-definition.scss */
+.bright-white:hover {
+  color: #214b93 !important;
+}
+
+/* line 39, ../../sass/base/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
+}
+
+/* line 3, ../../sass/element/preview-module.scss */
+.widget-back {
+  background: #f4f5f5;
+}
+
+/* line 7, ../../sass/element/preview-module.scss */
+h2.section-title {
+  text-transform: uppercase;
+  color: black;
+  font-size: 17px;
+  opacity: .9;
+}
+
+/* line 15, ../../sass/element/preview-module.scss */
+a.small-continue {
+  font-size: 11px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 3px;
+  opacity: .7;
+}
+/* line 23, ../../sass/element/preview-module.scss */
+a.dark-color {
+  font-weight: 500;
+  font-size: 14px;
+}

@@ -1,0 +1,27 @@
+@import 'base/color-definition';
+
+.widget-back{
+  background: $light-grey;
+}
+h2{
+  &.section-title{
+    text-transform: uppercase;
+    color: black;
+    font-size: 17px;
+    opacity: .9;
+  }
+}
+a{
+  &.small-continue{
+    font-size: 11px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 3px;
+    opacity: .7;
+  }
+  &.dark-color{
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
