@@ -1,5 +1,10 @@
+$lightest-text: #dedede;
 $positive-color: #0d9900;
 
 span.positive-color{
   color: $positive-color;
+}
+
+.lightest{
+  color: $lightest-text;
 }
