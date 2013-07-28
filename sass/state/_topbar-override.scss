@@ -1,7 +1,7 @@
 @media only screen and (min-width: 58.75em){
 }
 
-nav.top-bar.secondary-bar .left{
+nav.top-bar .left{
   overflow: hidden;
 }
 section.top-bar-section{
@@ -20,7 +20,7 @@ section.top-bar-section{
 
 // Background color for the top bar
 
-// $topbar-bg: #4c4c4c !default;
+$topbar-bg: #4c4c4c !default;
 
 // Height and margin
 
@@ -29,7 +29,7 @@ $topbar-margin-bottom: emCalc(0px);
 
 // Control Input height for top bar
 
-// $topbar-input-height: 26px;
+$topbar-input-height: 26px;
 
 // Controlling the styles for the title in the top bar
 
@@ -47,11 +47,11 @@ $topbar-margin-bottom: emCalc(0px);
 
 // Set the link colors and styles for top-level nav
 
-// $topbar-link-color: #dedede;
+$topbar-link-color: #dedede;
 // $topbar-link-color-hover: #fff;
 // $topbar-link-color-active: #fff;
-// $topbar-link-weight: light;
-// $topbar-link-font-size: 11px;
+$topbar-link-weight: light;
+$topbar-link-font-size: 11px;
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
 // $topbar-link-bg-hover: darken($topbar-bg, 3%);
 // $topbar-link-bg-active: darken($topbar-bg, 3%);
@@ -59,7 +59,7 @@ $topbar-margin-bottom: emCalc(0px);
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: bold;
-// $topbar-dropdown-label-font-size: 10px;
+$topbar-dropdown-label-font-size: 10px;
 
 // Top menu icon styles
 
@@ -74,13 +74,13 @@ $topbar-margin-bottom: emCalc(0px);
 // Transitions and breakpoint styles
 
 // $topbar-transition-speed: 300ms;
-$topbar-breakpoint: emCalc(268px); // Change to 9999px for always mobile layout
+$topbar-breakpoint: emCalc(768px); // Change to 9999px for always mobile layout
 // $topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})";
 
 // Divider Styles
 
-// $topbar-divider-border-bottom: solid 1px #5e5e5a;
-// $topbar-divider-border-top: solid 1px #444549;
+$topbar-divider-border-bottom: solid 1px #5e5e5a;
+$topbar-divider-border-top: solid 1px #444549;
 
 // Sticky Class
 
