@@ -5,17 +5,15 @@
   height: 27px;
 }
 
-@media only screen and (min-width: 58.75em) {
-  /* line 13, ../../sass/theme/topbar-button-search.scss */
-  .top-bar .has-form input {
-    border: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-  }
-  /* line 18, ../../sass/theme/topbar-button-search.scss */
-  .top-bar .has-form input, .top-bar .has-form .button {
-    height: 25px;
-    top: 5px;
-    font-size: 10.5px;
-  }
+/* line 12, ../../sass/theme/topbar-button-search.scss */
+.top-bar .has-form input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* line 17, ../../sass/theme/topbar-button-search.scss */
+.top-bar .has-form input, .top-bar .has-form .button {
+  height: 25px;
+  top: 5px;
+  font-size: 10.5px;
 }

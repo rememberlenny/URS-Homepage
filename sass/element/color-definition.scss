@@ -6,5 +6,5 @@ span.positive-color{
 }
 
 .lightest{
-  color: $lightest-text;
+  color: darken($lightest-text, 25%);
 }
