@@ -27,12 +27,30 @@ span.positive-color {
   color: #454545 !important;
 }
 
-/* line 2, ../../sass/state/mainnav-colors.scss */
-nav.main.top-bar {
-  background: #003268;
+/* line 3, ../../sass/element/preview-module.scss */
+.widget-back {
+  background: #f4f5f5;
 }
-/* line 8, ../../sass/state/mainnav-colors.scss */
-nav.main.top-bar ul.right a {
-  background: #003268;
+
+/* line 7, ../../sass/element/preview-module.scss */
+h2.section-title {
   text-transform: uppercase;
+  color: black;
+  font-size: 17px;
+  opacity: .9;
+}
+
+/* line 15, ../../sass/element/preview-module.scss */
+a.small-continue {
+  font-size: 11px;
+  color: #333;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 3px;
+  opacity: .7;
+}
+/* line 23, ../../sass/element/preview-module.scss */
+a.dark-color {
+  font-weight: 500;
+  font-size: 14px;
 }

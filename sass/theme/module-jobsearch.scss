@@ -1,0 +1,32 @@
+@import '../base/color-definition';
+
+.job-search-module{
+  width: 636px !important;
+  h2{
+    font-weight: 500;
+  }
+  background:url('../images/widget/job-search-background.jpg') right bottom;
+  padding-top: .7em;
+  padding-bottom: 1em;
+  h4{
+    font-size: 18px;
+  }
+  h3{
+    font-size:13px;
+    margin-bottom:0em;
+    a{
+      color: black !important;
+      opacity: .9;
+    }
+  }
+  p{
+    margin-bottom: .3em;
+    font-size: 11px;
+  }
+  input[type="text"]{
+    height: 1.95125em;
+    font-size: 0.7em;
+    border: none;
+    background:url('../images/search-icon-or.png') center right no-repeat #fff;
+  }
+}
