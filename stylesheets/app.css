@@ -20,7 +20,7 @@ span.positive-color {
 }
 
 /* line 4, ../sass/state/topbar-override.scss */
-nav.top-bar {
+nav.top-bar .left {
   overflow: hidden;
 }
 
