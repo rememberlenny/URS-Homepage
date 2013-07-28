@@ -8,3 +8,8 @@
 section.top-bar-section ul {
   background: transparent;
 }
+
+/* line 13, ../../sass/state/topbar-override.scss */
+.top-bar-section .has-dropdown > a:after {
+  right: 5px !important;
+}

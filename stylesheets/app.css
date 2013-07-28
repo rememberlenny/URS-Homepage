@@ -25,6 +25,11 @@ section.top-bar-section ul {
   background: transparent;
 }
 
+/* line 13, ../sass/state/topbar-override.scss */
+.top-bar-section .has-dropdown > a:after {
+  right: 5px !important;
+}
+
 /* line 2, ../sass/theme/topbar-button-search.scss */
 .top-bar .search-icon {
   background: url("../images/search-icon.png") no-repeat center center #eaa849;
