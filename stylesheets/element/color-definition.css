@@ -1,9 +1,14 @@
-/* line 7, ../../sass/element/color-definition.scss */
+/* line 16, ../../sass/element/color-definition.scss */
 span.positive-color {
   color: #0d9900;
 }
 
-/* line 11, ../../sass/element/color-definition.scss */
+/* line 20, ../../sass/element/color-definition.scss */
 .lightest {
   color: #9e9e9e;
+}
+
+/* line 24, ../../sass/element/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
 }
