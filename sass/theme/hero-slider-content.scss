@@ -1,5 +1,11 @@
 @import 'base/color-definition';
 
+
+h4.large-number{
+  font-size: 3em;
+  margin-bottom: 0em;
+  color: $font-white;
+}
 .orbit-container .orbit-timer{
   display: none;
 }
@@ -16,20 +22,68 @@
 }
 
 .hero-slider{
-  &.slide-1{
-      background:url('..images/slide/slide1.jpg');
+  overflow: hidden;
+  height: 175px;
+  .small-continue{
+    color: $font-white;
+  }
+  .slide-1{
+    height: 175px!important;
+      background:url('../images/slide/slide1.jpg');
     }
-    &.slide-2{
-      background:url('..images/slide/slide2.jpg');
+    .slide-2{
+      height: 175px!important;
+      h3{
+        font-size: 1.3em !important;
+        margin-top: 0.6em !important;
+        margin-left: 6em !important;
+      }
+      background:url('../images/slide/slide2.jpg');
     }
-    &.slide-3{
-      background:url('..images/slide/slide3.jpg');
+    .slide-3{
+      height: 175px!important;
+      h3{
+        font-size: 1.3em !important;
+        margin-bottom: 0em;
+        margin-left: 3em;
+        margin-top: 1em;
+        font-size: 1.3em;
+      }
+      p{
+        margin-left: 5em;
+        margin-bottom: 0em;
+      }
+      background:url('../images/slide/slide3.jpg');
     }
-    &.slide-4{
-      background:url('..images/slide/slide4.jpg');
+    .slide-4{
+      height: 175px!important;
+            h3{
+        font-size: 1.3em !important;
+        margin-bottom: 0em;
+        margin-left: 3em;
+        margin-top: 1em;
+        font-size: 1.3em;
+      }
+      p{
+        margin-left: 5em;
+        margin-bottom: 0em;
+      }
+      background:url('../images/slide/slide4.jpg');
     }
-    &.slide-5{
-      background:url('..images/slide/slide5.jpg');
+    .slide-5{
+      height: 175px!important;
+            h3{
+        font-size: 1.3em !important;
+        margin-bottom: 0em;
+        margin-left: 3em;
+        margin-top: 1em;
+        font-size: 1.3em;
+      }
+      p{
+        margin-left: 5em;
+        margin-bottom: 0em;
+      }
+      background:url('../images/slide/slide5.jpg');
     }
   h2, h3, p{
     color: $font-white;

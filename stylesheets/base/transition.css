@@ -48,7 +48,6 @@ img {
 }
 /* line 18, ../../sass/base/transition.scss */
 img:hover {
-  opacity: .7 !important;
   /* HOVER ON */
   -webkit-transition: opacity .02s !important;
 }

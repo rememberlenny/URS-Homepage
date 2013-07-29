@@ -27,60 +27,123 @@ span.positive-color {
   color: #454545 !important;
 }
 
-/* line 3, ../../sass/theme/hero-slider-content.scss */
+/* line 4, ../../sass/theme/hero-slider-content.scss */
+h4.large-number {
+  font-size: 3em;
+  margin-bottom: 0em;
+  color: #fefefe;
+}
+
+/* line 9, ../../sass/theme/hero-slider-content.scss */
 .orbit-container .orbit-timer {
   display: none;
 }
 
-/* line 6, ../../sass/theme/hero-slider-content.scss */
+/* line 12, ../../sass/theme/hero-slider-content.scss */
 .orbit-bullets {
   display: none;
 }
-/* line 8, ../../sass/theme/hero-slider-content.scss */
+/* line 14, ../../sass/theme/hero-slider-content.scss */
 .orbit-bullets li {
   padding: 0em !important;
   border: solid 1px #fefefe !important;
   background: transparent !important;
 }
-/* line 12, ../../sass/theme/hero-slider-content.scss */
+/* line 18, ../../sass/theme/hero-slider-content.scss */
 .orbit-bullets li.active {
   background: #fefefe !important;
 }
 
-/* line 18, ../../sass/theme/hero-slider-content.scss */
+/* line 24, ../../sass/theme/hero-slider-content.scss */
 .hero-slider {
+  overflow: hidden;
+  height: 175px;
   margin-bottom: 1.2em !important;
 }
-/* line 19, ../../sass/theme/hero-slider-content.scss */
-.hero-slider.slide-1 {
-  background: url("..images/slide/slide1.jpg");
+/* line 27, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .small-continue {
+  color: #fefefe;
 }
-/* line 22, ../../sass/theme/hero-slider-content.scss */
-.hero-slider.slide-2 {
-  background: url("..images/slide/slide2.jpg");
-}
-/* line 25, ../../sass/theme/hero-slider-content.scss */
-.hero-slider.slide-3 {
-  background: url("..images/slide/slide3.jpg");
-}
-/* line 28, ../../sass/theme/hero-slider-content.scss */
-.hero-slider.slide-4 {
-  background: url("..images/slide/slide4.jpg");
-}
-/* line 31, ../../sass/theme/hero-slider-content.scss */
-.hero-slider.slide-5 {
-  background: url("..images/slide/slide5.jpg");
+/* line 30, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-1 {
+  height: 175px !important;
+  background: url("../images/slide/slide1.jpg");
 }
 /* line 34, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-2 {
+  height: 175px !important;
+  background: url("../images/slide/slide2.jpg");
+}
+/* line 36, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-2 h3 {
+  font-size: 1.3em !important;
+  margin-top: 0.6em !important;
+  margin-left: 6em !important;
+}
+/* line 43, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 {
+  height: 175px !important;
+  background: url("../images/slide/slide3.jpg");
+}
+/* line 45, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 h3 {
+  font-size: 1.3em !important;
+  margin-bottom: 0em;
+  margin-left: 3em;
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+/* line 52, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 p {
+  margin-left: 5em;
+  margin-bottom: 0em;
+}
+/* line 58, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-4 {
+  height: 175px !important;
+  background: url("../images/slide/slide4.jpg");
+}
+/* line 60, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-4 h3 {
+  font-size: 1.3em !important;
+  margin-bottom: 0em;
+  margin-left: 3em;
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+/* line 67, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-4 p {
+  margin-left: 5em;
+  margin-bottom: 0em;
+}
+/* line 73, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-5 {
+  height: 175px !important;
+  background: url("../images/slide/slide5.jpg");
+}
+/* line 75, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-5 h3 {
+  font-size: 1.3em !important;
+  margin-bottom: 0em;
+  margin-left: 3em;
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+/* line 82, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-5 p {
+  margin-left: 5em;
+  margin-bottom: 0em;
+}
+/* line 88, ../../sass/theme/hero-slider-content.scss */
 .hero-slider h2, .hero-slider h3, .hero-slider p {
   color: #fefefe;
 }
-/* line 37, ../../sass/theme/hero-slider-content.scss */
+/* line 91, ../../sass/theme/hero-slider-content.scss */
 .hero-slider h2 {
   margin-bottom: 0em !important;
   font-size: 30px;
 }
-/* line 41, ../../sass/theme/hero-slider-content.scss */
+/* line 95, ../../sass/theme/hero-slider-content.scss */
 .hero-slider p {
   margin-bottom: .3em !important;
   font-size: 12px;
