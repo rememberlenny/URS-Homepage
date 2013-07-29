@@ -1,14 +1,19 @@
-/* line 3, ../../sass/base/layout.scss */
+/* line 1, ../../sass/base/layout.scss */
+#wrapper {
+  width: 1020px;
+}
+
+/* line 4, ../../sass/base/layout.scss */
 .fr {
   float: right !important;
 }
 
-/* line 4, ../../sass/base/layout.scss */
+/* line 5, ../../sass/base/layout.scss */
 .fl {
   float: left !important;
 }
 
-/* line 5, ../../sass/base/layout.scss */
+/* line 6, ../../sass/base/layout.scss */
 .row .row.widget {
   margin-bottom: 1em;
 }

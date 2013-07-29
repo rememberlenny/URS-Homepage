@@ -1,14 +1,19 @@
-/* line 3, ../sass/base/layout.scss */
+/* line 1, ../sass/base/layout.scss */
+#wrapper {
+  width: 1020px;
+}
+
+/* line 4, ../sass/base/layout.scss */
 .fr {
   float: right !important;
 }
 
-/* line 4, ../sass/base/layout.scss */
+/* line 5, ../sass/base/layout.scss */
 .fl {
   float: left !important;
 }
 
-/* line 5, ../sass/base/layout.scss */
+/* line 6, ../sass/base/layout.scss */
 .row .row.widget {
   margin-bottom: 1em;
 }
@@ -299,13 +304,51 @@ nav.main.top-bar ul.right a {
   text-transform: uppercase;
 }
 
-/* line 1, ../sass/state/mainnav-links.scss */
+/* line 20, ../sass/base/color-definition.scss */
+#wrapper {
+  background: white;
+}
+
+/* line 24, ../sass/base/color-definition.scss */
+span.positive-color {
+  color: #0d9900;
+}
+
+/* line 28, ../sass/base/color-definition.scss */
+.lightest {
+  color: #9e9e9e;
+}
+
+/* line 32, ../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+/* line 34, ../sass/base/color-definition.scss */
+.bright-white:hover {
+  color: #214b93 !important;
+}
+
+/* line 39, ../sass/base/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
+}
+
+/* line 2, ../sass/state/mainnav-links.scss */
 nav.main.top-bar {
   margin-bottom: 10px;
 }
-/* line 4, ../sass/state/mainnav-links.scss */
+/* line 5, ../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right a {
   text-transform: uppercase;
+  font-size: 14px;
+}
+/* line 9, ../sass/state/mainnav-links.scss */
+nav.main.top-bar ul.right li a:not(.button) {
+  padding: 0 22.66667px;
+}
+/* line 11, ../sass/state/mainnav-links.scss */
+nav.main.top-bar ul.right li a:not(.button):hover {
+  background: #00264e;
 }
 
 /* line 2, ../sass/theme/topbar-button-search.scss */

@@ -1,8 +1,16 @@
+@import '../base/color-definition';
 nav.main.top-bar{
   margin-bottom: 10px;
   ul.right{
     a{
       text-transform: uppercase;
+      font-size: 14px;
+    }
+    li a:not(.button) {
+      padding: 0 22.66667px;
+      &:hover{
+        background: darken($dark-brand-blue, 5%);
+      }
     }  
   }
 } 
