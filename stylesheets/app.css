@@ -476,93 +476,40 @@ span.positive-color {
 }
 
 /* line 3, ../sass/state/hero-images.scss */
+.hero-slider li {
+  padding: 1em;
+}
+
+/* line 7, ../sass/state/hero-images.scss */
 .hero-content {
   -webkit-transition: background 1s !important;
 }
-/* line 5, ../sass/state/hero-images.scss */
+/* line 9, ../sass/state/hero-images.scss */
 .hero-content:hover {
   -webkit-transition: background .02s !important;
 }
-/* line 8, ../sass/state/hero-images.scss */
+/* line 12, ../sass/state/hero-images.scss */
 .hero-content h3, .hero-content p {
   -webkit-transition: opacity 1s ease !important;
   color: #fefefe;
   opacity: 0;
 }
-/* line 12, ../sass/state/hero-images.scss */
+/* line 16, ../sass/state/hero-images.scss */
 .hero-content h3:hover, .hero-content p:hover {
   -webkit-transition: opacity .02s ease !important;
 }
-/* line 16, ../sass/state/hero-images.scss */
+/* line 20, ../sass/state/hero-images.scss */
 .hero-content p {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 20, ../sass/state/hero-images.scss */
+/* line 24, ../sass/state/hero-images.scss */
 .hero-content:hover {
   background: #de8f1d !important;
 }
-/* line 22, ../sass/state/hero-images.scss */
+/* line 26, ../sass/state/hero-images.scss */
 .hero-content:hover h3, .hero-content:hover p {
   opacity: 1;
-}
-/* line 26, ../sass/state/hero-images.scss */
-.hero-content.dam {
-  padding-top: 2.4em;
-  padding-left: 3em;
-}
-/* line 30, ../sass/state/hero-images.scss */
-.hero-content.bridge {
-  padding-top: 1.2em;
-}
-/* line 32, ../sass/state/hero-images.scss */
-.hero-content.bridge h3 {
-  font-size: 1.45em;
-}
-/* line 35, ../sass/state/hero-images.scss */
-.hero-content.bridge p {
-  font-size: .8em;
-}
-/* line 39, ../sass/state/hero-images.scss */
-.hero-content.roof, .hero-content.hospital {
-  height: 182px !important;
-}
-/* line 42, ../sass/state/hero-images.scss */
-.hero-content.roof {
-  padding-top: .65em;
-  padding-left: 1em;
-}
-/* line 43, ../sass/state/hero-images.scss */
-.hero-content.roof:hover {
-  background: #214b93 !important;
-}
-/* line 46, ../sass/state/hero-images.scss */
-.hero-content.roof h3 {
-  font-size: 1.2em;
-}
-/* line 52, ../sass/state/hero-images.scss */
-.hero-content.hospital {
-  padding-top: 2.5em;
-}
-/* line 53, ../sass/state/hero-images.scss */
-.hero-content.hospital h3 {
-  font-size: 1.8em;
-}
-/* line 56, ../sass/state/hero-images.scss */
-.hero-content.hospital p {
-  font-size: 1.2em;
-}
-/* line 61, ../sass/state/hero-images.scss */
-.hero-content.freeway {
-  padding-top: 6em;
-}
-/* line 62, ../sass/state/hero-images.scss */
-.hero-content.freeway h3 {
-  font-size: 1.8em;
-}
-/* line 65, ../sass/state/hero-images.scss */
-.hero-content.freeway p {
-  font-size: .9em;
 }
 
 /* line 2, ../sass/state/mainnav-logo.scss */
@@ -691,43 +638,92 @@ nav.main.top-bar ul.right li a:not(.button):hover {
   padding: 0 18.66667px;
 }
 
-/* line 1, ../sass/theme/hero-slider-content.scss */
+/* line 21, ../sass/base/color-definition.scss */
+#wrapper {
+  background: white;
+}
+
+/* line 25, ../sass/base/color-definition.scss */
+span.positive-color {
+  color: #0d9900;
+}
+
+/* line 29, ../sass/base/color-definition.scss */
+.lightest {
+  color: #9e9e9e;
+}
+
+/* line 33, ../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+/* line 35, ../sass/base/color-definition.scss */
+.bright-white:hover {
+  color: #214b93 !important;
+}
+
+/* line 40, ../sass/base/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
+}
+
+/* line 3, ../sass/theme/hero-slider-content.scss */
+.orbit-container .orbit-timer {
+  display: none;
+}
+
+/* line 6, ../sass/theme/hero-slider-content.scss */
+.orbit-bullets {
+  display: none;
+}
+/* line 8, ../sass/theme/hero-slider-content.scss */
+.orbit-bullets li {
+  padding: 0em !important;
+  border: solid 1px #fefefe !important;
+  background: transparent !important;
+}
+/* line 12, ../sass/theme/hero-slider-content.scss */
+.orbit-bullets li.active {
+  background: #fefefe !important;
+}
+
+/* line 18, ../sass/theme/hero-slider-content.scss */
 .hero-slider {
   margin-bottom: 1.2em !important;
 }
-/* line 4, ../sass/theme/hero-slider-content.scss */
-.hero-slider .dam {
-  background: url("../images/hero/dam.jpg") no-repeat center top;
-  height: 188px;
-  max-width: 400px;
+/* line 19, ../sass/theme/hero-slider-content.scss */
+.hero-slider.slide-1 {
+  background: url("..images/slide/slide1.jpg");
 }
-/* line 9, ../sass/theme/hero-slider-content.scss */
-.hero-slider .bridge {
-  background: url("../images/hero/bridge.jpg") no-repeat center top;
-  height: 188px;
-  width: 280px;
-  margin-right: 10px;
+/* line 22, ../sass/theme/hero-slider-content.scss */
+.hero-slider.slide-2 {
+  background: url("..images/slide/slide2.jpg");
 }
-/* line 15, ../sass/theme/hero-slider-content.scss */
-.hero-slider .roof {
-  background: url("../images/hero/roof.jpg") no-repeat center top;
-  height: 192px;
-  max-width: 328px;
-  margin-top: 7px;
-}
-/* line 21, ../sass/theme/hero-slider-content.scss */
-.hero-slider .hospital {
-  background: url("../images/hero/building.jpg") no-repeat center top;
-  height: 192px;
-  width: 351px;
-  margin-right: 10px;
-  margin-top: 7px;
+/* line 25, ../sass/theme/hero-slider-content.scss */
+.hero-slider.slide-3 {
+  background: url("..images/slide/slide3.jpg");
 }
 /* line 28, ../sass/theme/hero-slider-content.scss */
-.hero-slider .freeway {
-  background: url("../images/hero/freeway.jpg") no-repeat center top;
-  height: 377px;
-  max-width: 277px;
+.hero-slider.slide-4 {
+  background: url("..images/slide/slide4.jpg");
+}
+/* line 31, ../sass/theme/hero-slider-content.scss */
+.hero-slider.slide-5 {
+  background: url("..images/slide/slide5.jpg");
+}
+/* line 34, ../sass/theme/hero-slider-content.scss */
+.hero-slider h2, .hero-slider h3, .hero-slider p {
+  color: #fefefe;
+}
+/* line 37, ../sass/theme/hero-slider-content.scss */
+.hero-slider h2 {
+  margin-bottom: 0em !important;
+  font-size: 30px;
+}
+/* line 41, ../sass/theme/hero-slider-content.scss */
+.hero-slider p {
+  margin-bottom: .3em !important;
+  font-size: 12px;
 }
 
 /* line 3, ../sass/theme/module-projects.scss */
@@ -747,6 +743,11 @@ nav.main.top-bar ul.right li a:not(.button):hover {
 /* line 16, ../sass/theme/module-projects.scss */
 .description .dark-color {
   margin-bottom: 1em;
+}
+
+/* line 20, ../sass/theme/module-projects.scss */
+.project-nav {
+  padding-right: 1.4em !important;
 }
 
 /* line 1, ../sass/theme/module-annualrep.scss */

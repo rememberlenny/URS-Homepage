@@ -16,3 +16,8 @@
 .description .dark-color {
   margin-bottom: 1em;
 }
+
+/* line 20, ../../sass/theme/module-projects.scss */
+.project-nav {
+  padding-right: 1.4em !important;
+}

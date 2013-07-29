@@ -109,30 +109,40 @@
       <!-- Hero slider Begin  -->
       <div class="row hero-slider">
         <div class="column">
-          <ul data-orbit>
-            <li data-orbit-slide="headline-1">
-              <h2>URS Corporation</h2>
-              <p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p>
-              <a href="" class="fr small-continue">More about us &#9656;</a>
+          <ul data-orbit data-options="
+            animation: 'fade';
+            timer_speed: 10000;
+            resume_on_mouseout: false;
+            animation_speed: 500;
+            navigation_arrows: false;
+            slide_number: false;
+            timer: false;
+            variable_height: false;">
+            <li data-orbit-slide="headline-1" class="slide-1">
+              <div class="large-5">
+                <h2>URS Corporation</h2>
+                <p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p>
+                <a href="" class=" small-continue">More about us &#9656;</a>
+              </div>
             </li>
-            <li data-orbit-slide="headline-2">
+            <li data-orbit-slide="headline-2" class="slide-2">
               <h2>URS Corporation</h2>
               <h3 class="large-number fl">#248</h3>
               <h3>on FORTUNE's List of America's <br>500 Largest Companies</h3>
             </li>
-            <li data-orbit-slide="headline-3">
+            <li data-orbit-slide="headline-3" class="slide-3">
               <h2>URS Corporation</h2>
               <h3 class="large-number fl">#8</h3>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
             </li>
-            <li data-orbit-slide="headline-4">
+            <li data-orbit-slide="headline-4" class="slide-4">
               <h2>URS Corporation</h2>
               <h3 class="large-number fl">#8</h3>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
             </li>
-            <li data-orbit-slide="headline-5">
+            <li data-orbit-slide="headline-5" class="slide-5">
               <h2>URS Corporation</h2>
               <h3 class="large-number fl">#8</h3>
               <h3>in Power</h3>
@@ -247,45 +257,47 @@
                     <img src="../images/project/right.jpg" alt="">
                     </div>
                   </div>
-                  <div class="row description">
-                    <div class="column ">
+                <div class="row description">
+                  <div class="column ">
                     <a href="" class="dark-color">Reaper Unmanned <br>Aircraft System
                     </a></a>
                   </div>
                 </div>
               </div>
-              <div class="row ">
-                <div class="column large-12 large-offset-2">
-                  <div class="row project-nav">
-                    <ul class="large-block-grid-5">
-                      <li>
-                        <form class="custom">
-                          <select id="customDropdown1" class="large nav-ele">
-                            <option>Sort by Market</option>
-                          </select>
-                        </form>
-                      </li>
-                      <li>
-                        <form class="custom">
-                          <select id="customDropdown2" class="large nav-ele">
-                            <option>Sort by Service</option>
-                          </select>
-                        </form>
-                      </li>
-                      <li>
-                        <form class="custom">
-                          <select id="customDropdown3" class="large nav-ele">
-                            <option>Sort by Location</option>
-                          </select>
-                        </form>
-                      </li>
-                      <li>
-                        <input type="text" placeholder="Search by Keyword" class="nav-ele">
-                      </li>
-                      <li>
-                        <a href="" class="button small secondary act">Apply &#9656</a>
-                      </li>
-                    </ul>
+              <div class="column">
+                <div class="row">
+                  <div class="column">
+                    <div class="row project-nav">
+                      <ul class="inline-list fr">
+                        <li>
+                          <form class="custom">
+                            <select id="customDropdown1" class="large nav-ele">
+                              <option>Sort by Market</option>
+                            </select>
+                          </form>
+                        </li>
+                        <li>
+                          <form class="custom">
+                            <select id="customDropdown2" class="large nav-ele">
+                              <option>Sort by Service</option>
+                            </select>
+                          </form>
+                        </li>
+                        <li>
+                          <form class="custom">
+                            <select id="customDropdown3" class="large nav-ele">
+                              <option>Sort by Location</option>
+                            </select>
+                          </form>
+                        </li>
+                        <li>
+                          <input type="text" placeholder="Search by Keyword" class="nav-ele">
+                        </li>
+                        <li>
+                          <a href="" class="button small secondary act">Apply &#9656</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
