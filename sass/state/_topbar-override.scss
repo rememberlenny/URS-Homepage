@@ -9,6 +9,11 @@ section.top-bar-section {
     background: transparent;
     &.right{
       margin-right: 20px;
+      a{
+        &:hover{
+          background: lighten(#454545, 5%);
+        }
+      }
     }
   }
   .has-dropdown>a:after {
@@ -17,6 +22,7 @@ section.top-bar-section {
   li{
     a:not(.button){
       margin-bottom: -2px;
+      
     }
   }
 }

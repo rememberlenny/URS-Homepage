@@ -1,0 +1,70 @@
+@import '../base/color-definition';
+
+.hero-content{
+  -webkit-transition: background 1s !important;
+  &:hover{
+    -webkit-transition: background .02s !important;
+  }
+  h3, p{
+    -webkit-transition: opacity 1s ease !important;
+    color: $font-white;
+    opacity: 0;
+    &:hover{
+      -webkit-transition: opacity .02s ease !important;
+    }
+  }
+  p{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &:hover{
+    background: $brand-orange !important;
+    h3, p{
+      opacity: 1;
+    }
+  }
+  &.dam{
+    padding-top: 2.4em;
+    padding-left: 3em;
+  }
+  &.bridge{
+      padding-top: 1.2em;
+      h3{
+        font-size:1.45em;
+      } 
+      p{
+        font-size: .8em;
+      }
+  }
+  &.roof, &.hospital{
+    height: 182px !important;
+  }
+  &.roof{
+    &:hover{
+      background: $brand-blue !important;
+    }
+    h3{
+      font-size:1.2em;
+    } 
+    padding-top:.65em;
+    padding-left: 1em;
+  }
+  &.hospital{
+      h3{
+        font-size:1.8em;
+      } 
+      p{
+        font-size: 1.2em;
+      }
+      padding-top: 2.5em;
+  }
+  &.freeway{
+    h3{
+      font-size:1.8em;
+    } 
+    p{
+      font-size: .9em;
+    }
+    padding-top: 6em;
+  }
+}
