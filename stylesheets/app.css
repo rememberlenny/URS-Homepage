@@ -53,13 +53,24 @@ a {
   -webkit-transition: color 2s !important;
   -webkit-transition: background 1s !important;
 }
-
-/* line 10, ../sass/base/transition.scss */
+/* line 8, ../sass/base/transition.scss */
 a:hover {
   color: #003268 !important;
   /* HOVER ON */
   -webkit-transition: color .02s !important;
   -webkit-transition: background .02s !important;
+}
+
+/* line 15, ../sass/base/transition.scss */
+img {
+  /* HOVER OFF */
+  -webkit-transition: opacity 2s !important;
+}
+/* line 18, ../sass/base/transition.scss */
+img:hover {
+  opacity: .7 !important;
+  /* HOVER ON */
+  -webkit-transition: opacity .02s !important;
 }
 
 /* line 1, ../sass/base/tag-consistency.scss */
@@ -200,6 +211,15 @@ div.footer ul {
 /* line 48, ../sass/element/footer.scss */
 div.footer ul li {
   margin-bottom: .5em;
+}
+/* line 53, ../sass/element/footer.scss */
+div.footer .social-box a {
+  -webkit-transition: opacity 1s !important;
+}
+/* line 55, ../sass/element/footer.scss */
+div.footer .social-box a:hover {
+  opacity: .5;
+  -webkit-transition: opacity .2s ease !important;
 }
 
 /* line 1, ../sass/element/border-radius.scss */

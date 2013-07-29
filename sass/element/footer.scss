@@ -49,4 +49,13 @@ div.footer{
         margin-bottom: .5em;
     }
   }
+  .social-box{
+    a{
+      -webkit-transition: opacity 1s !important;
+      &:hover{
+        opacity: .5;
+        -webkit-transition: opacity .2s ease !important;
+      }
+    }
+  }
 }

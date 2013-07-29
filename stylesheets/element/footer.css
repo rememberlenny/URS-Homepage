@@ -88,3 +88,12 @@ div.footer ul {
 div.footer ul li {
   margin-bottom: .5em;
 }
+/* line 53, ../../sass/element/footer.scss */
+div.footer .social-box a {
+  -webkit-transition: opacity 1s !important;
+}
+/* line 55, ../../sass/element/footer.scss */
+div.footer .social-box a:hover {
+  opacity: .5;
+  -webkit-transition: opacity .2s ease !important;
+}
