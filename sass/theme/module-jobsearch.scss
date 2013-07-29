@@ -11,7 +11,12 @@
       color:black;
     }
   }
-  padding-bottom: 1em;
+  img{
+    height: 120px;
+  }
+  #jobs-display{
+    margin-bottom:1em;
+  }
   &.title{
     padding-bottom: 0em !important;
   }

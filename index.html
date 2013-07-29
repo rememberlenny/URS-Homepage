@@ -26,7 +26,7 @@
         <div class="contain-to-grid">
           <nav class="top-bar fixed secondary-bar">
              <ul class="title-area">
-               <li class="name"></li>
+               <li class="name"  style="z-index: 90 !important;"></li>
              </ul>
              <section class="top-bar-section">
               <ul class="left column">
@@ -50,10 +50,10 @@
                 <li class="divider"></li>
                 <li class="has-dropdown">
                   <a href="">Countries</a>
-                  <ul class="dropdown">
-                    <li class="country">
+                  <ul class="dropdown" >
+                    <li class="country" >
                       <a href="#">
-                        <img src="images/country-filler.png" alt="">
+                        <img src="images/country-filler.png" alt="" style="z-index: 900;">
                       </a>
                     </li>
                   </ul>
@@ -159,12 +159,12 @@
           <!-- News Begin  -->
           <div class="row news-home widget">
             <div class="column">
-              <div class="row">
+              <div class="row active"  id="clickme-news">
                 <div class="column">
-                  <h2 class="section-title main">News</h2>
+                  <h2 class="section-title main ">News</h2>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" id="display-news">
                 <div class="column large-2">
                   <div class="row annual-report">
                     <div class="column large-14">
@@ -210,11 +210,14 @@
 
           <div class="row feature-widget widget">
             <div class="column">
-              <div class="row">
+              <div class="row active" id="project-news">
                 <div class="column">
-                  <h2 class="section-title main">Projects</h2>
+                  <h2 class="section-title main " >Projects</h2>
                 </div>
               </div>
+              <div class="row" id="project-display">
+                <div class="column">
+                  
               <div class="row">
                 <div class="column large-2">
                   <div class="row annual-report">
@@ -299,6 +302,10 @@
                     </div>
                   </div>
                 </div>
+              
+
+                </div>
+              </div>
               </div>
             </div>
           </div>
@@ -309,12 +316,12 @@
           <!-- Careers Begin  -->
           <div class="row job-search-module widget">
             <div class="column">
-              <div class="row">
-                <div class="column">
-                  <h2 class="section-title main">Careers</h2>
+              <div class="row active" id="jobs-news">
+                <div class="column ">
+                  <h2 class="section-title main " >Careers</h2>
                 </div>
               </div>
-              <div class="row">
+              <div class="row" id="jobs-display">
                 <div class="column large-3">
                   <div class="row">
                     <div class="column large-14">
@@ -458,11 +465,7 @@
   </div>
     <!-- Footer End  -->
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   
   <script src="javascripts/foundation/foundation.js"></script>
   
@@ -497,6 +500,21 @@
   
   <script>
     $(document).foundation();
+    $('#clickme-news').click(function() {
+      $('#display-news').slideToggle('slow', function() {
+        $('#clickme-news').toggleClass("active");
+      });
+    });
+    $('#project-news').click(function() {
+      $('#project-display').slideToggle('slow', function() {
+        $('#project-news').toggleClass("active");
+      });
+    });
+    $('#jobs-news').click(function() {
+      $('#jobs-display').slideToggle('slow', function() {
+        $('#jobs-news').toggleClass("active");
+      });
+    });
   </script>
 </body>
 </html>

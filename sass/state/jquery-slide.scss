@@ -1,0 +1,42 @@
+@import 'base/color-definition';
+
+#display-news, 
+#project-display,
+#jobs-display{
+  display:none;
+}
+
+#clickme-news{
+  &.active{
+    background: url('../images/tab/tab-news-big.jpg');
+  }
+}
+
+#project-news{
+  &.active{
+    background: url('../images/tab/tab-projects-big.jpg');
+  }
+}
+
+#jobs-news{
+  &.active{
+    background: url('../images/tab/tab-career-big.jpg');
+  }
+}
+
+
+#clickme-news,
+#project-news,
+#jobs-news{
+  -webkit-transition: background 1s ease-in-out !important;
+  -webkit-transition: color 2s ease-in-out !important;
+  &.active{
+    -webkit-transition: background 1s ease-in-out !important;
+    -webkit-transition: color 2s ease-in-out !important;
+    h2.section-title{
+      color: $font-white !important;
+    }
+  }
+}
+
+
