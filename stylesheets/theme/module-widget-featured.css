@@ -17,3 +17,8 @@
 .widget-back {
   margin-bottom: 1em;
 }
+
+/* line 17, ../../sass/theme/module-widget-featured.scss */
+.row.project-nav {
+  margin-top: 1em !important;
+}
