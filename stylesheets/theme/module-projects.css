@@ -2,8 +2,12 @@
 .image-case {
   padding-bottom: .5em;
 }
+/* line 3, ../../sass/theme/module-projects.scss */
+.image-case img {
+  min-width: 249px;
+}
 
-/* line 5, ../../sass/theme/module-projects.scss */
+/* line 8, ../../sass/theme/module-projects.scss */
 .description .dark-color {
   margin-bottom: 1em;
 }

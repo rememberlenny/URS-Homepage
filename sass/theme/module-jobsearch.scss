@@ -1,8 +1,14 @@
 @import '../base/color-definition';
 
 .job-search-module{
+  .search-widget{
+  }
   h2{
     font-weight: 500;
+    color: $brand-blue;
+    &.main{
+      color:black;
+    }
   }
   padding-top: .7em;
   padding-bottom: 1em;
@@ -10,21 +16,26 @@
     font-size: 18px;
   }
   h3{
-    font-size:13px;
+    font-size:11px;
     margin-bottom:0em;
     a{
       color: black !important;
-      opacity: .9;
+      opacity: .8;
     }
   }
   p{
     margin-bottom: .3em;
-    font-size: 11px;
+    font-size: 10px;
+    opacity:.8;
   }
   input[type="text"]{
+    width: 190px;
     height: 1.95125em;
     font-size: 0.7em;
     border: none;
-    background:url('../images/search-icon-or.png') center right no-repeat #fff;
+    background:url('../images/search-icon-bl.png') center right no-repeat #fff;
+  }
+  .act{
+    margin-left: 13px;
   }
 }

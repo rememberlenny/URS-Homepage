@@ -729,8 +729,12 @@ nav.main.top-bar ul.right li a:not(.button):hover {
 .image-case {
   padding-bottom: .5em;
 }
+/* line 3, ../sass/theme/module-projects.scss */
+.image-case img {
+  min-width: 249px;
+}
 
-/* line 5, ../sass/theme/module-projects.scss */
+/* line 8, ../sass/theme/module-projects.scss */
 .description .dark-color {
   margin-bottom: 1em;
 }
@@ -809,35 +813,46 @@ span.positive-color {
   padding-top: .7em;
   padding-bottom: 1em;
 }
-/* line 4, ../sass/theme/module-jobsearch.scss */
+/* line 6, ../sass/theme/module-jobsearch.scss */
 .job-search-module h2 {
   font-weight: 500;
+  color: #214b93;
 }
 /* line 9, ../sass/theme/module-jobsearch.scss */
+.job-search-module h2.main {
+  color: black;
+}
+/* line 15, ../sass/theme/module-jobsearch.scss */
 .job-search-module h4 {
   font-size: 18px;
 }
-/* line 12, ../sass/theme/module-jobsearch.scss */
+/* line 18, ../sass/theme/module-jobsearch.scss */
 .job-search-module h3 {
-  font-size: 13px;
+  font-size: 11px;
   margin-bottom: 0em;
 }
-/* line 15, ../sass/theme/module-jobsearch.scss */
+/* line 21, ../sass/theme/module-jobsearch.scss */
 .job-search-module h3 a {
   color: black !important;
-  opacity: .9;
+  opacity: .8;
 }
-/* line 20, ../sass/theme/module-jobsearch.scss */
+/* line 26, ../sass/theme/module-jobsearch.scss */
 .job-search-module p {
   margin-bottom: .3em;
-  font-size: 11px;
+  font-size: 10px;
+  opacity: .8;
 }
-/* line 24, ../sass/theme/module-jobsearch.scss */
+/* line 31, ../sass/theme/module-jobsearch.scss */
 .job-search-module input[type="text"] {
+  width: 190px;
   height: 1.95125em;
   font-size: 0.7em;
   border: none;
-  background: url("../images/search-icon-or.png") center right no-repeat white;
+  background: url("../images/search-icon-bl.png") center right no-repeat white;
+}
+/* line 38, ../sass/theme/module-jobsearch.scss */
+.job-search-module .act {
+  margin-left: 13px;
 }
 
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
