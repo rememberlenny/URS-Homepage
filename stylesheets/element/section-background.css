@@ -1,0 +1,14 @@
+/* line 1, ../../sass/element/section-background.scss */
+.news-home {
+  background: url("../images/section-back/news-back.jpg") top center no-repeat;
+}
+
+/* line 4, ../../sass/element/section-background.scss */
+.feature-widget {
+  background: url("../images/section-back/project-back.jpg") top center no-repeat;
+}
+
+/* line 7, ../../sass/element/section-background.scss */
+.job-search-module {
+  background: url("../images/section-back/career-back.jpg") top center no-repeat;
+}
