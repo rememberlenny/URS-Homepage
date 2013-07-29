@@ -40,9 +40,11 @@ div.news-home p {
   margin-bottom: .5em;
   opacity: .8;
 }
-/* line 14, ../../sass/element/blog-post.scss */
-div.news-home .news-item {
+
+/* line 15, ../../sass/element/blog-post.scss */
+.news-item {
   padding-top: .75em;
   padding-bottom: .5em;
   border-left: 2px solid #214b93;
+  border-color: rgba(33, 75, 147, 0.5);
 }

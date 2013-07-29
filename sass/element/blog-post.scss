@@ -11,9 +11,10 @@ div.news-home{
     margin-bottom:.5em;
     opacity: .8;
   }
-  .news-item{
-    padding-top: .75em;
-    padding-bottom: .5em;
-      border-left: 2px solid $brand-blue;
-  }
+}
+.news-item{
+  padding-top: .75em;
+  padding-bottom: .5em;
+  border-left: 2px solid $brand-blue;
+  border-color: rgba(33, 75, 147, .5);
 }

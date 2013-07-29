@@ -4,8 +4,16 @@
   padding-top: .2em;
   padding-bottom: .2em;
 }
+/* line 7, ../../sass/theme/module-widget-featured.scss */
+.feature-widget .image-case {
+  padding-bottom: .5em;
+}
+/* line 10, ../../sass/theme/module-widget-featured.scss */
+.feature-widget .description {
+  margin-bottom: 1em;
+}
 
-/* line 8, ../../sass/theme/module-widget-featured.scss */
+/* line 14, ../../sass/theme/module-widget-featured.scss */
 .widget-back {
   margin-bottom: 1em;
 }

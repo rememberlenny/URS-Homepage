@@ -269,11 +269,13 @@ div.news-home p {
   margin-bottom: .5em;
   opacity: .8;
 }
-/* line 14, ../sass/element/blog-post.scss */
-div.news-home .news-item {
+
+/* line 15, ../sass/element/blog-post.scss */
+.news-item {
   padding-top: .75em;
   padding-bottom: .5em;
   border-left: 2px solid #214b93;
+  border-color: rgba(33, 75, 147, 0.5);
 }
 
 /* line 21, ../sass/base/color-definition.scss */
@@ -314,23 +316,32 @@ span.positive-color {
 h2.section-title {
   text-transform: uppercase;
   color: black;
-  font-size: 17px;
+  font-size: 15px;
   opacity: .9;
+  line-height: 1.2em;
+}
+/* line 13, ../sass/element/preview-module.scss */
+h2.section-title.main {
+  text-transform: capitalize;
+  font-size: 30px !important;
+  font-weight: bold;
+  margin-bottom: .5em;
 }
 
-/* line 15, ../sass/element/preview-module.scss */
+/* line 22, ../sass/element/preview-module.scss */
 a.small-continue {
-  font-size: 11px;
+  font-size: 9px;
   color: #333;
   text-transform: uppercase;
   font-weight: 500;
   margin-top: 3px;
   opacity: .7;
 }
-/* line 23, ../sass/element/preview-module.scss */
+/* line 30, ../sass/element/preview-module.scss */
 a.dark-color {
   font-weight: 500;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* line 4, ../sass/state/_topbar-override.scss */
@@ -357,6 +368,11 @@ section.top-bar-section .has-dropdown > a:after {
 /* line 23, ../sass/state/_topbar-override.scss */
 section.top-bar-section li a:not(.button) {
   margin-bottom: -2px;
+}
+
+/* line 3, ../sass/state/news.scss */
+.news-home h2.section-title {
+  font-size: 11px;
 }
 
 /* line 21, ../sass/base/color-definition.scss */
@@ -643,9 +659,24 @@ nav.main.top-bar ul.right li a:not(.button):hover {
   max-width: 277px;
 }
 
-/* line 2, ../sass/theme/module-annualrep.scss */
+/* line 1, ../sass/theme/module-projects.scss */
+.image-case {
+  padding-bottom: .5em;
+}
+
+/* line 5, ../sass/theme/module-projects.scss */
+.description .dark-color {
+  margin-bottom: 1em;
+}
+
+/* line 1, ../sass/theme/module-annualrep.scss */
+.annual-report {
+  padding-top: .75em;
+}
+/* line 3, ../sass/theme/module-annualrep.scss */
 .annual-report ul {
-  margin-top: 3.5em;
+  line-height: .7em !important;
+  margin-top: .5em;
 }
 
 /* line 4, ../sass/theme/module-history.scss */
@@ -659,8 +690,16 @@ nav.main.top-bar ul.right li a:not(.button):hover {
   padding-top: .2em;
   padding-bottom: .2em;
 }
+/* line 7, ../sass/theme/module-widget-featured.scss */
+.feature-widget .image-case {
+  padding-bottom: .5em;
+}
+/* line 10, ../sass/theme/module-widget-featured.scss */
+.feature-widget .description {
+  margin-bottom: 1em;
+}
 
-/* line 8, ../sass/theme/module-widget-featured.scss */
+/* line 14, ../sass/theme/module-widget-featured.scss */
 .widget-back {
   margin-bottom: 1em;
 }
