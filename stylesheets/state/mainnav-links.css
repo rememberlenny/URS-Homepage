@@ -29,7 +29,7 @@ span.positive-color {
 
 /* line 2, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 /* line 5, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right a {
@@ -38,7 +38,7 @@ nav.main.top-bar ul.right a {
 }
 /* line 9, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button) {
-  padding: 0 22.66667px;
+  padding: 0 14.66667px;
 }
 /* line 11, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button):hover {

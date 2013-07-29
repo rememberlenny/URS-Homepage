@@ -32,36 +32,36 @@ span.positive-color {
   padding-top: .7em;
   padding-bottom: 1em;
 }
-/* line 6, ../../sass/theme/module-jobsearch.scss */
+/* line 7, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h2 {
   font-weight: 500;
   color: #214b93;
 }
-/* line 9, ../../sass/theme/module-jobsearch.scss */
+/* line 10, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h2.main {
   color: black;
 }
-/* line 15, ../../sass/theme/module-jobsearch.scss */
+/* line 16, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h4 {
   font-size: 18px;
 }
-/* line 18, ../../sass/theme/module-jobsearch.scss */
+/* line 19, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h3 {
   font-size: 11px;
   margin-bottom: 0em;
 }
-/* line 21, ../../sass/theme/module-jobsearch.scss */
+/* line 22, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h3 a {
   color: black !important;
   opacity: .8;
 }
-/* line 26, ../../sass/theme/module-jobsearch.scss */
+/* line 27, ../../sass/theme/module-jobsearch.scss */
 .job-search-module p {
   margin-bottom: .3em;
   font-size: 10px;
   opacity: .8;
 }
-/* line 31, ../../sass/theme/module-jobsearch.scss */
+/* line 32, ../../sass/theme/module-jobsearch.scss */
 .job-search-module input[type="text"] {
   width: 190px;
   height: 1.95125em;
@@ -69,7 +69,17 @@ span.positive-color {
   border: none;
   background: url("../images/search-icon-bl.png") center right no-repeat white;
 }
-/* line 38, ../../sass/theme/module-jobsearch.scss */
+/* line 39, ../../sass/theme/module-jobsearch.scss */
 .job-search-module .act {
   margin-left: 13px;
+}
+/* line 42, ../../sass/theme/module-jobsearch.scss */
+.job-search-module section {
+  margin-left: .4em;
+}
+/* line 45, ../../sass/theme/module-jobsearch.scss */
+.job-search-module .small-continue.fr {
+  margin-right: 5.9em;
+  margin-top: -1em;
+  font-weight: bold;
 }

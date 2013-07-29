@@ -1,13 +1,18 @@
-/* line 1, ../../sass/theme/module-projects.scss */
+/* line 3, ../../sass/theme/module-projects.scss */
+.feature-widget .row .large-offset-2 {
+  margin-left: 17.28571%;
+}
+
+/* line 9, ../../sass/theme/module-projects.scss */
 .image-case {
   padding-bottom: .5em;
 }
-/* line 3, ../../sass/theme/module-projects.scss */
+/* line 11, ../../sass/theme/module-projects.scss */
 .image-case img {
-  min-width: 249px;
+  min-width: 219px;
 }
 
-/* line 8, ../../sass/theme/module-projects.scss */
+/* line 16, ../../sass/theme/module-projects.scss */
 .description .dark-color {
   margin-bottom: 1em;
 }

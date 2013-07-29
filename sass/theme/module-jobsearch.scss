@@ -1,6 +1,7 @@
 @import '../base/color-definition';
 
 .job-search-module{
+  //background:url('../images/tab/tab-career-big.jpg');
   .search-widget{
   }
   h2{
@@ -37,5 +38,13 @@
   }
   .act{
     margin-left: 13px;
+  }
+  section{
+    margin-left: .4em;
+  }
+  .small-continue.fr{
+    margin-right: 5.9em;
+    margin-top: -1em;
+    font-weight: bold;
   }
 }
