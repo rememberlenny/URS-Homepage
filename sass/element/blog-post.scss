@@ -1,3 +1,4 @@
+@import 'base/color-definition';
 div.news-home{
   h3{
     font-size: 14px;
@@ -9,5 +10,10 @@ div.news-home{
     font-weight: 200;
     margin-bottom:.5em;
     opacity: .8;
+  }
+  .news-item{
+    padding-top: .75em;
+    padding-bottom: .5em;
+      border-left: 2px solid $brand-blue;
   }
 }
