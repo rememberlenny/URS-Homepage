@@ -7,20 +7,27 @@
 }
 
 #clickme-news{
+  background:none;
   &.active{
     background: url('../images/tab/tab-news-big.jpg');
   }
 }
 
 #project-news{
+  background:none;
   &.active{
     background: url('../images/tab/tab-projects-big.jpg');
   }
 }
 
 #jobs-news{
+  background:none;
+  -webkit-transition: background 1s !important;
+  transition: background 1s !important;
   &.active{
     background: url('../images/tab/tab-career-big.jpg');
+    -webkit-transition: background 1s !important;
+    transition: background 1s !important;
   }
 }
 
@@ -28,14 +35,18 @@
 #clickme-news,
 #project-news,
 #jobs-news{
-  -webkit-transition: background 1s ease-in-out !important;
   -webkit-transition: color 2s ease-in-out !important;
   &.active{
-    -webkit-transition: background 1s ease-in-out !important;
     -webkit-transition: color 2s ease-in-out !important;
     h2.section-title{
       color: $font-white !important;
     }
+    .child{
+      background:url('../images/assets/plus.png') top left no-repeat;
+    }
+  }
+  .child{
+    background:url('../images/assets/minus.png') top left no-repeat;
   }
 }
 

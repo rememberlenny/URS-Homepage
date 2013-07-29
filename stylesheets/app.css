@@ -658,40 +658,66 @@ span.positive-color {
   display: none;
 }
 
-/* line 10, ../sass/state/jquery-slide.scss */
+/* line 9, ../sass/state/jquery-slide.scss */
+#clickme-news {
+  background: none;
+}
+/* line 11, ../sass/state/jquery-slide.scss */
 #clickme-news.active {
   background: url("../images/tab/tab-news-big.jpg");
 }
 
 /* line 16, ../sass/state/jquery-slide.scss */
+#project-news {
+  background: none;
+}
+/* line 18, ../sass/state/jquery-slide.scss */
 #project-news.active {
   background: url("../images/tab/tab-projects-big.jpg");
 }
 
-/* line 22, ../sass/state/jquery-slide.scss */
+/* line 23, ../sass/state/jquery-slide.scss */
+#jobs-news {
+  background: none;
+  -webkit-transition: background 1s !important;
+  transition: background 1s !important;
+}
+/* line 27, ../sass/state/jquery-slide.scss */
 #jobs-news.active {
   background: url("../images/tab/tab-career-big.jpg");
+  -webkit-transition: background 1s !important;
+  transition: background 1s !important;
 }
 
-/* line 30, ../sass/state/jquery-slide.scss */
+/* line 37, ../sass/state/jquery-slide.scss */
 #clickme-news,
 #project-news,
 #jobs-news {
-  -webkit-transition: background 1s ease-in-out !important;
   -webkit-transition: color 2s ease-in-out !important;
 }
-/* line 33, ../sass/state/jquery-slide.scss */
+/* line 39, ../sass/state/jquery-slide.scss */
 #clickme-news.active,
 #project-news.active,
 #jobs-news.active {
-  -webkit-transition: background 1s ease-in-out !important;
   -webkit-transition: color 2s ease-in-out !important;
 }
-/* line 36, ../sass/state/jquery-slide.scss */
+/* line 41, ../sass/state/jquery-slide.scss */
 #clickme-news.active h2.section-title,
 #project-news.active h2.section-title,
 #jobs-news.active h2.section-title {
   color: #fefefe !important;
+}
+/* line 44, ../sass/state/jquery-slide.scss */
+#clickme-news.active .child,
+#project-news.active .child,
+#jobs-news.active .child {
+  background: url("../images/assets/plus.png") top left no-repeat;
+}
+/* line 48, ../sass/state/jquery-slide.scss */
+#clickme-news .child,
+#project-news .child,
+#jobs-news .child {
+  background: url("../images/assets/minus.png") top left no-repeat;
 }
 
 /* line 2, ../sass/theme/topbar-button-search.scss */

@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width" />
   <title>URS Corporation</title>
 
-  <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
   
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
@@ -109,7 +109,6 @@
       <!-- Hero slider Begin  -->
       <div class="row hero-slider">
           <ul data-orbit data-options="
-            animation: 'fade';
             timer_speed: 10000;
             resume_on_mouseout: false;
             animation_speed: 500;
@@ -159,8 +158,8 @@
           <!-- News Begin  -->
           <div class="row news-home widget">
             <div class="column">
-              <div class="row active"  id="clickme-news">
-                <div class="column">
+              <div class="row active" id="clickme-news">
+                <div class="column child">
                   <h2 class="section-title main ">News</h2>
                 </div>
               </div>
@@ -173,7 +172,7 @@
                       </h2>
                     </div>
                     <div class="column large-14">
-                      <img class="" style="height: 80px;" src="../images/widget/annual-report-thumb.jpg" alt="">
+                      <img class="" style="height: 80px;" src="images/widget/annual-report-thumb.jpg" alt="">
                       <ul class="no-bullet text-right links">
                         <li>
                           <a href="" class=" small-continue">View Interactive &#9656;</a>
@@ -211,7 +210,7 @@
           <div class="row feature-widget widget">
             <div class="column">
               <div class="row active" id="project-news">
-                <div class="column">
+                <div class="column child">
                   <h2 class="section-title main " >Projects</h2>
                 </div>
               </div>
@@ -232,7 +231,7 @@
                 <div class="column large-4 news-item ">
                   <div class="row image-case">
                     <div class="column">
-                    <img src="../images/project/left.jpg" alt="">
+                    <img src="images/project/left.jpg" alt="">
                     </div>
                   </div>
                   <div class="row description">
@@ -244,7 +243,7 @@
                 <div class="column large-4 news-item bl">
                   <div class="row image-case">
                     <div class="column">
-                    <img src="../images/project/mid.png" alt="">
+                    <img src="images/project/mid.png" alt="">
                     </div>
                   </div>
                   <div class="row description">
@@ -256,7 +255,7 @@
                 <div class="column large-4 news-item bl">
                   <div class="row image-case">
                     <div class="column">
-                    <img src="../images/project/right.jpg" alt="">
+                    <img src="images/project/right.jpg" alt="">
                     </div>
                   </div>
                 <div class="row description">
@@ -317,7 +316,7 @@
           <div class="row job-search-module widget">
             <div class="column">
               <div class="row active" id="jobs-news">
-                <div class="column ">
+                <div class="column  child">
                   <h2 class="section-title main " >Careers</h2>
                 </div>
               </div>
@@ -371,7 +370,7 @@
                     <div class="column large-7 news-item bl">
                       <div class="row">
                         <div class="column">
-                          <img src="../images/employee/chris.jpg" alt="" class="fl">
+                          <img src="images/employee/chris.jpg" alt="" class="fl">
                           <section class="fl">
                             <h3><a href="">Chris</a></h3>
                             <p>Senior Principal<br> Brisbane, Australia</p>
@@ -385,7 +384,7 @@
                     <div class="column large-7 news-item bl">
                       <div class="row">
                         <div class="column">
-                          <img src="../images/employee/ashley.jpg" alt="" class="fl">
+                          <img src="images/employee/ashley.jpg" alt="" class="fl">
                           <section class="fl">
                             <h3><a href="">Ashley</a></h3>
                             <p>Senior Principal,<br>Environment<br>Melbourne, Australia</p>
@@ -433,11 +432,11 @@
         <!-- Left Begin  -->
          <div class="text-right fr social-box">
           <ul class="no-bullet">
-            <li><a href=""><img src="../images/icon/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/linkedin.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/youtube.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/google.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon/twitter.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon/linkedin.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon/youtube.png" alt=""></a></li>
+            <li><a href=""><img src="images/icon/google.png" alt=""></a></li>
           </ul>
         </div> 
         <!-- Right End  -->    
@@ -502,18 +501,30 @@
     $(document).foundation();
     $('#clickme-news').click(function() {
       $('#display-news').slideToggle('slow', function() {
-        $('#clickme-news').toggleClass("active");
       });
+      if( $('#clickme-news').hasClass('active') ){
+        $('#clickme-news').removeClass("active");
+      } else {
+        $('#clickme-news').addClass("active");
+      }
     });
     $('#project-news').click(function() {
       $('#project-display').slideToggle('slow', function() {
-        $('#project-news').toggleClass("active");
       });
+      if( $('#project-news').hasClass('active') ){
+        $('#project-news').removeClass("active");
+      } else {
+        $('#project-news').addClass("active");
+      }
     });
     $('#jobs-news').click(function() {
       $('#jobs-display').slideToggle('slow', function() {
-        $('#jobs-news').toggleClass("active");
       });
+      if( $('#jobs-news').hasClass('active') ){
+        $('#jobs-news').removeClass("active");
+      } else {
+        $('#jobs-news').addClass("active");
+      }
     });
   </script>
 </body>
