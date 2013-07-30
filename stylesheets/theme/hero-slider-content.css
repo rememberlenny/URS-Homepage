@@ -17,12 +17,8 @@ span.positive-color {
 .bright-white {
   color: #fefefe !important;
 }
-/* line 35, ../../sass/base/color-definition.scss */
-.bright-white:hover {
-  color: #214b93 !important;
-}
 
-/* line 40, ../../sass/base/color-definition.scss */
+/* line 37, ../../sass/base/color-definition.scss */
 .dark-color {
   color: #454545 !important;
 }

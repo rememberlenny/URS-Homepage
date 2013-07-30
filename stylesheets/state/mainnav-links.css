@@ -17,31 +17,29 @@ span.positive-color {
 .bright-white {
   color: #fefefe !important;
 }
-/* line 35, ../../sass/base/color-definition.scss */
-.bright-white:hover {
-  color: #214b93 !important;
-}
 
-/* line 40, ../../sass/base/color-definition.scss */
+/* line 37, ../../sass/base/color-definition.scss */
 .dark-color {
   color: #454545 !important;
 }
 
 /* line 2, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar {
+  margin-left: -17px;
+  margin-right: -17px;
   height: 62px !important;
   margin-bottom: 15px;
 }
-/* line 6, ../../sass/state/mainnav-links.scss */
+/* line 8, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right a {
   text-transform: uppercase;
   font-size: 14px;
 }
-/* line 10, ../../sass/state/mainnav-links.scss */
+/* line 12, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button) {
   padding: 24px 25.66667px 2px;
 }
-/* line 12, ../../sass/state/mainnav-links.scss */
+/* line 14, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button):hover {
   background: #00264e;
 }
