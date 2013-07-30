@@ -94,7 +94,7 @@
               </ul>
               <ul class="right row">
                 <li><a href="">About</a></li>
-                <li class="" id="megamenu-selector">
+                <li class="" id="megamenu-selector" >
                   <a href="">Markets</a>
                 </li>
                 <li><a href="">Services</a></li>
@@ -587,17 +587,19 @@
     };
 
     // Mega menu
-    $('#megamenu-selector').mouseover( function(){
-        if( $('#mega-menu').hasClass('show') ){
-        } else {
-          displayMegaMenu();
-        }
-      }
-    );
-    $('#mega-menu').mouseleave( function(){
-
-        hideMegaMenu();
-      
+    $('#megamenu-selector').hover( 
+      function(){
+        displayMegaMenu();
+      },
+      function(){
+        $('#mega-menu').hover( 
+          function(){
+            displayMegaMenu();
+          },
+          function(){
+            hideMegaMenu();
+          }
+        );
       }
     );
     
