@@ -1,7 +1,23 @@
 @import 'base/color-definition';
 
 $nav-color: #333132;
-
+#megamenu-selector{
+  &:hover,
+  &.show{
+    a,
+    &.show{
+      background:white;
+      color: $brand-orange !important;
+    }
+  }  
+  a,
+  &.show{
+    &:hover{
+      background:white;
+      color: $brand-orange !important;
+    }
+  }
+}
 .mega-menu{
   display:none;
   background: $font-white !important;
