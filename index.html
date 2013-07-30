@@ -609,73 +609,73 @@
   //   }
   // );
     
-    var hero = {
-          'displayEl': $('#hero-display'), 
-          'triggerEl': $('#hero-news'),
-          'accordianStatus':'0'
-        },
-        news = {
-          'displayEl': $('#display-news'),
-          'triggerEl': $('#clickme-news'),
-          'accordianStatus':'0' 
-        },
-        project = {
-          'displayEl': $('#project-display'),
-          'triggerEl': $('#project-news'),
-          'accordianStatus':'0'
-        },
-        jobs = {
-          'displayEl': $('#jobs-display'),
-          'triggerEl': $('#jobs-news'),
-          'accordianStatus':'0'
+    var applicationEl = {
+          'hero' : {
+            'displayEl': $('#hero-display'), 
+            'triggerEl': $('#hero-news'),
+            'accordianStatus':'0'
+          },
+          'news' : {
+            'displayEl': $('#display-news'),
+            'triggerEl': $('#clickme-news'),
+            'accordianStatus':'0' 
+          },
+          'project' : {
+            'displayEl': $('#project-display'),
+            'triggerEl': $('#project-news'),
+            'accordianStatus':'0'
+          },
+          'jobs' : {
+            'displayEl': $('#jobs-display'),
+            'triggerEl': $('#jobs-news'),
+            'accordianStatus':'0'
+          }
         };
-
-    var elementList = ['hero', 'news', 'project', 'jobs'];
 
     function closeOthers(){
       // Select current
     }
 
     // Accordian view
-    hero.triggerEl.click(function() {
-      hero.displayEl.slideToggle('slow', function() {
+    applicationEl.hero.triggerEl.click(function() {
+      applicationEl.hero.displayEl.slideToggle('slow', function() {
       });
-      if( hero.triggerEl.hasClass('active') ){
-        hero.triggerEl.removeClass("active");
+      if( applicationEl.hero.triggerEl.hasClass('active') ){
+        applicationEl.hero.triggerEl.removeClass("active");
       } else {
-        hero.triggerEl.addClass("active");
+        applicationEl.hero.triggerEl.addClass("active");
       }
     });
-    news.triggerEl.click(function() {
-      news.displayEl.slideToggle('slow', function() {
+    applicationEl.news.triggerEl.click(function() {
+      applicationEl.news.displayEl.slideToggle('slow', function() {
       });
-      if( news.triggerEl.hasClass('active') ){
-        news.triggerEl.removeClass("active");
+      if( applicationEl.news.triggerEl.hasClass('active') ){
+        applicationEl.news.triggerEl.removeClass("active");
       } else {
-        news.triggerEl.addClass("active");
+        applicationEl.news.triggerEl.addClass("active");
       }
     });
-    project.triggerEl.click(function() {
-      project.displayEl.slideToggle('slow', function() {
+    applicationEl.project.triggerEl.click(function() {
+      applicationEl.project.displayEl.slideToggle('slow', function() {
       });
-      if( $project.triggerEl.hasClass('active') ){
-        $project.triggerEl.removeClass("active");
+      if( applicationEl.project.triggerEl.hasClass('active') ){
+        applicationEl.project.triggerEl.removeClass("active");
       } else {
-        $project.triggerEl.addClass("active");
+        applicationEl.project.triggerEl.addClass("active");
       }
     });
-    jobs.triggerEl.click(function() {
-      jobs.displayEl.slideToggle('slow', function() {
+    applicationEl.jobs.triggerEl.click(function() {
+      applicationEl.jobs.displayEl.slideToggle('slow', function() {
       });
-      if( jobs.triggerEl.hasClass('active') ){
-        jobs.triggerEl.removeClass("active");
-        jobs.triggerEl.fadeTo('fast', function()
+      if( applicationEl.jobs.triggerEl.hasClass('active') ){
+        applicationEl.jobs.triggerEl.removeClass("active");
+        applicationEl.jobs.triggerEl.fadeTo('fast', function()
         {
             $(this).css('background-image', 'none');
         }).fadeTo('fast');        
       } else {
-        jobs.triggerEl.addClass("active");
-        jobs.triggerEl.fadeTo('fast', function()
+        applicationEl.jobs.triggerEl.addClass("active");
+        applicationEl.jobs.triggerEl.fadeTo('fast', function()
         {
             $(this).css('background-image', 'url("/images/tab/tab-career-big.jpg")');
         }).fadeTo('fast');
