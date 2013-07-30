@@ -35,7 +35,7 @@ a {
 }
 /* line 8, ../../sass/base/transition.scss */
 a:hover {
-  color: #003268 !important;
+  color: #de8f1d !important;
   /* HOVER ON */
   -webkit-transition: color .02s !important;
   -webkit-transition: background .02s !important;

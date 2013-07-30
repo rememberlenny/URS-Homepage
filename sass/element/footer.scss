@@ -23,7 +23,7 @@ div.footer{
     opacity: .8;
   }
   a{
-    font-weight: 600;
+    font-weight: 400;
   }
   p{
     font-weight: 200;
@@ -51,9 +51,10 @@ div.footer{
   }
   .social-box{
     a{
+      opacity: .7;
       -webkit-transition: opacity 1s !important;
       &:hover{
-        opacity: .5;
+        opacity: 1;
         -webkit-transition: opacity .2s ease !important;
       }
     }

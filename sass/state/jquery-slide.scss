@@ -9,25 +9,33 @@
 #clickme-news{
   background:none;
   &.active{
-    background: url('../images/tab/tab-news-big.jpg');
+    background: url('../images/tab/tab-news-big.jpg') top center;
   }
 }
 
 #project-news{
   background:none;
   &.active{
-    background: url('../images/tab/tab-projects-big.jpg');
+    background: url('../images/tab/tab-projects-big.jpg') top center;
   }
 }
 
 #jobs-news{
   background:none;
-  -webkit-transition: background 1s !important;
-  transition: background 1s !important;
+-webkit-transition: background 1s ease-in-out;
+-moz-transition: background 1s ease-in-out;
+-o-transition: background 1s ease-in-out;
+-ms-transition: background 1s ease-in-out; 
+transition: background 1s ease-in-out;
+transition: background 0.5s linear;
   &.active{
-    background: url('../images/tab/tab-career-big.jpg');
-    -webkit-transition: background 1s !important;
-    transition: background 1s !important;
+    background: url('../images/tab/tab-career-big.jpg') top center;
+-webkit-transition: background 1s ease-in-out;
+-moz-transition: background 1s ease-in-out;
+-o-transition: background 1s ease-in-out;
+-ms-transition: background 1s ease-in-out; 
+transition: background 1s ease-in-out;
+transition: background 0.5s linear;
   }
 }
 
@@ -35,10 +43,10 @@
 #clickme-news,
 #project-news,
 #jobs-news{
-  -webkit-transition: color 2s ease-in-out !important;
   &.active{
     -webkit-transition: color 2s ease-in-out !important;
     h2.section-title{
+      -webkit-transition: color 1s linear !important;
       color: $font-white !important;
     }
     .child{

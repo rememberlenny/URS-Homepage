@@ -1,5 +1,6 @@
 @import '../base/color-definition';
 nav.main.top-bar{
+  height: 62px !important;
   margin-bottom: 15px;
   ul.right{
     a{
@@ -7,7 +8,7 @@ nav.main.top-bar{
       font-size: 14px;
     }
     li a:not(.button) {
-      padding: 0 14.66667px;
+      padding: 24px 25.66667px 2px;
       &:hover{
         background: darken($dark-brand-blue, 5%);
       }

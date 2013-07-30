@@ -35,4 +35,5 @@ nav.main.top-bar {
 nav.main.top-bar ul.right a {
   background: #003268;
   text-transform: uppercase;
+  font-weight: bold;
 }

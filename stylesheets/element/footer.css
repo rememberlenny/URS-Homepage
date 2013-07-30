@@ -55,7 +55,7 @@ div.footer li {
 }
 /* line 25, ../../sass/element/footer.scss */
 div.footer a {
-  font-weight: 600;
+  font-weight: 400;
 }
 /* line 28, ../../sass/element/footer.scss */
 div.footer p {
@@ -90,10 +90,11 @@ div.footer ul li {
 }
 /* line 53, ../../sass/element/footer.scss */
 div.footer .social-box a {
+  opacity: .7;
   -webkit-transition: opacity 1s !important;
 }
-/* line 55, ../../sass/element/footer.scss */
+/* line 56, ../../sass/element/footer.scss */
 div.footer .social-box a:hover {
-  opacity: .5;
+  opacity: 1;
   -webkit-transition: opacity .2s ease !important;
 }

@@ -29,18 +29,19 @@ span.positive-color {
 
 /* line 2, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar {
+  height: 62px !important;
   margin-bottom: 15px;
 }
-/* line 5, ../../sass/state/mainnav-links.scss */
+/* line 6, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right a {
   text-transform: uppercase;
   font-size: 14px;
 }
-/* line 9, ../../sass/state/mainnav-links.scss */
+/* line 10, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button) {
-  padding: 0 14.66667px;
+  padding: 24px 25.66667px 2px;
 }
-/* line 11, ../../sass/state/mainnav-links.scss */
+/* line 12, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button):hover {
   background: #00264e;
 }

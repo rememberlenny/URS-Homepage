@@ -6,3 +6,8 @@ hr {
 hr.last {
   margin-bottom: .5em !important;
 }
+
+/* line 8, ../../sass/base/tag-consistency.scss */
+span.block {
+  display: block;
+}
