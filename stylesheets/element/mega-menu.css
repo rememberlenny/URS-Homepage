@@ -27,36 +27,48 @@ span.positive-color {
   color: #454545 !important;
 }
 
-/* line 8, ../../sass/element/mega-menu.scss */
+/* line 5, ../../sass/element/mega-menu.scss */
+#megamenu-selector a {
+  padding-bottom: 3px !important;
+}
+/* line 11, ../../sass/element/mega-menu.scss */
 #megamenu-selector:hover a, #megamenu-selector:hover.show, #megamenu-selector.show a, #megamenu-selector.show.show {
   background: white;
   color: #de8f1d !important;
 }
-/* line 15, ../../sass/element/mega-menu.scss */
+/* line 18, ../../sass/element/mega-menu.scss */
 #megamenu-selector a:hover, #megamenu-selector.show:hover {
   background: white;
   color: #de8f1d !important;
 }
 
-/* line 21, ../../sass/element/mega-menu.scss */
+/* line 24, ../../sass/element/mega-menu.scss */
+#mega-menu {
+  box-shadow: 0px 23px 21px 4px #333;
+  width: 96%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* line 30, ../../sass/element/mega-menu.scss */
 .mega-menu {
   display: none;
   background: #fefefe !important;
   padding-top: .75em;
   border-radius: 0px 0px 30px 30px;
-  box-shadow: 0px 9px 31px -20px #333333;
+  box-shadow: 0px 23px 21px 4px #333;
   position: absolute !important;
   z-index: 400 !important;
 }
-/* line 29, ../../sass/element/mega-menu.scss */
+/* line 38, ../../sass/element/mega-menu.scss */
 .mega-menu div:first-child {
   background: url("../images/divider-vert.png") right center no-repeat;
 }
-/* line 35, ../../sass/element/mega-menu.scss */
+/* line 44, ../../sass/element/mega-menu.scss */
 .mega-menu ul li {
   line-height: 1.4em !important;
 }
-/* line 36, ../../sass/element/mega-menu.scss */
+/* line 45, ../../sass/element/mega-menu.scss */
 .mega-menu ul li label {
   color: #de8f1d !important;
   background: #fefefe !important;
@@ -64,12 +76,12 @@ span.positive-color {
   line-height: 1em;
   margin-bottom: .4em;
 }
-/* line 42, ../../sass/element/mega-menu.scss */
+/* line 51, ../../sass/element/mega-menu.scss */
 .mega-menu ul li label.primary {
   font-weight: 800;
   margin-bottom: 1em;
 }
-/* line 48, ../../sass/element/mega-menu.scss */
+/* line 57, ../../sass/element/mega-menu.scss */
 .mega-menu ul li a {
   line-height: 1.4em !important;
   font-weight: 500;
@@ -77,7 +89,7 @@ span.positive-color {
   background: #fefefe !important;
   color: #333132;
 }
-/* line 54, ../../sass/element/mega-menu.scss */
+/* line 63, ../../sass/element/mega-menu.scss */
 .mega-menu ul li a:hover {
   color: #de8f1d;
 }

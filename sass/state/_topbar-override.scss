@@ -26,7 +26,7 @@ section.top-bar-section {
           background: darken(#454545, 5%);
           color: $font-white!important;
         }
-        font-weight: bold;
+        font-weight: 400;
       }
     }
   }
@@ -77,7 +77,7 @@ $topbar-link-color: #dedede;
 $topbar-link-color-hover: $brand-orange;
 // $topbar-link-color-active: #fff;
 $topbar-link-weight: light;
-$topbar-link-font-size: 11px;
+$topbar-link-font-size: 9px;
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
 // $topbar-link-bg-hover: darken($topbar-bg, 3%);
 // $topbar-link-bg-active: darken($topbar-bg, 3%);
@@ -85,7 +85,7 @@ $topbar-link-font-size: 11px;
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: bold;
-$topbar-dropdown-label-font-size: 10px;
+$topbar-dropdown-label-font-size: 9px;
 
 // Top menu icon styles
 

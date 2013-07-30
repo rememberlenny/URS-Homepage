@@ -1,24 +1,26 @@
 /* line 1, ../../sass/base/layout.scss */
 #wrapper {
-  width: 920px;
+  width: 954px;
+  border-left: 17px solid white;
+  border-right: 17px solid white;
 }
 
-/* line 4, ../../sass/base/layout.scss */
+/* line 6, ../../sass/base/layout.scss */
 div.row.footer {
-  width: 920px;
+  width: 954px;
 }
 
-/* line 8, ../../sass/base/layout.scss */
+/* line 10, ../../sass/base/layout.scss */
 .fr {
   float: right !important;
 }
 
-/* line 9, ../../sass/base/layout.scss */
+/* line 11, ../../sass/base/layout.scss */
 .fl {
   float: left !important;
 }
 
-/* line 10, ../../sass/base/layout.scss */
+/* line 12, ../../sass/base/layout.scss */
 .row .row.widget {
   margin-bottom: 1em;
 }

@@ -29,64 +29,70 @@ span.positive-color {
 
 /* line 7, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h2 {
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 17px;
   color: #214b93;
 }
-/* line 10, ../../sass/theme/module-jobsearch.scss */
+/* line 11, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h2.main {
   color: black;
 }
-/* line 14, ../../sass/theme/module-jobsearch.scss */
+/* line 15, ../../sass/theme/module-jobsearch.scss */
 .job-search-module img {
   height: 120px;
 }
-/* line 17, ../../sass/theme/module-jobsearch.scss */
+/* line 18, ../../sass/theme/module-jobsearch.scss */
 .job-search-module #jobs-display {
   margin-bottom: 1em;
 }
 /* line 20, ../../sass/theme/module-jobsearch.scss */
+.job-search-module #jobs-display .news-item:first-child {
+  margin-left: 11px;
+  margin-right: -11px;
+}
+/* line 25, ../../sass/theme/module-jobsearch.scss */
 .job-search-module.title {
   padding-bottom: 0em !important;
 }
-/* line 23, ../../sass/theme/module-jobsearch.scss */
+/* line 28, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h4 {
   font-size: 18px;
 }
-/* line 26, ../../sass/theme/module-jobsearch.scss */
+/* line 31, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h3 {
   font-size: 11px;
   margin-bottom: 0em;
 }
-/* line 29, ../../sass/theme/module-jobsearch.scss */
+/* line 34, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h3 a {
   color: black !important;
   opacity: .8;
 }
-/* line 34, ../../sass/theme/module-jobsearch.scss */
+/* line 39, ../../sass/theme/module-jobsearch.scss */
 .job-search-module p {
   margin-bottom: .3em;
   font-size: 10px;
   opacity: .8;
 }
-/* line 39, ../../sass/theme/module-jobsearch.scss */
+/* line 44, ../../sass/theme/module-jobsearch.scss */
 .job-search-module input[type="text"] {
-  width: 190px;
+  width: 195px;
   height: 1.95125em;
   font-size: 0.7em;
   border: none;
   background: url("../images/search-icon-bl.png") center right no-repeat white;
 }
-/* line 46, ../../sass/theme/module-jobsearch.scss */
+/* line 51, ../../sass/theme/module-jobsearch.scss */
 .job-search-module .act {
   margin-left: 13px;
 }
-/* line 49, ../../sass/theme/module-jobsearch.scss */
+/* line 54, ../../sass/theme/module-jobsearch.scss */
 .job-search-module section {
   margin-left: .4em;
 }
-/* line 52, ../../sass/theme/module-jobsearch.scss */
+/* line 57, ../../sass/theme/module-jobsearch.scss */
 .job-search-module .small-continue.fr {
-  margin-right: 5.9em;
+  margin-right: 1.9em;
   margin-top: -1em;
   font-weight: bold;
 }

@@ -5,7 +5,8 @@
   .search-widget{
   }
   h2{
-    font-weight: 500;
+    font-weight: 600;
+    font-size: 17px;
     color: $brand-blue;
     &.main{
       color:black;
@@ -16,6 +17,10 @@
   }
   #jobs-display{
     margin-bottom:1em;
+    .news-item:first-child{
+      margin-left:11px;
+      margin-right:-11px;
+    }
   }
   &.title{
     padding-bottom: 0em !important;
@@ -37,7 +42,7 @@
     opacity:.8;
   }
   input[type="text"]{
-    width: 190px;
+    width: 195px;
     height: 1.95125em;
     font-size: 0.7em;
     border: none;
@@ -50,7 +55,7 @@
     margin-left: .4em;
   }
   .small-continue.fr{
-    margin-right: 5.9em;
+    margin-right: 1.9em;
     margin-top: -1em;
     font-weight: bold;
   }

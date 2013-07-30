@@ -9,7 +9,7 @@
   <title>URS Corporation</title>
 
   <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
-  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 
@@ -32,7 +32,7 @@
               <ul class="left column">
                 <li class="stock-ticker">
                   <a href="" style="color:#dedede !important">
-                    NYSE: URS <span class="positive-color">&#9650;</span> 46.57 (+22)
+                    <span style="font-weight: bold; font-size: 1.1em; margin-left: -1.6em; margin-right: 1.6em">UNITED STATES</span> <span style=" font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; font-size:1.3em">NYSE: URS</span> <span class="positive-color">&#9650;</span> 46.57 (+22)
                   </a>  
                 </li>
                 <li> 
@@ -608,48 +608,74 @@
   //     $('#mega-menu').slideUp(); 
   //   }
   // );
+    
+    var hero = {
+          'displayEl': $('#hero-display'), 
+          'triggerEl': $('#hero-news'),
+          'accordianStatus':'0'
+        },
+        news = {
+          'displayEl': $('#display-news'),
+          'triggerEl': $('#clickme-news'),
+          'accordianStatus':'0' 
+        },
+        project = {
+          'displayEl': $('#project-display'),
+          'triggerEl': $('#project-news'),
+          'accordianStatus':'0'
+        },
+        jobs = {
+          'displayEl': $('#jobs-display'),
+          'triggerEl': $('#jobs-news'),
+          'accordianStatus':'0'
+        };
 
+    var elementList = ['hero', 'news', 'project', 'jobs'];
+
+    function closeOthers(){
+      // Select current
+    }
 
     // Accordian view
-    $('#hero-news').click(function() {
-      $('#hero-display').slideToggle('slow', function() {
+    hero.triggerEl.click(function() {
+      hero.displayEl.slideToggle('slow', function() {
       });
-      if( $('#hero-news').hasClass('active') ){
-        $('#hero-news').removeClass("active");
+      if( hero.triggerEl.hasClass('active') ){
+        hero.triggerEl.removeClass("active");
       } else {
-        $('#hero-news').addClass("active");
+        hero.triggerEl.addClass("active");
       }
     });
-    $('#clickme-news').click(function() {
-      $('#display-news').slideToggle('slow', function() {
+    news.triggerEl.click(function() {
+      news.displayEl.slideToggle('slow', function() {
       });
-      if( $('#clickme-news').hasClass('active') ){
-        $('#clickme-news').removeClass("active");
+      if( news.triggerEl.hasClass('active') ){
+        news.triggerEl.removeClass("active");
       } else {
-        $('#clickme-news').addClass("active");
+        news.triggerEl.addClass("active");
       }
     });
-    $('#project-news').click(function() {
-      $('#project-display').slideToggle('slow', function() {
+    project.triggerEl.click(function() {
+      project.displayEl.slideToggle('slow', function() {
       });
-      if( $('#project-news').hasClass('active') ){
-        $('#project-news').removeClass("active");
+      if( $project.triggerEl.hasClass('active') ){
+        $project.triggerEl.removeClass("active");
       } else {
-        $('#project-news').addClass("active");
+        $project.triggerEl.addClass("active");
       }
     });
-    $('#jobs-news').click(function() {
-      $('#jobs-display').slideToggle('slow', function() {
+    jobs.triggerEl.click(function() {
+      jobs.displayEl.slideToggle('slow', function() {
       });
-      if( $('#jobs-news').hasClass('active') ){
-        $('#jobs-news').removeClass("active");
-        $('#jobs-news').fadeTo('fast', function()
+      if( jobs.triggerEl.hasClass('active') ){
+        jobs.triggerEl.removeClass("active");
+        jobs.triggerEl.fadeTo('fast', function()
         {
             $(this).css('background-image', 'none');
         }).fadeTo('fast');        
       } else {
-        $('#jobs-news').addClass("active");
-        $('#jobs-news').fadeTo('fast', function()
+        jobs.triggerEl.addClass("active");
+        jobs.triggerEl.fadeTo('fast', function()
         {
             $(this).css('background-image', 'url("/images/tab/tab-career-big.jpg")');
         }).fadeTo('fast');
