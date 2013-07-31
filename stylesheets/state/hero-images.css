@@ -23,39 +23,54 @@ span.positive-color {
   color: #454545 !important;
 }
 
-/* line 3, ../../sass/state/hero-images.scss */
+/* line 2, ../../sass/state/hero-images.scss */
+.header-fix {
+  margin-bottom: -5em;
+  z-index: 800;
+}
+/* line 5, ../../sass/state/hero-images.scss */
+.header-fix h2 {
+  padding-top: 21px !important;
+}
+
+/* line 10, ../../sass/state/hero-images.scss */
 .hero-slider li {
   padding: 1.3em 1.25em;
 }
 
-/* line 7, ../../sass/state/hero-images.scss */
+/* line 15, ../../sass/state/hero-images.scss */
+.slide-content h2 {
+  visibility: hidden;
+}
+
+/* line 19, ../../sass/state/hero-images.scss */
 .hero-content {
   -webkit-transition: background 1s !important;
 }
-/* line 9, ../../sass/state/hero-images.scss */
+/* line 21, ../../sass/state/hero-images.scss */
 .hero-content:hover {
   -webkit-transition: background .02s !important;
 }
-/* line 12, ../../sass/state/hero-images.scss */
+/* line 24, ../../sass/state/hero-images.scss */
 .hero-content h3, .hero-content p {
   -webkit-transition: opacity 1s ease !important;
   color: #fefefe;
   opacity: 0;
 }
-/* line 16, ../../sass/state/hero-images.scss */
+/* line 28, ../../sass/state/hero-images.scss */
 .hero-content h3:hover, .hero-content p:hover {
   -webkit-transition: opacity .02s ease !important;
 }
-/* line 20, ../../sass/state/hero-images.scss */
+/* line 32, ../../sass/state/hero-images.scss */
 .hero-content p {
   text-transform: uppercase;
   font-weight: 600;
 }
-/* line 24, ../../sass/state/hero-images.scss */
+/* line 36, ../../sass/state/hero-images.scss */
 .hero-content:hover {
   background: #de8f1d !important;
 }
-/* line 26, ../../sass/state/hero-images.scss */
+/* line 38, ../../sass/state/hero-images.scss */
 .hero-content:hover h3, .hero-content:hover p {
   opacity: 1;
 }

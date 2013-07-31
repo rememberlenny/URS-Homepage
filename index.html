@@ -13,6 +13,7 @@
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 
+
 </head>
 <body>
 
@@ -185,6 +186,9 @@
       
       <!-- Hero slider Begin  -->
       <div class="row hero-slider" id="hero-slider">
+        <div class="header-fix column">
+          <h2>URS Corporation</h2>
+        </div>
           <ul data-orbit data-options="
             timer_speed: 10000;
             animation: 'fade';
@@ -194,31 +198,31 @@
             slide_number: false;
             timer: false;
             variable_height: false;">
-            <li data-orbit-slide="headline-1" id="headline-1" class="slide-1">
+            <li data-orbit-slide="headline-1" id="headline-1" class="slide-1 slide-content">
               <div class="large-5">
                 <h2>URS Corporation</h2>
                 <p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p>
                 <a href="" class=" small-continue">More about us &#9656;</a>
               </div>
             </li>
-            <li data-orbit-slide="headline-2"id="headline-2" class="slide-2">
+            <li data-orbit-slide="headline-2"id="headline-2" class="slide-2 slide-content">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#248</h4>
               <h3>on FORTUNE's List of America's <br>500 Largest Companies</h3>
             </li>
-            <li data-orbit-slide="headline-3"id="headline-3" class="slide-3">
+            <li data-orbit-slide="headline-3"id="headline-3" class="slide-3 slide-content">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
             </li>
-            <li data-orbit-slide="headline-4"id="headline-4" class="slide-4">
+            <li data-orbit-slide="headline-4"id="headline-4" class="slide-4 slide-content">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
             </li>
-            <li data-orbit-slide="headline-5"id="headline-5" class="slide-5">
+            <li data-orbit-slide="headline-5"id="headline-5" class="slide-5 slide-content">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
@@ -576,6 +580,15 @@
   
   <script>
     $(document).foundation();
+    
+    // 
+    // CHANGE ALL HREF
+    $(function(){
+      $('a').each(function() {
+          $(this).attr('href', '/indexa.html' );
+      });
+    });
+    // 
 
     function displayMegaMenu(){
       $('#megamenu-selector').addClass('show');
