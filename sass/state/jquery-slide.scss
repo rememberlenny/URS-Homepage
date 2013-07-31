@@ -14,8 +14,11 @@
   overflow: hidden;
 }
 
-#hero-slider{
-  height:178px;
+#hero-slider,
+.slide-content
+{
+  height:178px !important;
+  width:921px !important;
 }
 
 #display-news, 
