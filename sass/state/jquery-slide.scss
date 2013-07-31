@@ -17,10 +17,23 @@
 .slide-content{
   height: 167px;
   box-shadow: inset 390px 0px 380px -30px rgba(87, 77, 70, 0.9);
+    -webkit-transition: box-shadow 500ms ;
+    -moz-transition: box-shadow 500ms ;
+    -o-transition: box-shadow 500ms ;
+    transition: box-shadow 500ms ;
 }
 .open{
   .slide-content{
       box-shadow: inset 390px 0px 380px -30px rgba(222, 222, 222, 0.9);
+    -webkit-transition: box-shadow 500ms ;
+    -moz-transition: box-shadow 500ms ;
+    -o-transition: box-shadow 500ms ;
+    transition: box-shadow 500ms ;
+    h2#hero-news, 
+    p,
+    a.small-continue{
+      color: #000102;
+    }
   }
 }
 
