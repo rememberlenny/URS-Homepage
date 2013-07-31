@@ -670,21 +670,38 @@
     //   );  
     // }
 
-    function closeHero(){
+    $(document).ready(function(){
+      $('.orbit-container ul').animate({
+        height: '161px',
+      }, 600);
+    });
 
+    function closeHero(){
+      $('h2#hero-news').animate({
+        paddingTop: "7px",
+      }, 300);
+      $('#hero-display').animate({
+        height: '58px',
+      }, 400);
+        $('#header-fix').removeClass("open");
+        $('#hero-display').removeClass("open");
+        $('#header-fix').removeClass("active");
     };
+
     function closeNews(){
       applicationEl.news.displayEl.slideUp();
       if( applicationEl.news.triggerEl.hasClass('active') ){
         applicationEl.news.triggerEl.removeClass("active");
       }
     };
+
     function closeProjects(){
       applicationEl.project.displayEl.slideUp();
       if( applicationEl.project.triggerEl.hasClass('active') ){
         applicationEl.project.triggerEl.removeClass("active");
       }
     };
+
     function closeCareer(){
       applicationEl.jobs.displayEl.slideUp();
       if( applicationEl.jobs.triggerEl.hasClass('active') ){
@@ -739,6 +756,12 @@
           $('.orbit-container').animate({
             height: '274'
           });
+          $('h2#hero-news').animate({
+            paddingTop: "7px",
+          }, 300);
+          $('#hero-display').animate({
+            height: '58px',
+          }, 400);
           closeNews();
           closeProjects();
           closeCareer();
@@ -751,44 +774,27 @@
     applicationEl.news.triggerEl.click(function() {
       applicationEl.news.displayEl.slideToggle('slow', function() {
       });
-      if( applicationEl.news.triggerEl.hasClass('active') ){
-        applicationEl.news.triggerEl.removeClass("active");
-      } else {
-        applicationEl.news.triggerEl.addClass("active");
-      }
       closeProjects();
       closeCareer();
+      closeHero();
     });
+
     applicationEl.project.triggerEl.click(function() {
       applicationEl.project.displayEl.slideToggle('slow', function() {
       });
-      if( applicationEl.project.triggerEl.hasClass('active') ){
-        applicationEl.project.triggerEl.removeClass("active");
-      } else {
-        applicationEl.project.triggerEl.addClass("active");
-      }
       closeNews();
       closeCareer();
+      closeHero();
     });
+
     applicationEl.jobs.triggerEl.click(function() {
       applicationEl.jobs.displayEl.slideToggle('slow', function() {
       });
-      if( applicationEl.jobs.triggerEl.hasClass('active') ){
-        applicationEl.jobs.triggerEl.removeClass("active");
-        applicationEl.jobs.triggerEl.fadeTo('fast', function()
-        {
-            $(this).css('background-image', 'none');
-        }).fadeTo('fast');        
-      } else {
-        applicationEl.jobs.triggerEl.addClass("active");
-        applicationEl.jobs.triggerEl.fadeTo('fast', function()
-        {
-            $(this).css('background-image', 'url("/images/tab/tab-career-big.jpg")');
-        }).fadeTo('fast');
-      }
       closeNews();
       closeProjects();
+      closeHero();
     });
+
   </script>
 </body>
 </html>

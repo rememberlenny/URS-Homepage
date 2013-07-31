@@ -30,7 +30,7 @@ span.positive-color {
 }
 /* line 5, ../../sass/state/hero-images.scss */
 .header-fix h2 {
-  padding-top: 21px !important;
+  padding-top: 21px;
 }
 
 /* line 10, ../../sass/state/hero-images.scss */

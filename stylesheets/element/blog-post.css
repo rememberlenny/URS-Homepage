@@ -25,12 +25,12 @@ span.positive-color {
 
 /* line 3, ../../sass/element/blog-post.scss */
 div.news-home h3 {
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0em;
 }
 /* line 7, ../../sass/element/blog-post.scss */
 div.news-home p {
-  font-size: 12px;
+  font-size: 11px;
   color: #010101;
   font-weight: 200;
   margin-bottom: .5em;

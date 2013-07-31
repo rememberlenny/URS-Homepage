@@ -1,12 +1,15 @@
 @import 'base/color-definition';
-
+#hero-display{
+  overflow: hidden;
+}
 .orbit-container{
   overflow: hidden;
   ul{
-    height: 177px!important;
+    height: 161px;
     .slide-content{
     }
   }
+  background: none !important;
   .exempt{
     p{
       margin-bottom: .7em !important;
