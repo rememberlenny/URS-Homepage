@@ -1,11 +1,13 @@
+@import 'base/color-definition';
 #wrapper,{
-  width: 954px;
-  border-left:17px solid white;
-  border-right:17px solid white;
+  width: 1025px;
+  border-left:50px solid $wrapper-background;
+  border-right:50px solid $wrapper-background;
 }
 div.row.footer{
-  width: 954px;
-
+  width: 1025px;
+  border-left:50px solid $wrapper-background;
+  border-right:50px solid $wrapper-background;
   }  
 .fr{ float: right !important; }
 .fl{ float: left !important; }

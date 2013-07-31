@@ -22,8 +22,7 @@
     <div id="inner-wrapper">
       
     </div>
-      <div class="row  hide-for-small" style="margin-left: -37px;
-margin-right: -37px;">
+      <div class="row  hide-for-small" style="">
         <div class="contain-to-grid">
           <nav class="top-bar fixed secondary-bar">
              <ul class="title-area">
@@ -185,40 +184,41 @@ margin-right: -37px;">
       <!-- Main blue nav bar End  -->
       
       <!-- Hero slider Begin  -->
-      <div class="row hero-slider">
+      <div class="row hero-slider" id="hero-slider">
           <ul data-orbit data-options="
             timer_speed: 10000;
+            animation: 'fade';
             resume_on_mouseout: false;
             animation_speed: 500;
             navigation_arrows: false;
             slide_number: false;
             timer: false;
             variable_height: false;">
-            <li data-orbit-slide="headline-1" class="slide-1">
+            <li data-orbit-slide="headline-1" id="headline-1" class="slide-1">
               <div class="large-5">
                 <h2>URS Corporation</h2>
                 <p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p>
                 <a href="" class=" small-continue">More about us &#9656;</a>
               </div>
             </li>
-            <li data-orbit-slide="headline-2" class="slide-2">
+            <li data-orbit-slide="headline-2"id="headline-2" class="slide-2">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#248</h4>
               <h3>on FORTUNE's List of America's <br>500 Largest Companies</h3>
             </li>
-            <li data-orbit-slide="headline-3" class="slide-3">
+            <li data-orbit-slide="headline-3"id="headline-3" class="slide-3">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
             </li>
-            <li data-orbit-slide="headline-4" class="slide-4">
+            <li data-orbit-slide="headline-4"id="headline-4" class="slide-4">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
             </li>
-            <li data-orbit-slide="headline-5" class="slide-5">
+            <li data-orbit-slide="headline-5"id="headline-5" class="slide-5">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
@@ -633,9 +633,50 @@ margin-right: -37px;">
           }
         };
 
+    var selectEl ={
+      e1:$('#headline-1'),
+      e2:$('#headline-2'),
+      e3:$('#headline-3'),
+      e4:$('#headline-4'),
+      e5:$('#headline-5'),
+    }
+
     function closeOthers(){
       // Select current
     }
+
+    // function fadeBackground(selectEl){
+    //   selectEl.fadeOut(1000, function (newColor) {
+    //       this.css("background", "url('" + newColor + "')");
+    //       this.fadeIn(1000);
+    //   });
+    // }
+    // function addClassToSelect(classD){
+    //   selectEl.classD.addClass(
+    //     function(classD) {
+    //       return "item-" + classD;
+    //     }
+    //   );  
+    // }
+
+    // function changeSlideBackground(){
+    //   if(selectEl.e1.hasClass('active')){
+    //     addClassToSelect(hl1);
+    //     fadeBackground(selectEl.e1);     
+    //   } else if (selectEl.e2.hasClass('active')){
+    //     addClassToSelect(hl2);
+    //     fadeBackground(selectEl.e2);
+    //   } else if (selectEl.e3.hasClass('active')){
+    //     addClassToSelect(hl3);
+    //     fadeBackground(selectEl.e3);      
+    //   } else if (selectEl.e4.hasClass('active')){
+    //     addClassToSelect(hl4);
+    //     fadeBackground(selectEl.e4);    
+    //   } else (selectEl.e5.hasClass('active')){
+    //     addClassToSelect(hl5);
+    //     fadeBackground(selectEl.e5);
+    //   }
+    // }
 
     // Accordian view
     applicationEl.hero.triggerEl.click(function() {

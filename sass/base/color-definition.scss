@@ -2,6 +2,7 @@ $lightest-text: #dedede;
 $positive-color: #0d9900;
 $light-grey: #f4f5f5;
 $brand-orange: #de8f1d;
+$wrapper-background: #f2f2f3;
 
 $font-white: #fefefe;
 
@@ -19,7 +20,7 @@ $secondary-color: $brand-orange;
 // $success-color: #5da423;
 
 #wrapper{
-  background: white;
+  background: $wrapper-background;
 }
 
 span.positive-color{
