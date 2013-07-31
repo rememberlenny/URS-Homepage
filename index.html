@@ -186,8 +186,10 @@
       
       <!-- Hero slider Begin  -->
       <div class="row hero-slider" id="hero-slider">
-        <div class="header-fix column" >
-          <h2 id="hero-news">URS Corporation</h2>
+        <div class="header-fix column" id="header-fix">
+          <div class="child">
+            <h2 id="hero-news">URS Corporation</h2>
+          </div>
         </div>
         <div id="hero-display">
           <ul data-orbit data-options="
@@ -278,9 +280,9 @@
               
                 </div>
                 <div class="column large-4 news-item bl">
-                <h3><a href="/indexa.html">Bill Lingard Named Executive Vice President and Chief Operating Oﬃcer of URS</a></h3>
-                <p>Chief Financial Oﬃcer H. Thomas Hicks Promoted to EVP; Bill Lingard Named Executive Vice President and Chief Operating Oﬃcer of URS; Chief Financial Oﬃcer H. Thomas Hicks Promoted to EVP</p>
-                <a href="/indexa.html" class="fr small-continue">View all &#9656;</a>
+                  <h3><a href="/indexa.html">Bill Lingard Named Executive Vice President and Chief Operating Oﬃcer of URS</a></h3>
+                  <p>Chief Financial Oﬃcer H. Thomas Hicks Promoted to EVP; Bill Lingard Named Executive Vice President and Chief Operating Oﬃcer of URS; Chief Financial Oﬃcer H. Thomas Hicks Promoted to EVP</p>
+                  <a href="/indexa.html" class="fr small-continue">View all &#9656;</a>
                 </div>
               </div>
             </div>
@@ -684,10 +686,10 @@
     applicationEl.hero.triggerEl.click(function() {
       applicationEl.hero.displayEl.slideToggle('slow', function() {
       });
-      if( applicationEl.hero.triggerEl.hasClass('active') ){
-        applicationEl.hero.triggerEl.removeClass("active");
+      if( $('#header-fix').hasClass('active') ){
+        $('#header-fix').removeClass("active");
       } else {
-        applicationEl.hero.triggerEl.addClass("active");
+        $('#header-fix').addClass("active");
       }
     });
     applicationEl.news.triggerEl.click(function() {

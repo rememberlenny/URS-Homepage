@@ -40,6 +40,13 @@ transition: background 0.5s linear;
 }
 
 
+#header-fix{
+  &.active{
+      background:url('../images/assets/plus.png') top left no-repeat;
+  }
+  background:url('../images/assets/minus.png') top left no-repeat;
+}
+
 #clickme-news,
 #project-news,
 #jobs-news{

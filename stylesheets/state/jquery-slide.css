@@ -69,26 +69,35 @@ span.positive-color {
   transition: background 0.5s linear;
 }
 
-/* line 46, ../../sass/state/jquery-slide.scss */
+/* line 43, ../../sass/state/jquery-slide.scss */
+#header-fix {
+  background: url("../images/assets/minus.png") top left no-repeat;
+}
+/* line 44, ../../sass/state/jquery-slide.scss */
+#header-fix.active {
+  background: url("../images/assets/plus.png") top left no-repeat;
+}
+
+/* line 53, ../../sass/state/jquery-slide.scss */
 #clickme-news.active,
 #project-news.active,
 #jobs-news.active {
   -webkit-transition: color 2s ease-in-out !important;
 }
-/* line 48, ../../sass/state/jquery-slide.scss */
+/* line 55, ../../sass/state/jquery-slide.scss */
 #clickme-news.active h2.section-title,
 #project-news.active h2.section-title,
 #jobs-news.active h2.section-title {
   -webkit-transition: color 1s linear !important;
   color: #fefefe !important;
 }
-/* line 52, ../../sass/state/jquery-slide.scss */
+/* line 59, ../../sass/state/jquery-slide.scss */
 #clickme-news.active .child,
 #project-news.active .child,
 #jobs-news.active .child {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
-/* line 56, ../../sass/state/jquery-slide.scss */
+/* line 63, ../../sass/state/jquery-slide.scss */
 #clickme-news .child,
 #project-news .child,
 #jobs-news .child {
