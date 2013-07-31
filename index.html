@@ -697,19 +697,26 @@
           $('#hero-display').animate({
             height: '167'
           });
+          $('#hero-display').removeClass('open');
           $('.slide-content').animate({
+            height: '167'
+          });
+          $('.orbit-container').animate({
             height: '167'
           });
         } else {
           $('#header-fix').addClass("active");
           $('#hero-display').animate({
-            height: '87'
+            height: '274'
           });
+          $('#hero-display').addClass('open');
           $('.slide-content').animate({
-            height: '87'
+            height: '274'
+          });
+          $('.orbit-container').animate({
+            height: '274'
           });
         }
-
       }
       
     );

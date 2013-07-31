@@ -1,10 +1,10 @@
 @import 'base/color-definition';
 
 .orbit-container{
-  min-height: 167px !important;
+  min-height: 167px;
   overflow: hidden;
   ul{
-    min-height: 167px !important;
+    min-height: 167px;
     .slide-content{
     }
   }
@@ -16,6 +16,12 @@
 
 .slide-content{
   height: 167px;
+  box-shadow: inset 390px 0px 380px -30px rgba(87, 77, 70, 0.9);
+}
+.open{
+  .slide-content{
+      box-shadow: inset 390px 0px 380px -30px rgba(222, 222, 222, 0.9);
+  }
 }
 
 #hero-slider,
