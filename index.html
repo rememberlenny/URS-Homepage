@@ -633,19 +633,19 @@
           }
         };
 
-    var selectEl ={
-      e1:$('#headline-1'),
-      e2:$('#headline-2'),
-      e3:$('#headline-3'),
-      e4:$('#headline-4'),
-      e5:$('#headline-5'),
-    }
+    // var selectEl ={
+    //   e1:$('#headline-1'),
+    //   e2:$('#headline-2'),
+    //   e3:$('#headline-3'),
+    //   e4:$('#headline-4'),
+    //   e5:$('#headline-5'),
+    // };
 
-    function closeOthers(){
-      // Select current
-    }
+    // function closeOthers(){
+    //   // Select current
+    // };
 
-    // function fadeBackground(selectEl){
+    // function fadeBackground(selectEl, newColor){
     //   selectEl.fadeOut(1000, function (newColor) {
     //       this.css("background", "url('" + newColor + "')");
     //       this.fadeIn(1000);
@@ -659,24 +659,18 @@
     //   );  
     // }
 
-    // function changeSlideBackground(){
-    //   if(selectEl.e1.hasClass('active')){
-    //     addClassToSelect(hl1);
-    //     fadeBackground(selectEl.e1);     
-    //   } else if (selectEl.e2.hasClass('active')){
-    //     addClassToSelect(hl2);
-    //     fadeBackground(selectEl.e2);
-    //   } else if (selectEl.e3.hasClass('active')){
-    //     addClassToSelect(hl3);
-    //     fadeBackground(selectEl.e3);      
-    //   } else if (selectEl.e4.hasClass('active')){
-    //     addClassToSelect(hl4);
-    //     fadeBackground(selectEl.e4);    
-    //   } else (selectEl.e5.hasClass('active')){
-    //     addClassToSelect(hl5);
-    //     fadeBackground(selectEl.e5);
-    //   }
-    // }
+    function changeSlideBackground(){
+      // if( $('#headline-1').hasClass('active') ){
+        $('#headline-1').addClass('item-1');
+        $('#headline-1').fadeOut(1000, function () {
+          console.log('fading out');
+          // this.css("background", "url('" + 'http://fakeimg.pl/300x300' + "')");
+          console.log('background changed');
+          $(this).fadeIn(1000);
+          console.log('fading in');
+        });  
+      };
+    // };
 
     // Accordian view
     applicationEl.hero.triggerEl.click(function() {
