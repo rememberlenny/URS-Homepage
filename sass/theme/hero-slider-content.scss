@@ -7,11 +7,6 @@ h4.large-number{
   color: $font-white;
 }
 .orbit-bullets{
-  z-index: 600 !important;
-  bottom: 110px !important;
-  top: -110px !important;
-  right: 20px !important;
-  float:right;
   li{
     padding: 0em !important;
     border: solid 1px $font-white !important;

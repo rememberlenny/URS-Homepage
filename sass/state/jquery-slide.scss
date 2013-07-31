@@ -1,5 +1,23 @@
 @import 'base/color-definition';
 
+.orbit-container{
+  min-height: 167px !important;
+  overflow: hidden;
+  ul{
+    min-height: 167px !important;
+    .slide-content{
+    }
+  }
+}
+#hero-display{
+  height: 167px;
+  overflow: hidden;
+}
+
+#hero-slider{
+  height:178px;
+}
+
 #display-news, 
 #project-display,
 #jobs-display{

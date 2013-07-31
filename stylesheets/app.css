@@ -789,32 +789,53 @@ span.positive-color {
   color: #454545 !important;
 }
 
-/* line 5, ../sass/state/jquery-slide.scss */
+/* line 3, ../sass/state/jquery-slide.scss */
+.orbit-container {
+  min-height: 167px !important;
+  overflow: hidden;
+}
+/* line 6, ../sass/state/jquery-slide.scss */
+.orbit-container ul {
+  min-height: 167px !important;
+}
+
+/* line 12, ../sass/state/jquery-slide.scss */
+#hero-display {
+  height: 167px;
+  overflow: hidden;
+}
+
+/* line 17, ../sass/state/jquery-slide.scss */
+#hero-slider {
+  height: 178px;
+}
+
+/* line 23, ../sass/state/jquery-slide.scss */
 #display-news,
 #project-display,
 #jobs-display {
   display: none;
 }
 
-/* line 9, ../sass/state/jquery-slide.scss */
+/* line 27, ../sass/state/jquery-slide.scss */
 #clickme-news {
   background: none;
 }
-/* line 11, ../sass/state/jquery-slide.scss */
+/* line 29, ../sass/state/jquery-slide.scss */
 #clickme-news.active {
   background: url("../images/tab/tab-news-big.jpg") top center;
 }
 
-/* line 16, ../sass/state/jquery-slide.scss */
+/* line 34, ../sass/state/jquery-slide.scss */
 #project-news {
   background: none;
 }
-/* line 18, ../sass/state/jquery-slide.scss */
+/* line 36, ../sass/state/jquery-slide.scss */
 #project-news.active {
   background: url("../images/tab/tab-projects-big.jpg") top center;
 }
 
-/* line 23, ../sass/state/jquery-slide.scss */
+/* line 41, ../sass/state/jquery-slide.scss */
 #jobs-news {
   background: none;
   -webkit-transition: background 1s ease-in-out;
@@ -824,7 +845,7 @@ span.positive-color {
   transition: background 1s ease-in-out;
   transition: background 0.5s linear;
 }
-/* line 31, ../sass/state/jquery-slide.scss */
+/* line 49, ../sass/state/jquery-slide.scss */
 #jobs-news.active {
   background: url("../images/tab/tab-career-big.jpg") top center;
   -webkit-transition: background 1s ease-in-out;
@@ -835,35 +856,35 @@ span.positive-color {
   transition: background 0.5s linear;
 }
 
-/* line 43, ../sass/state/jquery-slide.scss */
+/* line 61, ../sass/state/jquery-slide.scss */
 #header-fix {
   background: url("../images/assets/minus.png") top left no-repeat;
 }
-/* line 44, ../sass/state/jquery-slide.scss */
+/* line 62, ../sass/state/jquery-slide.scss */
 #header-fix.active {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
 
-/* line 53, ../sass/state/jquery-slide.scss */
+/* line 71, ../sass/state/jquery-slide.scss */
 #clickme-news.active,
 #project-news.active,
 #jobs-news.active {
   -webkit-transition: color 2s ease-in-out !important;
 }
-/* line 55, ../sass/state/jquery-slide.scss */
+/* line 73, ../sass/state/jquery-slide.scss */
 #clickme-news.active h2.section-title,
 #project-news.active h2.section-title,
 #jobs-news.active h2.section-title {
   -webkit-transition: color 1s linear !important;
   color: #fefefe !important;
 }
-/* line 59, ../sass/state/jquery-slide.scss */
+/* line 77, ../sass/state/jquery-slide.scss */
 #clickme-news.active .child,
 #project-news.active .child,
 #jobs-news.active .child {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
-/* line 63, ../sass/state/jquery-slide.scss */
+/* line 81, ../sass/state/jquery-slide.scss */
 #clickme-news .child,
 #project-news .child,
 #jobs-news .child {
@@ -933,52 +954,44 @@ h4.large-number {
   color: #fefefe;
 }
 
-/* line 9, ../sass/theme/hero-slider-content.scss */
-.orbit-bullets {
-  z-index: 600 !important;
-  bottom: 110px !important;
-  top: -110px !important;
-  right: 20px !important;
-  float: right;
-}
-/* line 15, ../sass/theme/hero-slider-content.scss */
+/* line 10, ../sass/theme/hero-slider-content.scss */
 .orbit-bullets li {
   padding: 0em !important;
   border: solid 1px #fefefe !important;
   background: transparent !important;
 }
-/* line 19, ../sass/theme/hero-slider-content.scss */
+/* line 14, ../sass/theme/hero-slider-content.scss */
 .orbit-bullets li.active {
   background: #fefefe !important;
 }
 
-/* line 26, ../sass/theme/hero-slider-content.scss */
+/* line 21, ../sass/theme/hero-slider-content.scss */
 .hero-slider {
   margin-bottom: 1.2em !important;
 }
-/* line 28, ../sass/theme/hero-slider-content.scss */
+/* line 23, ../sass/theme/hero-slider-content.scss */
 .hero-slider .small-continue {
   color: #fefefe;
 }
-/* line 31, ../sass/theme/hero-slider-content.scss */
+/* line 26, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-1 {
   background: url("../images/slide/slide1.jpg");
 }
-/* line 34, ../sass/theme/hero-slider-content.scss */
+/* line 29, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-2 {
   background: url("../images/slide/slide2.jpg");
 }
-/* line 35, ../sass/theme/hero-slider-content.scss */
+/* line 30, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-2 h3 {
   font-size: 1.3em !important;
   margin-top: 0.6em !important;
   margin-left: 6em !important;
 }
-/* line 42, ../sass/theme/hero-slider-content.scss */
+/* line 37, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-3 {
   background: url("../images/slide/slide3.jpg");
 }
-/* line 43, ../sass/theme/hero-slider-content.scss */
+/* line 38, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-3 h3 {
   font-size: 1.3em !important;
   margin-bottom: 0em;
@@ -986,16 +999,16 @@ h4.large-number {
   margin-top: 1em;
   font-size: 1.3em;
 }
-/* line 50, ../sass/theme/hero-slider-content.scss */
+/* line 45, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-3 p {
   margin-left: 5em;
   margin-bottom: 0em;
 }
-/* line 56, ../sass/theme/hero-slider-content.scss */
+/* line 51, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-4 {
   background: url("../images/slide/slide4.jpg");
 }
-/* line 57, ../sass/theme/hero-slider-content.scss */
+/* line 52, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-4 h3 {
   font-size: 1.3em !important;
   margin-bottom: 0em;
@@ -1003,16 +1016,16 @@ h4.large-number {
   margin-top: 1em;
   font-size: 1.3em;
 }
-/* line 64, ../sass/theme/hero-slider-content.scss */
+/* line 59, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-4 p {
   margin-left: 5em;
   margin-bottom: 0em;
 }
-/* line 70, ../sass/theme/hero-slider-content.scss */
+/* line 65, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-5 {
   background: url("../images/slide/slide5.jpg");
 }
-/* line 71, ../sass/theme/hero-slider-content.scss */
+/* line 66, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-5 h3 {
   font-size: 1.3em !important;
   margin-bottom: 0em;
@@ -1020,21 +1033,21 @@ h4.large-number {
   margin-top: 1em;
   font-size: 1.3em;
 }
-/* line 78, ../sass/theme/hero-slider-content.scss */
+/* line 73, ../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-5 p {
   margin-left: 5em;
   margin-bottom: 0em;
 }
-/* line 84, ../sass/theme/hero-slider-content.scss */
+/* line 79, ../sass/theme/hero-slider-content.scss */
 .hero-slider h2, .hero-slider h3, .hero-slider p {
   color: #fefefe;
 }
-/* line 87, ../sass/theme/hero-slider-content.scss */
+/* line 82, ../sass/theme/hero-slider-content.scss */
 .hero-slider h2 {
   margin-bottom: 0em !important;
   font-size: 30px;
 }
-/* line 91, ../sass/theme/hero-slider-content.scss */
+/* line 86, ../sass/theme/hero-slider-content.scss */
 .hero-slider p {
   margin-bottom: .3em !important;
   font-size: 12px;

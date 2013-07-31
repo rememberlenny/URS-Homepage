@@ -200,6 +200,7 @@
             navigation_arrows: false;
             slide_number: false;
             timer: false;
+            bullets: false;
             variable_height: false;">
             <li data-orbit-slide="headline-1" id="headline-1" class="slide-1 slide-content">
               <div class="large-5">
@@ -682,16 +683,11 @@
       };
     // };
 
-    // Accordian view
-    applicationEl.hero.triggerEl.click(function() {
-      applicationEl.hero.displayEl.slideToggle('slow', function() {
-      });
-      if( $('#header-fix').hasClass('active') ){
-        $('#header-fix').removeClass("active");
-      } else {
-        $('#header-fix').addClass("active");
-      }
-    });
+
+
+
+
+
     applicationEl.news.triggerEl.click(function() {
       applicationEl.news.displayEl.slideToggle('slow', function() {
       });
