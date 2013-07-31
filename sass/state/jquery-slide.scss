@@ -1,35 +1,66 @@
 @import 'base/color-definition';
 
 .orbit-container{
-  min-height: 167px;
   overflow: hidden;
   ul{
-    min-height: 167px;
+    height: 177px!important;
     .slide-content{
+    }
+  }
+  .exempt{
+    p{
+      margin-bottom: .7em !important;
+      font-weight: 600;
+    }
+    ul{
+      height: auto !important;
+      margin-left: -.25em;
+      &:first-child{
+        margin-right: -1.25em;
+      }
+      li{
+        list-style: disc!important;
+        font-weight: 600;
+        font-size: 11px;
+        padding: 0em;
+        &:before{
+          content:'\0095';
+        }
+      }
     }
   }
 }
 #hero-display{
-  height: 167px;
-  overflow: hidden;
 }
 
 .slide-content{
-  height: 167px;
   box-shadow: inset 390px 0px 380px -30px rgba(87, 77, 70, 0.9);
     -webkit-transition: box-shadow 500ms ;
     -moz-transition: box-shadow 500ms ;
     -o-transition: box-shadow 500ms ;
     transition: box-shadow 500ms ;
 }
+#headline-2,
+#headline-3
+{
+  box-shadow: inset 390px 0px 380px -30px rgba(0, 50, 104, 1);
+}
 .open{
-  .slide-content{
-      box-shadow: inset 390px 0px 380px -30px rgba(222, 222, 222, 0.9);
+  .slide-content, 
+  #headline-2,
+  #headline-3,
+  #headline-4,
+  #headline-5,
+  {
+    box-shadow: inset 360px 10px 580px -30px rgba(222, 222, 222, 1),
+      inset 640px 10px 580px -30px rgba(222, 222, 222, 0.9);
     -webkit-transition: box-shadow 500ms ;
     -moz-transition: box-shadow 500ms ;
     -o-transition: box-shadow 500ms ;
     transition: box-shadow 500ms ;
     p,
+    h3,
+    h4,
     a.small-continue{
       color: #000102;
     }
@@ -37,6 +68,7 @@
   h2#hero-news{
     color: #000102;
   }
+
 }
 
 #hero-slider,
@@ -87,9 +119,9 @@ transition: background 0.5s linear;
 
 #header-fix{
   &.active{
-      background:url('../images/assets/plus.png') top left no-repeat;
+    background:url('../images/assets/minus.png') top left no-repeat;
   }
-  background:url('../images/assets/minus.png') top left no-repeat;
+  background:url('../images/assets/plus.png') top left no-repeat;
 }
 
 #clickme-news,

@@ -18,13 +18,18 @@
 
 </head>
 <body>
-  
+    <script>
+    function goBack()
+      {
+        window.history.back()
+      }
+    </script>
 
     <div class="row text-center" style="background: white; border-color: white !important">
       <h1 style="padding-top:3em; padding-bottom:3em;">
         Action Complete
       </h1>
-      <a class="button small" href="/index.html"><< Go back</a>
+      <input type="button" class="button large" value="Back" onclick="goBack()">
     </div>
 
 

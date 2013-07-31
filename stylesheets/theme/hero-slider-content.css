@@ -48,83 +48,66 @@ h4.large-number {
 /* line 23, ../../sass/theme/hero-slider-content.scss */
 .hero-slider .small-continue {
   color: #fefefe;
+  font-size: 10px;
 }
-/* line 26, ../../sass/theme/hero-slider-content.scss */
+/* line 27, ../../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-1 {
-  background: url("../images/slide/slide1.jpg");
-}
-/* line 29, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-2 {
-  background: url("../images/slide/slide2.jpg");
+  background: url("../images/slide/slide1.jpg") top right;
 }
 /* line 30, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-2 {
+  background: url("../images/slide/slide2.jpg") center right;
+}
+/* line 31, ../../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-2 h3 {
-  font-size: 1.3em !important;
-  margin-top: 0.6em !important;
-  margin-left: 6em !important;
+  font-size: 1em !important;
+  margin-top: 1.6em !important;
+  margin-left: 8em !important;
+  font-weight: 400;
 }
-/* line 37, ../../sass/theme/hero-slider-content.scss */
+/* line 39, ../../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-3 {
-  background: url("../images/slide/slide3.jpg");
+  background: url("../images/slide/slide3.jpg") top right;
 }
-/* line 38, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-3 h3 {
-  font-size: 1.3em !important;
-  margin-bottom: 0em;
-  margin-left: 3em;
-  margin-top: 1em;
-  font-size: 1.3em;
-}
-/* line 45, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-3 p {
-  margin-left: 5em;
-  margin-bottom: 0em;
-}
-/* line 51, ../../sass/theme/hero-slider-content.scss */
+/* line 43, ../../sass/theme/hero-slider-content.scss */
 .hero-slider .slide-4 {
-  background: url("../images/slide/slide4.jpg");
+  background: url("../images/slide/slide4.jpg") top right;
 }
-/* line 52, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-4 h3 {
-  font-size: 1.3em !important;
+/* line 46, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-5 {
+  background: url("../images/slide/slide5.jpg") top right;
+}
+/* line 53, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 h3,
+.hero-slider .slide-4 h3,
+.hero-slider .slide-5 h3 {
+  font-size: 1.2em !important;
   margin-bottom: 0em;
-  margin-left: 3em;
-  margin-top: 1em;
-  font-size: 1.3em;
+  margin-left: 4em;
+  margin-top: 1.4em;
+  font-weight: 400;
 }
-/* line 59, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-4 p {
-  margin-left: 5em;
+/* line 60, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 p,
+.hero-slider .slide-4 p,
+.hero-slider .slide-5 p {
+  margin-left: 7em;
   margin-bottom: 0em;
 }
 /* line 65, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-5 {
-  background: url("../images/slide/slide5.jpg");
-}
-/* line 66, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-5 h3 {
-  font-size: 1.3em !important;
-  margin-bottom: 0em;
-  margin-left: 3em;
-  margin-top: 1em;
-  font-size: 1.3em;
-}
-/* line 73, ../../sass/theme/hero-slider-content.scss */
-.hero-slider .slide-5 p {
-  margin-left: 5em;
-  margin-bottom: 0em;
-}
-/* line 79, ../../sass/theme/hero-slider-content.scss */
 .hero-slider h2, .hero-slider h3, .hero-slider p {
   color: #fefefe;
 }
-/* line 82, ../../sass/theme/hero-slider-content.scss */
+/* line 68, ../../sass/theme/hero-slider-content.scss */
 .hero-slider h2 {
-  margin-bottom: 0em !important;
-  font-size: 30px;
+  margin-bottom: 0.2em !important;
+  font-size: 25px;
 }
-/* line 86, ../../sass/theme/hero-slider-content.scss */
+/* line 72, ../../sass/theme/hero-slider-content.scss */
 .hero-slider p {
   margin-bottom: .3em !important;
-  font-size: 12px;
+  margin-bottom: .3em !important;
+  font-size: 11px;
+  line-height: 1.4em;
+  font-weight: 400;
 }

@@ -39,10 +39,10 @@ h2.section-title {
 /* line 13, ../../sass/element/preview-module.scss */
 h2.section-title.main {
   text-transform: capitalize;
-  font-size: 30px !important;
+  font-size: 26px !important;
   font-weight: bold;
-  margin-bottom: .5em;
-  margin-top: .5em;
+  margin-bottom: .8em;
+  margin-top: .8em;
 }
 
 /* line 23, ../../sass/element/preview-module.scss */

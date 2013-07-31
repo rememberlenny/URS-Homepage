@@ -22,70 +22,59 @@ h4.large-number{
 
   .small-continue{
     color: $font-white;
+    font-size:10px;
   }
   .slide-1{
-      background:url('../images/slide/slide1.jpg');
+      background:url('../images/slide/slide1.jpg') top right;
     }
     .slide-2{
       h3{
-        font-size: 1.3em !important;
-        margin-top: 0.6em !important;
-        margin-left: 6em !important;
+        font-size: 1em !important;
+        margin-top: 1.6em !important;
+        margin-left: 8em !important;
+        font-weight: 400;
       }
-      background:url('../images/slide/slide2.jpg');
+      background:url('../images/slide/slide2.jpg') center right;
     }
     .slide-3{
-      h3{
-        font-size: 1.3em !important;
-        margin-bottom: 0em;
-        margin-left: 3em;
-        margin-top: 1em;
-        font-size: 1.3em;
-      }
-      p{
-        margin-left: 5em;
-        margin-bottom: 0em;
-      }
-      background:url('../images/slide/slide3.jpg');
+
+      background:url('../images/slide/slide3.jpg') top right;
     }
     .slide-4{
-            h3{
-        font-size: 1.3em !important;
-        margin-bottom: 0em;
-        margin-left: 3em;
-        margin-top: 1em;
-        font-size: 1.3em;
-      }
-      p{
-        margin-left: 5em;
-        margin-bottom: 0em;
-      }
-      background:url('../images/slide/slide4.jpg');
+      background:url('../images/slide/slide4.jpg') top right;
     }
     .slide-5{
-            h3{
-        font-size: 1.3em !important;
+      background:url('../images/slide/slide5.jpg') top right;
+    }
+    .slide-3,
+    .slide-4,
+    .slide-5,
+    {
+      h3{
+        font-size: 1.2em !important;
         margin-bottom: 0em;
-        margin-left: 3em;
-        margin-top: 1em;
-        font-size: 1.3em;
+        margin-left: 4em;
+        margin-top: 1.4em;
+        font-weight: 400;
       }
       p{
-        margin-left: 5em;
+        margin-left: 7em;
         margin-bottom: 0em;
       }
-      background:url('../images/slide/slide5.jpg');
     }
   h2, h3, p{
     color: $font-white;
   }
   h2{
-    margin-bottom: 0em !important;
-    font-size: 30px;
+    margin-bottom: 0.2em !important;
+    font-size: 25px;
   }
   p{
     margin-bottom: .3em !important;
-    font-size: 12px;
+    margin-bottom: .3em !important;
+    font-size: 11px;
+    line-height: 1.4em;
+    font-weight: 400;
   }
   margin-bottom: 1.2em !important;
 }
