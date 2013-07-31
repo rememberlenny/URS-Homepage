@@ -29,11 +29,13 @@
     -moz-transition: box-shadow 500ms ;
     -o-transition: box-shadow 500ms ;
     transition: box-shadow 500ms ;
-    h2#hero-news, 
     p,
     a.small-continue{
       color: #000102;
     }
+  }
+  h2#hero-news{
+    color: #000102;
   }
 }
 

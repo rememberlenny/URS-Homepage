@@ -57,45 +57,48 @@ span.positive-color {
   -o-transition: box-shadow 500ms;
   transition: box-shadow 500ms;
 }
-/* line 34, ../../sass/state/jquery-slide.scss */
-.open .slide-content h2#hero-news,
+/* line 33, ../../sass/state/jquery-slide.scss */
 .open .slide-content p,
 .open .slide-content a.small-continue {
   color: #000102;
 }
+/* line 37, ../../sass/state/jquery-slide.scss */
+.open h2#hero-news {
+  color: #000102;
+}
 
-/* line 42, ../../sass/state/jquery-slide.scss */
+/* line 44, ../../sass/state/jquery-slide.scss */
 #hero-slider,
 .slide-content {
   width: 921px !important;
 }
 
-/* line 48, ../../sass/state/jquery-slide.scss */
+/* line 50, ../../sass/state/jquery-slide.scss */
 #display-news,
 #project-display,
 #jobs-display {
   display: none;
 }
 
-/* line 52, ../../sass/state/jquery-slide.scss */
+/* line 54, ../../sass/state/jquery-slide.scss */
 #clickme-news {
   background: none;
 }
-/* line 54, ../../sass/state/jquery-slide.scss */
+/* line 56, ../../sass/state/jquery-slide.scss */
 #clickme-news.active {
   background: url("../images/tab/tab-news-big.jpg") top center;
 }
 
-/* line 59, ../../sass/state/jquery-slide.scss */
+/* line 61, ../../sass/state/jquery-slide.scss */
 #project-news {
   background: none;
 }
-/* line 61, ../../sass/state/jquery-slide.scss */
+/* line 63, ../../sass/state/jquery-slide.scss */
 #project-news.active {
   background: url("../images/tab/tab-projects-big.jpg") top center;
 }
 
-/* line 66, ../../sass/state/jquery-slide.scss */
+/* line 68, ../../sass/state/jquery-slide.scss */
 #jobs-news {
   background: none;
   -webkit-transition: background 1s ease-in-out;
@@ -105,7 +108,7 @@ span.positive-color {
   transition: background 1s ease-in-out;
   transition: background 0.5s linear;
 }
-/* line 74, ../../sass/state/jquery-slide.scss */
+/* line 76, ../../sass/state/jquery-slide.scss */
 #jobs-news.active {
   background: url("../images/tab/tab-career-big.jpg") top center;
   -webkit-transition: background 1s ease-in-out;
@@ -116,35 +119,35 @@ span.positive-color {
   transition: background 0.5s linear;
 }
 
-/* line 86, ../../sass/state/jquery-slide.scss */
+/* line 88, ../../sass/state/jquery-slide.scss */
 #header-fix {
   background: url("../images/assets/minus.png") top left no-repeat;
 }
-/* line 87, ../../sass/state/jquery-slide.scss */
+/* line 89, ../../sass/state/jquery-slide.scss */
 #header-fix.active {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
 
-/* line 96, ../../sass/state/jquery-slide.scss */
+/* line 98, ../../sass/state/jquery-slide.scss */
 #clickme-news.active,
 #project-news.active,
 #jobs-news.active {
   -webkit-transition: color 2s ease-in-out !important;
 }
-/* line 98, ../../sass/state/jquery-slide.scss */
+/* line 100, ../../sass/state/jquery-slide.scss */
 #clickme-news.active h2.section-title,
 #project-news.active h2.section-title,
 #jobs-news.active h2.section-title {
   -webkit-transition: color 1s linear !important;
   color: #fefefe !important;
 }
-/* line 102, ../../sass/state/jquery-slide.scss */
+/* line 104, ../../sass/state/jquery-slide.scss */
 #clickme-news.active .child,
 #project-news.active .child,
 #jobs-news.active .child {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
-/* line 106, ../../sass/state/jquery-slide.scss */
+/* line 108, ../../sass/state/jquery-slide.scss */
 #clickme-news .child,
 #project-news .child,
 #jobs-news .child {

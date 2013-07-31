@@ -693,7 +693,7 @@
     $('#hero-news').click(
       function(){
         if( $('#header-fix').hasClass('active') ){
-          $('#header-fix').removeClass("active");
+          $('#header-fix').removeClass("active open");
           $('#hero-display').animate({
             height: '167'
           });
@@ -705,7 +705,7 @@
             height: '167'
           });
         } else {
-          $('#header-fix').addClass("active");
+          $('#header-fix').addClass("active open");
           $('#hero-display').animate({
             height: '274'
           });
