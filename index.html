@@ -670,6 +670,28 @@
     //   );  
     // }
 
+    function closeHero(){
+
+    };
+    function closeNews(){
+      applicationEl.news.displayEl.slideUp();
+      if( applicationEl.news.triggerEl.hasClass('active') ){
+        applicationEl.news.triggerEl.removeClass("active");
+      }
+    };
+    function closeProjects(){
+      applicationEl.project.displayEl.slideUp();
+      if( applicationEl.project.triggerEl.hasClass('active') ){
+        applicationEl.project.triggerEl.removeClass("active");
+      }
+    };
+    function closeCareer(){
+      applicationEl.jobs.displayEl.slideUp();
+      if( applicationEl.jobs.triggerEl.hasClass('active') ){
+        applicationEl.jobs.triggerEl.removeClass("active");
+      }
+    };
+
     function changeSlideBackground(){
       // if( $('#headline-1').hasClass('active') ){
         $('#headline-1').addClass('item-1');
@@ -717,6 +739,9 @@
           $('.orbit-container').animate({
             height: '274'
           });
+          closeNews();
+          closeProjects();
+          closeCareer();
           saveHtml = $('.slide-content.active').html();
           $('.slide-content.active').html("<div class='row'><div class='large-5 column exempt'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p></div></div><div class='row'><div class='exempt large-7 column'><p>The Company offers a full range of services including:</p><div class='column'><div class='row'><div class='column large-7'><ul class='circle'><li>Program management</li><li>Planning</li><li>Design & engineering</li><li>Systems engineering & technical assistance</li></ul></div><div class='column large-7'><ul class='circle'><li>Construction & construction management</li><li>Operations & maintenance</li><li>Information technology</li><li>Decommissioning & closure services</li></div></ul></div></div></div>");
         }
@@ -731,6 +756,8 @@
       } else {
         applicationEl.news.triggerEl.addClass("active");
       }
+      closeProjects();
+      closeCareer();
     });
     applicationEl.project.triggerEl.click(function() {
       applicationEl.project.displayEl.slideToggle('slow', function() {
@@ -740,6 +767,8 @@
       } else {
         applicationEl.project.triggerEl.addClass("active");
       }
+      closeNews();
+      closeCareer();
     });
     applicationEl.jobs.triggerEl.click(function() {
       applicationEl.jobs.displayEl.slideToggle('slow', function() {
@@ -757,6 +786,8 @@
             $(this).css('background-image', 'url("/images/tab/tab-career-big.jpg")');
         }).fadeTo('fast');
       }
+      closeNews();
+      closeProjects();
     });
   </script>
 </body>
