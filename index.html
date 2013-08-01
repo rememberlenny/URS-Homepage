@@ -204,33 +204,44 @@
             variable_height: false;">
             <li data-orbit-slide="headline-1" id="headline-1" class="slide-1 slide-content">
               <div class="large-5" style="width: 37%;">
+                <span class=" slide-content-case">
                 <h2>URS Corporation</h2>
                 <p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p>
                 <a href="indexa.html" id="slider-more-link" class="small-continue">More about us &#9656;</a>
+                </span>
               </div>
             </li>
             <li data-orbit-slide="headline-2"id="headline-2" class="slide-2 slide-content">
+              <span class="slide-content-case">
+                
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#248</h4>
               <h3>on FORTUNE's List of America's <br>500 Largest Companies</h3>
+              </span>
             </li>
             <li data-orbit-slide="headline-3"id="headline-3" class="slide-3 slide-content">
+            <span class="slide-content-case">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
+            </span>
             </li>
             <li data-orbit-slide="headline-4"id="headline-4" class="slide-4 slide-content">
+            <span class="slide-content-case">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
+            </span>
             </li>
             <li data-orbit-slide="headline-5"id="headline-5" class="slide-5 slide-content">
+            <span class="slide-content-case">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p><i>ENR TOP 400 Contractors</i></p>
+            </span>
             </li>
           </ul>  
         </div>
@@ -585,8 +596,20 @@
   
   <script>
     $(document).foundation();
-    
-    // 
+
+    jQuery.fn.visible = function() {
+      return this.css('visibility', 'visible');
+    }
+
+    jQuery.fn.invisible = function() {
+      return this.css('visibility', 'hidden');
+    }
+
+    jQuery.fn.visibilityToggle = function() {
+      return this.css('visibility', function(i, visibility) {
+          return (visibility == 'visible') ? 'hidden' : 'visible';
+      });
+    }
 
     function displayMegaMenu(){
       $('#megamenu-selector').addClass('show');
@@ -615,17 +638,15 @@
         );
       }
     );
-    
-  //   function () {
-  //     $('#mega-menu').slideUp(); 
-  //   }
-  // );
-    
+
     var applicationEl = {
           'hero' : {
             'displayEl': $('#hero-display'), 
-            'triggerEl': $('#hero-news'),
+            'slideEl': $('#hero-display'), 
+            'triggerEl': $('#header-fix'),
             'bodyEl': $('.news-home.widget'),
+            'titleEl': $('h2#hero-news'),
+            'slideContentEl': $('.slide-content-case'),
             'accordianStatus':'0'
           },
           'news' : {
@@ -648,32 +669,6 @@
           }
         };
 
-    // var selectEl ={
-    //   e1:$('#headline-1'),
-    //   e2:$('#headline-2'),
-    //   e3:$('#headline-3'),
-    //   e4:$('#headline-4'),
-    //   e5:$('#headline-5'),
-    // };
-
-    // function closeOthers(){
-    //   // Select current
-    // };
-
-    // function fadeBackground(selectEl, newColor){
-    //   selectEl.fadeOut(1000, function (newColor) {
-    //       this.css("background", "url('" + newColor + "')");
-    //       this.fadeIn(1000);
-    //   });
-    // }
-    // function addClassToSelect(classD){
-    //   selectEl.classD.addClass(
-    //     function(classD) {
-    //       return "item-" + classD;
-    //     }
-    //   );  
-    // }
-
     $(document).ready(function(){
       $('.orbit-container ul').animate({
         height: '156px',
@@ -681,20 +676,20 @@
     });
 
     function closeHero(){
-      if($('#hero-display').hasClass("open") || $('#header-fix').hasClass("active")){
-        $('h2#hero-news').animate({
+      if( applicationEl.hero.triggerEl.hasClass("active")){
+      console.log('closeHero run');
+        applicationEl.hero.titleEl.animate({
           paddingTop: ".8em",
           marginTop: "0px",
         }, 300);
-        $('#hero-display').animate({
+        $('.slide-content-case').fadeTo('fast', .01);
+        applicationEl.hero.displayEl.animate({
           height: '73px',
         }, 400);
-        if($('#hero-display').hasClass("open")){
-          $('#hero-display').removeClass("open");
-        }
-        if($('#header-fix').hasClass("active")){
-          $('#header-fix').removeClass("active");
-        }
+        applicationEl.hero.displayEl.removeClass("active");
+        applicationEl.hero.displayEl.removeClass("open");
+        applicationEl.hero.triggerEl.removeClass("active");
+        applicationEl.hero.triggerEl.removeClass("open");
       }
     };
 
@@ -722,35 +717,16 @@
       }
     };
 
-    function changeSlideBackground(){
-      // if( $('#headline-1').hasClass('active') ){
-        $('#headline-1').addClass('item-1');
-        $('#headline-1').fadeOut(1000, function () {
-          console.log('fading out');
-          // this.css("background", "url('" + 'http://fakeimg.pl/300x300' + "')");
-          console.log('background changed');
-          $(this).fadeIn(1000);
-          console.log('fading in');
-        });  
-      };
-    // };
-
-
-    // landing page
-    // active
-    // inactive
-
-
     var saveHtml;
 
     $('#header-fix').click(
       function(){
-        if( $('#header-fix').hasClass('active') ){
-          $('#header-fix').removeClass("active open");
-          $('#hero-display').animate({
+        if( applicationEl.hero.triggerEl.hasClass('active') ){
+          applicationEl.hero.triggerEl.removeClass("active open");
+          applicationEl.hero.displayEl.animate({
             height: '167'
           });
-          $('#hero-display').removeClass('open');
+          applicationEl.hero.displayEl.removeClass('open');
           $('.slide-content').animate({
             height: '167'
           });
@@ -764,11 +740,11 @@
           closeCareer();  
 
         } else {
-          $('#header-fix').addClass("active open");
-          $('#hero-display').animate({
+          applicationEl.hero.triggerEl.addClass("active open");
+          applicationEl.hero.displayEl.animate({
             height: '274'
           });
-          $('#hero-display').addClass('open');
+          applicationEl.hero.displayEl.addClass('open');
           $('.slide-content').animate({
             height: '274'
           });
@@ -776,14 +752,13 @@
             height: '274'
           });
 
-
           closeNews();
           closeProjects();
           closeCareer();
 
           saveHtml = $('.slide-content.active').html();
 
-          $('.slide-content.active').html("<div class='row'><div class='large-5 column exempt'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p></div></div><div class='row'><div class='exempt large-7 column'><p>The Company offers a full range of services including:</p><div class='column'><div class='row'><div class='column large-7'><ul class='circle'><li>Program management</li><li>Planning</li><li>Design & engineering</li><li>Systems engineering & technical assistance</li></ul></div><div class='column large-7'><ul class='circle'><li>Construction & construction management</li><li>Operations & maintenance</li><li>Information technology</li><li>Decommissioning & closure services</li></div></ul></div></div></div>");
+          $('.slide-content.active').html("<div class='row'><div class='large-5 column exempt slide-content-case'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p></div></div><div class='row'><div class='exempt large-7 column'><p>The Company offers a full range of services including:</p><div class='column'><div class='row'><div class='column large-7'><ul class='circle'><li>Program management</li><li>Planning</li><li>Design & engineering</li><li>Systems engineering & technical assistance</li></ul></div><div class='column large-7'><ul class='circle'><li>Construction & construction management</li><li>Operations & maintenance</li><li>Information technology</li><li>Decommissioning & closure services</li></div></ul></div></div></div>");
         }
       }
     );
