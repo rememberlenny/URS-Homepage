@@ -1,15 +1,45 @@
 /* line 1, ../../sass/element/section-background.scss */
 .news-home {
-  background: url("../images/tab/tab1.jpg") top center no-repeat;
+  background-image: url("../images/tab/tab1.jpg") top left no-repeat;
+}
+/* line 2, ../../sass/element/section-background.scss */
+.news-home .inner-wrap {
+  background-image: none;
+  transition: background-image 1s ease-in-out;
+}
+/* line 6, ../../sass/element/section-background.scss */
+.news-home.active .inner-wrap {
+  background-image: url("../images/tab/tab1-bw.jpg") top left no-repeat;
+  transition: background-image 1s ease-in-out;
 }
 
-/* line 4, ../../sass/element/section-background.scss */
+/* line 12, ../../sass/element/section-background.scss */
 .feature-widget {
-  background: url("../images/tab/tab2.jpg") top center no-repeat;
+  background-image: url("../images/tab/tab2.jpg") top left no-repeat;
+}
+/* line 13, ../../sass/element/section-background.scss */
+.feature-widget .inner-wrap {
+  background-image: none;
+  transition: background-image 1s ease-in-out;
+}
+/* line 17, ../../sass/element/section-background.scss */
+.feature-widget.active .inner-wrap {
+  background-image: url("../images/tab/tab2-bw.jpg") top left no-repeat;
+  transition: background-image 1s ease-in-out;
 }
 
-/* line 7, ../../sass/element/section-background.scss */
+/* line 23, ../../sass/element/section-background.scss */
 .job-search-module {
-  background: url("../images/tab/tab3.jpg") top center no-repeat;
+  background-image: url("../images/tab/tab3.jpg") top left no-repeat;
   border-radius: 0 0 30px 0;
+}
+/* line 24, ../../sass/element/section-background.scss */
+.job-search-module .inner-wrap {
+  background-image: none;
+  transition: background-image 1s ease-in-out;
+}
+/* line 28, ../../sass/element/section-background.scss */
+.job-search-module.active .inner-wrap {
+  background-image: url("../images/tab/tab3-bw.jpg") top left no-repeat;
+  transition: background-image 1s ease-in-out;
 }

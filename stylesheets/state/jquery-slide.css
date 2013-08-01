@@ -165,59 +165,59 @@ span.positive-color {
   transition: background 0.5s linear;
 }
 
-/* line 123, ../../sass/state/jquery-slide.scss */
+/* line 122, ../../sass/state/jquery-slide.scss */
 #header-fix {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
-/* line 124, ../../sass/state/jquery-slide.scss */
+/* line 123, ../../sass/state/jquery-slide.scss */
 #header-fix.active {
   background: url("../images/assets/minus.png") top left no-repeat;
 }
 
-/* line 133, ../../sass/state/jquery-slide.scss */
+/* line 132, ../../sass/state/jquery-slide.scss */
 #clickme-news h2.section-title,
 #project-news h2.section-title,
 #jobs-news h2.section-title {
   color: #fefefe;
   -webkit-transition: color 1s linear !important;
 }
-/* line 137, ../../sass/state/jquery-slide.scss */
+/* line 136, ../../sass/state/jquery-slide.scss */
 #clickme-news.active,
 #project-news.active,
 #jobs-news.active {
   -webkit-transition: color 2s ease-in-out !important;
 }
-/* line 139, ../../sass/state/jquery-slide.scss */
+/* line 138, ../../sass/state/jquery-slide.scss */
 #clickme-news.active h2.section-title,
 #project-news.active h2.section-title,
 #jobs-news.active h2.section-title {
   -webkit-transition: color 1s linear !important;
   color: black !important;
 }
-/* line 143, ../../sass/state/jquery-slide.scss */
+/* line 142, ../../sass/state/jquery-slide.scss */
 #clickme-news.active .child,
 #project-news.active .child,
 #jobs-news.active .child {
   background: url("../images/assets/plus.png") top left no-repeat;
 }
-/* line 147, ../../sass/state/jquery-slide.scss */
+/* line 146, ../../sass/state/jquery-slide.scss */
 #clickme-news .child,
 #project-news .child,
 #jobs-news .child {
   background: url("../images/assets/minus.png") top left no-repeat;
 }
 
-/* line 154, ../../sass/state/jquery-slide.scss */
+/* line 153, ../../sass/state/jquery-slide.scss */
 .news-home,
 .feature-widget,
 .job-search-module {
   box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
   transition: box-shadow 0.5s linear;
 }
-/* line 157, ../../sass/state/jquery-slide.scss */
+/* line 156, ../../sass/state/jquery-slide.scss */
 .news-home.active,
 .feature-widget.active,
 .job-search-module.active {
-  box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0.8);
+  box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
   transition: box-shadow 0.5s linear;
 }

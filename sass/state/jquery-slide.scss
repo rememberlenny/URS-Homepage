@@ -103,22 +103,21 @@
 
 #jobs-news{
   background:none;
--webkit-transition: background 1s ease-in-out;
--moz-transition: background 1s ease-in-out;
--o-transition: background 1s ease-in-out;
--ms-transition: background 1s ease-in-out; 
-transition: background 1s ease-in-out;
-transition: background 0.5s linear;
-  &.active{
--webkit-transition: background 1s ease-in-out;
--moz-transition: background 1s ease-in-out;
--o-transition: background 1s ease-in-out;
--ms-transition: background 1s ease-in-out; 
-transition: background 1s ease-in-out;
-transition: background 0.5s linear;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out; 
+  transition: background 1s ease-in-out;
+  transition: background 0.5s linear;
+&.active{
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out; 
+  transition: background 1s ease-in-out;
+  transition: background 0.5s linear;
   }
 }
-
 
 #header-fix{
   &.active{
@@ -155,7 +154,7 @@ transition: background 0.5s linear;
   box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
   transition: box-shadow 0.5s linear;
   &.active{
-    box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
     transition: box-shadow 0.5s linear;
   }
 }
