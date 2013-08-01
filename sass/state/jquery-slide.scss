@@ -5,7 +5,7 @@
 .orbit-container{
   overflow: hidden;
   ul{
-    height: 161px;
+    height: 156px;
     .slide-content{
     }
   }
@@ -89,14 +89,12 @@
 #clickme-news{
   background:none;
   &.active{
-    background: url('../images/tab/tab-news-big.jpg') top center;
   }
 }
 
 #project-news{
   background:none;
   &.active{
-    background: url('../images/tab/tab-projects-big.jpg') top center;
   }
 }
 
@@ -109,7 +107,6 @@
 transition: background 1s ease-in-out;
 transition: background 0.5s linear;
   &.active{
-    background: url('../images/tab/tab-career-big.jpg') top center;
 -webkit-transition: background 1s ease-in-out;
 -moz-transition: background 1s ease-in-out;
 -o-transition: background 1s ease-in-out;
@@ -130,11 +127,15 @@ transition: background 0.5s linear;
 #clickme-news,
 #project-news,
 #jobs-news{
+  h2.section-title{
+    color: $font-white;
+    -webkit-transition: color 1s linear !important;
+  }
   &.active{
     -webkit-transition: color 2s ease-in-out !important;
     h2.section-title{
       -webkit-transition: color 1s linear !important;
-      color: $font-white !important;
+      color: black !important;
     }
     .child{
       background:url('../images/assets/plus.png') top left no-repeat;
@@ -145,4 +146,13 @@ transition: background 0.5s linear;
   }
 }
 
-
+.news-home,
+.feature-widget,
+.job-search-module{
+  box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
+  transition: box-shadow 0.5s linear;
+  &.active{
+    box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0.8);
+    transition: box-shadow 0.5s linear;
+  }
+}

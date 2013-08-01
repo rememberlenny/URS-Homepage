@@ -245,7 +245,7 @@
           <!-- News Begin  -->
           <div class="row news-home widget">
             <div class="column">
-              <div class="row active" id="clickme-news">
+              <div class="row" id="clickme-news">
                 <div class="column child">
                   <h2 class="section-title main ">News</h2>
                 </div>
@@ -295,7 +295,7 @@
 
           <div class="row feature-widget widget">
             <div class="column">
-              <div class="row active" id="project-news">
+              <div class="row" id="project-news">
                 <div class="column child">
                   <h2 class="section-title main " >Projects</h2>
                 </div>
@@ -401,7 +401,7 @@
           <!-- Careers Begin  -->
           <div class="row job-search-module widget">
             <div class="column">
-              <div class="row active" id="jobs-news">
+              <div class="row" id="jobs-news">
                 <div class="column  child">
                   <h2 class="section-title main " >Careers</h2>
                 </div>
@@ -625,21 +625,25 @@
           'hero' : {
             'displayEl': $('#hero-display'), 
             'triggerEl': $('#hero-news'),
+            'bodyEl': $('.news-home.widget'),
             'accordianStatus':'0'
           },
           'news' : {
             'displayEl': $('#display-news'),
             'triggerEl': $('#clickme-news'),
+            'bodyEl': $('.news-home.widget'),
             'accordianStatus':'0' 
           },
           'project' : {
             'displayEl': $('#project-display'),
             'triggerEl': $('#project-news'),
+            'bodyEl': $('.feature-widget.widget'),
             'accordianStatus':'0'
           },
           'jobs' : {
             'displayEl': $('#jobs-display'),
             'triggerEl': $('#jobs-news'),
+            'bodyEl':$('.job-search-module.widget'),
             'accordianStatus':'0'
           }
         };
@@ -672,40 +676,49 @@
 
     $(document).ready(function(){
       $('.orbit-container ul').animate({
-        height: '161px',
+        height: '156px',
       }, 600);
     });
 
     function closeHero(){
-      $('h2#hero-news').animate({
-        paddingTop: "7px",
-      }, 300);
-      $('#hero-display').animate({
-        height: '58px',
-      }, 400);
-        $('#header-fix').removeClass("open");
-        $('#hero-display').removeClass("open");
-        $('#header-fix').removeClass("active");
+      if($('#hero-display').hasClass("open") || $('#header-fix').hasClass("active")){
+        $('h2#hero-news').animate({
+          paddingTop: ".8em",
+          marginTop: "0px",
+        }, 300);
+        $('#hero-display').animate({
+          height: '73px',
+        }, 400);
+        if($('#hero-display').hasClass("open")){
+          $('#hero-display').removeClass("open");
+        }
+        if($('#header-fix').hasClass("active")){
+          $('#header-fix').removeClass("active");
+        }
+      }
     };
 
     function closeNews(){
-      applicationEl.news.displayEl.slideUp();
       if( applicationEl.news.triggerEl.hasClass('active') ){
+        applicationEl.news.displayEl.slideUp();
         applicationEl.news.triggerEl.removeClass("active");
+        applicationEl.news.bodyEl.removeClass("active");
       }
     };
 
     function closeProjects(){
-      applicationEl.project.displayEl.slideUp();
       if( applicationEl.project.triggerEl.hasClass('active') ){
+        applicationEl.project.displayEl.slideUp();
         applicationEl.project.triggerEl.removeClass("active");
+        applicationEl.project.bodyEl.removeClass("active");
       }
     };
 
     function closeCareer(){
-      applicationEl.jobs.displayEl.slideUp();
       if( applicationEl.jobs.triggerEl.hasClass('active') ){
+        applicationEl.jobs.displayEl.slideUp();
         applicationEl.jobs.triggerEl.removeClass("active");
+        applicationEl.jobs.bodyEl.removeClass("active");
       }
     };
 
@@ -729,6 +742,7 @@
 
 
     var saveHtml;
+
     $('#header-fix').click(
       function(){
         if( $('#header-fix').hasClass('active') ){
@@ -744,6 +758,11 @@
             height: '167'
           });
           $('.slide-content.active').html(saveHtml);
+
+          closeNews();
+          closeProjects();
+          closeCareer();  
+
         } else {
           $('#header-fix').addClass("active open");
           $('#hero-display').animate({
@@ -756,45 +775,65 @@
           $('.orbit-container').animate({
             height: '274'
           });
-          $('h2#hero-news').animate({
-            paddingTop: "7px",
-          }, 300);
-          $('#hero-display').animate({
-            height: '58px',
-          }, 400);
+
+
           closeNews();
           closeProjects();
           closeCareer();
+
           saveHtml = $('.slide-content.active').html();
+
           $('.slide-content.active').html("<div class='row'><div class='large-5 column exempt'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p></div></div><div class='row'><div class='exempt large-7 column'><p>The Company offers a full range of services including:</p><div class='column'><div class='row'><div class='column large-7'><ul class='circle'><li>Program management</li><li>Planning</li><li>Design & engineering</li><li>Systems engineering & technical assistance</li></ul></div><div class='column large-7'><ul class='circle'><li>Construction & construction management</li><li>Operations & maintenance</li><li>Information technology</li><li>Decommissioning & closure services</li></div></ul></div></div></div>");
         }
       }
-      
     );
+
     applicationEl.news.triggerEl.click(function() {
-      applicationEl.news.displayEl.slideToggle('slow', function() {
-      });
-      closeProjects();
-      closeCareer();
-      closeHero();
+      if(!applicationEl.news.triggerEl.hasClass('active')){
+        applicationEl.news.displayEl.slideDown('slow', function() {});
+        applicationEl.news.triggerEl.addClass('active');
+        applicationEl.news.bodyEl.addClass('active');
+        closeProjects();
+        closeCareer();
+        closeHero();
+      } else {
+        applicationEl.news.triggerEl.removeClass('active');
+        applicationEl.news.bodyEl.removeClass('active');
+        applicationEl.news.displayEl.slideUp('slow', function() {});
+      }
     });
 
     applicationEl.project.triggerEl.click(function() {
-      applicationEl.project.displayEl.slideToggle('slow', function() {
-      });
-      closeNews();
-      closeCareer();
-      closeHero();
+      if(!applicationEl.project.triggerEl.hasClass('active')){
+        applicationEl.project.displayEl.slideDown('slow', function() {});
+        applicationEl.project.triggerEl.addClass('active');
+        applicationEl.project.bodyEl.addClass('active');
+        closeNews();
+        closeCareer();
+        closeHero();
+      } else {
+        applicationEl.project.triggerEl.removeClass('active');
+        applicationEl.project.bodyEl.removeClass('active');
+        applicationEl.project.displayEl.slideUp('slow', function() {});
+       }
     });
 
     applicationEl.jobs.triggerEl.click(function() {
-      applicationEl.jobs.displayEl.slideToggle('slow', function() {
-      });
-      closeNews();
-      closeProjects();
-      closeHero();
+      if(!applicationEl.jobs.triggerEl.hasClass('active')){
+        applicationEl.jobs.displayEl.slideDown('slow', function() {});
+        applicationEl.jobs.triggerEl.addClass('active');
+        applicationEl.jobs.bodyEl.addClass('active');
+        closeNews();
+        closeProjects();
+        closeHero();
+      } else {
+        applicationEl.jobs.displayEl.slideUp('slow', function() {});
+        applicationEl.jobs.triggerEl.removeClass('active');
+        applicationEl.jobs.bodyEl.removeClass('active');
+      }
     });
 
   </script>
+
 </body>
 </html>
