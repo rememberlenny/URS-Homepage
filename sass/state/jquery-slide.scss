@@ -49,6 +49,9 @@
   box-shadow: inset 390px 0px 380px -30px rgba(0, 50, 104, 1);
 }
 .open{
+  .orbit-bullets{
+    visibility: hidden;
+  }
   .slide-content, 
   #headline-2,
   #headline-3,

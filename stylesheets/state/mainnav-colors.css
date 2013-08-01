@@ -26,10 +26,17 @@ span.positive-color {
 /* line 2, ../../sass/state/mainnav-colors.scss */
 nav.main.top-bar {
   background: #003268;
+  z-index: 100;
 }
-/* line 8, ../../sass/state/mainnav-colors.scss */
+/* line 9, ../../sass/state/mainnav-colors.scss */
 nav.main.top-bar ul.right a {
   background: #003268;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+/* line 16, ../../sass/state/mainnav-colors.scss */
+#mega-menu {
+  z-index: 12 !important;
+  top: 97px;
 }
