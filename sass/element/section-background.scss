@@ -1,34 +1,33 @@
 .news-home{
   .inner-wrap{
-    background-image:none;
+    background-image:url('../images/tab/tab1.jpg');
     transition: background-image 1s ease-in-out;
   }
   &.active .inner-wrap{
-    background-image:url('../images/tab/tab1-bw.jpg') top left no-repeat;
+    background-image:url('../images/tab/tab1-bw.jpg');
     transition: background-image 1s ease-in-out;
   }
-  background-image:url('../images/tab/tab1.jpg') top left no-repeat;
+  background-image:url('../images/tab/tab1-bw.jpg');
 }
 .feature-widget{
   .inner-wrap{
-    background-image:none;
+    background-image:url('../images/tab/tab2.jpg');
     transition: background-image 1s ease-in-out;
   }
   &.active .inner-wrap{
-    background-image:url('../images/tab/tab2-bw.jpg') top left no-repeat;
+    background-image:url('../images/tab/tab2-bw.jpg');
     transition: background-image 1s ease-in-out;
   }
-  background-image:url('../images/tab/tab2.jpg') top left no-repeat;
+  background-image:url('../images/tab/tab2-bw.jpg');
 }
 .job-search-module{
   .inner-wrap{
-    background-image:none;
+    background-image:url('../images/tab/tab3.jpg');
     transition: background-image 1s ease-in-out;
   }
   &.active .inner-wrap{
-    background-image:url('../images/tab/tab3-bw.jpg') top left no-repeat;
+    background-image:url('../images/tab/tab3-bw.jpg');
     transition: background-image 1s ease-in-out;
   }
-  background-image:url('../images/tab/tab3.jpg') top left no-repeat;
-  border-radius: 0 0 30px 0;
+  background-image:url('../images/tab/tab3-bw.jpg');
 }
