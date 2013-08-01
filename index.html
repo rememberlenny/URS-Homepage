@@ -778,7 +778,22 @@
       }
     );
 
-    applicationEl.news.triggerEl.click(function() {
+    applicationEl.news.triggerEl.hover(function() {
+      if(!applicationEl.news.triggerEl.hasClass('active')){
+        applicationEl.news.displayEl.slideDown('slow', function() {});
+        applicationEl.news.triggerEl.addClass('active');
+        applicationEl.news.bodyEl.addClass('active');
+        closeProjects();
+        closeCareer();
+        closeHero();
+      } else {
+        applicationEl.news.triggerEl.removeClass('active');
+        applicationEl.news.bodyEl.removeClass('active');
+        applicationEl.news.displayEl.slideUp('slow', function() {});
+      }
+    },
+    function() {
+      closeNews();
       if(!applicationEl.news.triggerEl.hasClass('active')){
         applicationEl.news.displayEl.slideDown('slow', function() {});
         applicationEl.news.triggerEl.addClass('active');
@@ -793,7 +808,22 @@
       }
     });
 
-    applicationEl.project.triggerEl.click(function() {
+    applicationEl.project.triggerEl.hover(function() {
+      if(!applicationEl.project.triggerEl.hasClass('active')){
+        applicationEl.project.displayEl.slideDown('slow', function() {});
+        applicationEl.project.triggerEl.addClass('active');
+        applicationEl.project.bodyEl.addClass('active');
+        closeNews();
+        closeCareer();
+        closeHero();
+      } else {
+        applicationEl.project.triggerEl.removeClass('active');
+        applicationEl.project.bodyEl.removeClass('active');
+        applicationEl.project.displayEl.slideUp('slow', function() {});
+       }
+    },
+    function() {
+      closeProjects();
       if(!applicationEl.project.triggerEl.hasClass('active')){
         applicationEl.project.displayEl.slideDown('slow', function() {});
         applicationEl.project.triggerEl.addClass('active');
@@ -808,7 +838,22 @@
        }
     });
 
-    applicationEl.jobs.triggerEl.click(function() {
+    applicationEl.jobs.triggerEl.hover(function() {
+      if(!applicationEl.jobs.triggerEl.hasClass('active')){
+        applicationEl.jobs.displayEl.slideDown('slow', function() {});
+        applicationEl.jobs.triggerEl.addClass('active');
+        applicationEl.jobs.bodyEl.addClass('active');
+        closeNews();
+        closeProjects();
+        closeHero();
+      } else {
+        applicationEl.jobs.displayEl.slideUp('slow', function() {});
+        applicationEl.jobs.triggerEl.removeClass('active');
+        applicationEl.jobs.bodyEl.removeClass('active');
+      }
+    },
+    function() {
+      closeCarrer();
       if(!applicationEl.jobs.triggerEl.hasClass('active')){
         applicationEl.jobs.displayEl.slideDown('slow', function() {});
         applicationEl.jobs.triggerEl.addClass('active');
