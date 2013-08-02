@@ -266,9 +266,7 @@ span.positive-color {
   z-index: 400 !important;
 }
 /* line 43, ../sass/element/mega-menu.scss */
-.mega-menu div:first-child {
-  background: url("../images/divider-vert.png") right center no-repeat;
-}
+
 /* line 49, ../sass/element/mega-menu.scss */
 .mega-menu ul li {
   line-height: 1.4em !important;
