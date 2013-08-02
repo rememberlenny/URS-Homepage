@@ -879,6 +879,8 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
         closeProjects();
         closeCareer();
         closeHero();
+      } else if (applicationEl.news.triggerEl.hasClass('active')){
+        closeNews();
       } else {
           if(!applicationEl.news.triggerEl.mouseover()){
 
@@ -897,6 +899,8 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
         closeNews();
         closeCareer();
         closeHero();
+      } else if (applicationEl.project.triggerEl.hasClass('active')){
+        closeProjects();
       } else {
           if(!applicationEl.project.triggerEl.mouseover()){
 
@@ -915,6 +919,8 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
         closeNews();
         closeProjects();
         closeHero();
+      } else if (applicationEl.jobs.triggerEl.hasClass('active')){
+        closeCareer();
       } else {
           if(!applicationEl.jobs.triggerEl.mouseover()){
 
