@@ -302,7 +302,7 @@ div.orbit-container ul {
                       <h2 class="section-title">
                         <a href="indexa.html" style="text-transform: uppercase;
 color: rgb(0, 0, 0);
-font-size: 15px;
+font-size: 13px;
 opacity: .9;
 line-height: 1.2em;">URS 2012 <br>Annual Report</a>
                       </h2>
@@ -310,7 +310,7 @@ line-height: 1.2em;">URS 2012 <br>Annual Report</a>
                     <div class="column large-14">
                       <a href="indexa.html" style="text-transform: uppercase;
 color: rgb(0, 0, 0);
-font-size: 15px;
+font-size: 13px;
 opacity: .9;
 line-height: 1.2em;"><img class="" style="height: 80px;" src="images/widget/annual-report-thumb.jpg" alt=""></a>
                       <ul class="no-bullet text-right links">
@@ -748,7 +748,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
           'hero' : {
             'displayEl': $('#hero-display'), 
             'slideEl': $('#hero-display'), 
-            'triggerEl': $('#header-fix'),
+            'triggerEl': $('#header-fix, #hero-display'),
             'bodyEl': $('.news-home.widget'),
             'titleEl': $('h2#hero-news'),
             'slideContentEl': $('.slide-content-case'),
@@ -756,19 +756,19 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
           },
           'news' : {
             'displayEl': $('#display-news'),
-            'triggerEl': $('#clickme-news'),
+            'triggerEl': $('#clickme-news, #display-news'),
             'bodyEl': $('.news-home.widget'),
             'accordianStatus':'0' 
           },
           'project' : {
             'displayEl': $('#project-display'),
-            'triggerEl': $('#project-news'),
+            'triggerEl': $('#project-news, #project-display'),
             'bodyEl': $('.feature-widget.widget'),
             'accordianStatus':'0'
           },
           'jobs' : {
             'displayEl': $('#jobs-display'),
-            'triggerEl': $('#jobs-news'),
+            'triggerEl': $('#jobs-news, #jobs-display'),
             'bodyEl':$('.job-search-module.widget'),
             'accordianStatus':'0'
           }
@@ -825,7 +825,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
 
     var saveHtml;
 
-    $('#header-fix, .slide-content.active, #headline-2, #headline-3, #headline-4, #headline-5').click(
+    $('#header-fix, .slide-content.active, #headline-2, #headline-3, #headline-4, #headline-5').hoverIntent(
         function(event){
           console.log(event.target.nodeName);
           if( applicationEl.hero.triggerEl.hasClass('active') ){
@@ -871,7 +871,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
       }
     );
 
-    applicationEl.news.triggerEl.click(function() {
+    applicationEl.news.triggerEl.hoverIntent(function() {
       if(!applicationEl.news.triggerEl.hasClass('active')){
         applicationEl.news.displayEl.slideDown('slow', function() {});
         applicationEl.news.triggerEl.addClass('active');
@@ -880,13 +880,16 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
         closeCareer();
         closeHero();
       } else {
-        applicationEl.news.triggerEl.removeClass('active');
-        applicationEl.news.bodyEl.removeClass('active');
-        applicationEl.news.displayEl.slideUp('slow', function() {});
+          if(!applicationEl.news.triggerEl.mouseover()){
+
+            applicationEl.news.triggerEl.removeClass('active');
+            applicationEl.news.bodyEl.removeClass('active');
+            applicationEl.news.displayEl.slideUp('slow', function() {});
+          }
       }
     });
 
-    applicationEl.project.triggerEl.click(function() {
+    applicationEl.project.triggerEl.hoverIntent(function() {
       if(!applicationEl.project.triggerEl.hasClass('active')){
         applicationEl.project.displayEl.slideDown('slow', function() {});
         applicationEl.project.triggerEl.addClass('active');
@@ -895,13 +898,16 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
         closeCareer();
         closeHero();
       } else {
-        applicationEl.project.triggerEl.removeClass('active');
-        applicationEl.project.bodyEl.removeClass('active');
-        applicationEl.project.displayEl.slideUp('slow', function() {});
+          if(!applicationEl.project.triggerEl.mouseover()){
+
+            applicationEl.project.triggerEl.removeClass('active');
+            applicationEl.project.bodyEl.removeClass('active');
+            applicationEl.project.displayEl.slideUp('slow', function() {});
+          }
        }
     });
 
-    applicationEl.jobs.triggerEl.click(function() {
+    applicationEl.jobs.triggerEl.hoverIntent(function() {
       if(!applicationEl.jobs.triggerEl.hasClass('active')){
         applicationEl.jobs.displayEl.slideDown('slow', function() {});
         applicationEl.jobs.triggerEl.addClass('active');
@@ -910,9 +916,12 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
         closeProjects();
         closeHero();
       } else {
-        applicationEl.jobs.displayEl.slideUp('slow', function() {});
-        applicationEl.jobs.triggerEl.removeClass('active');
-        applicationEl.jobs.bodyEl.removeClass('active');
+          if(!applicationEl.jobs.triggerEl.mouseover()){
+
+            applicationEl.jobs.displayEl.slideUp('slow', function() {});
+            applicationEl.jobs.triggerEl.removeClass('active');
+            applicationEl.jobs.bodyEl.removeClass('active');
+          }
       }
     });
 
