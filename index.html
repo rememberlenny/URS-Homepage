@@ -96,7 +96,7 @@
               <ul class="right row">
                 <li><a href="indexa.html">About</a></li>
                 <li class="" id="megamenu-selector" >
-                  <a href="#">Markets</a>
+                  <a href="#" onclick="return false;">Markets</a>
                 </li>
                 <li><a href="indexa.html">Services</a></li>
                 <li><a href="indexa.html">Projects</a></li>
@@ -593,57 +593,24 @@
   </div>
     <!-- Footer End  -->
 
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  
+  <script src="javascripts/vendor/jquery.js"></script>
+
+  <script src="javascripts/jQuery.hoverintent.js"></script>
+
   <script src="javascripts/foundation/foundation.js"></script>
   
-  <script src="javascripts/foundation/foundation.alerts.js"></script>
-  
-  <script src="javascripts/foundation/foundation.clearing.js"></script>
-  
-  <script src="javascripts/foundation/foundation.cookie.js"></script>
-  
   <script src="javascripts/foundation/foundation.dropdown.js"></script>
-  
-  <script src="javascripts/foundation/foundation.forms.js"></script>
-  
-  <script src="javascripts/foundation/foundation.interchange.js"></script>
-  
-  <script src="javascripts/foundation/foundation.joyride.js"></script>
-  
-  <script src="javascripts/foundation/foundation.magellan.js"></script>
-  
+
   <script src="javascripts/foundation/foundation.orbit.js"></script>
   
-  <script src="javascripts/foundation/foundation.placeholder.js"></script>
-  
-  <script src="javascripts/foundation/foundation.reveal.js"></script>
-  
-  <script src="javascripts/foundation/foundation.section.js"></script>
-  
-  <script src="javascripts/foundation/foundation.tooltips.js"></script>
-  
   <script src="javascripts/foundation/foundation.topbar.js"></script>
+  
   
   
   <script>
     $(document).foundation();
 
-    jQuery.fn.visible = function() {
-      return this.css('visibility', 'visible');
-    }
-
-    jQuery.fn.invisible = function() {
-      return this.css('visibility', 'hidden');
-    }
-
-    jQuery.fn.visibilityToggle = function() {
-      return this.css('visibility', function(i, visibility) {
-          return (visibility == 'visible') ? 'hidden' : 'visible';
-      });
-    }
-
-    function displayMegaMenu(){
+   function displayMegaMenu(){
       $('#megamenu-selector').addClass('show');
       $('#megamenu-selector').css('background', 'white');
       $('#mega-menu').slideDown();
@@ -655,21 +622,36 @@
     };
 
     // Mega menu
-    $('#megamenu-selector').hover( 
+    $('#megamenu-selector').mouseover( 
       function(){
         displayMegaMenu();
-      },
-      function(){
-        $('#mega-menu').hover( 
-          function(){
-            displayMegaMenu();
-          },
-          function(){
-            hideMegaMenu();
-          }
-        );
       }
     );
+    $('#megamenu-selector').mouseout(
+      function(){
+        console.log('mouseout true');
+        if($('#mega-menu').mouseIsOver()===false){
+          hideMegaMenu();
+          console.log('mouseover false');
+        }
+      })    
+    $('#mega-menu').mouseout( 
+      function(){
+        console.log('mouseout true');
+        if($('#mega-menu').mouseIsOver()===false){
+          hideMegaMenu();
+          console.log('mouseover false');
+        }
+      }
+    );
+
+    jQuery.fn.mouseIsOver = function () {
+        if($(this[0]).is(":hover"))
+        {
+            return true;
+        }
+        return false;
+    }; 
 
     var applicationEl = {
           'hero' : {
