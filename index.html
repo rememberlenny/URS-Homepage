@@ -801,46 +801,48 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
 
     var saveHtml;
 
-    $('#header-fix').click(
-      function(){
-        if( applicationEl.hero.triggerEl.hasClass('active') ){
-          applicationEl.hero.triggerEl.removeClass("active open");
-          applicationEl.hero.displayEl.animate({
-            height: '167'
-          });
-          applicationEl.hero.displayEl.removeClass('open');
-          $('.slide-content').animate({
-            height: '167'
-          });
-          $('.orbit-container').animate({
-            height: '167'
-          });
-          $('.slide-content.active').html("<div class='large-5' style='width: 37%;'><span class=' slide-content-case'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p><a href='indexa.html' id='slider-more-link' class='small-continue'>More about us &#9656;</a></span></div>");
+    $('#hero-slider').click(
+      if(this != $('.orbit-bullets')){
+        function(){
+          if( applicationEl.hero.triggerEl.hasClass('active') ){
+            applicationEl.hero.triggerEl.removeClass("active open");
+            applicationEl.hero.displayEl.animate({
+              height: '167'
+            });
+            applicationEl.hero.displayEl.removeClass('open');
+            $('.slide-content').animate({
+              height: '167'
+            });
+            $('.orbit-container').animate({
+              height: '167'
+            });
+            $('.slide-content.active').html("<div class='large-5' style='width: 37%;'><span class=' slide-content-case'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p><a href='indexa.html' id='slider-more-link' class='small-continue'>More about us &#9656;</a></span></div>");
 
-          closeNews();
-          closeProjects();
-          closeCareer();  
+            closeNews();
+            closeProjects();
+            closeCareer();  
 
-        } else {
-          applicationEl.hero.triggerEl.addClass("active open");
-          applicationEl.hero.displayEl.animate({
-            height: '274'
-          });
-          applicationEl.hero.displayEl.addClass('open');
-          $('.slide-content').animate({
-            height: '274'
-          });
-          $('.orbit-container').animate({
-            height: '274'
-          });
+          } else {
+            applicationEl.hero.triggerEl.addClass("active open");
+            applicationEl.hero.displayEl.animate({
+              height: '274'
+            });
+            applicationEl.hero.displayEl.addClass('open');
+            $('.slide-content').animate({
+              height: '274'
+            });
+            $('.orbit-container').animate({
+              height: '274'
+            });
 
-          closeNews();
-          closeProjects();
-          closeCareer();
+            closeNews();
+            closeProjects();
+            closeCareer();
 
-          saveHtml = $('.slide-content.active').html();
+            saveHtml = $('.slide-content.active').html();
 
-          $('.slide-content.active').html("<div class='row'><div class='large-5 column exempt slide-content-case'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p></div></div><div class='row'><div class='exempt large-7 column'><p>The Company offers a full range of services including:</p><div class='column'><div class='row'><div class='column large-7'><ul class='circle'><li>Program management</li><li>Planning</li><li>Design & engineering</li><li>Systems engineering & technical assistance</li></ul></div><div class='column large-7'><ul class='circle'><li>Construction & construction management</li><li>Operations & maintenance</li><li>Information technology</li><li>Decommissioning & closure services</li></div></ul></div><div class='row'><a href='indexa.html' id='slider-more-link' class='small-continue'>More about us &#9656;</a></div></div></div>");
+            $('.slide-content.active').html("<div class='row'><div class='large-5 column exempt slide-content-case'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p></div></div><div class='row'><div class='exempt large-7 column'><p>The Company offers a full range of services including:</p><div class='column'><div class='row'><div class='column large-7'><ul class='circle'><li>Program management</li><li>Planning</li><li>Design & engineering</li><li>Systems engineering & technical assistance</li></ul></div><div class='column large-7'><ul class='circle'><li>Construction & construction management</li><li>Operations & maintenance</li><li>Information technology</li><li>Decommissioning & closure services</li></div></ul></div><div class='row'><a href='indexa.html' id='slider-more-link' class='small-continue'>More about us &#9656;</a></div></div></div>");
+          }
         }
       }
     );
