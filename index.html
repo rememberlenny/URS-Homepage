@@ -195,6 +195,16 @@
   .hero-slider .slide-3.active p, .hero-slider .slide-4.active p, .hero-slider .slide-5.active p {
 margin-left: 0em;
 }
+.slide-content .large-5{
+  min-height: 141px;
+}
+.openDown.slide-content .large-5{
+  min-height: 0px !important;
+}
+div.orbit-container ul {
+  height: 167.40625px !important;
+  overflow:visible !important;
+}
 </style>
       
       <!-- Hero slider Begin  -->
@@ -225,36 +235,44 @@ margin-left: 0em;
               </div>
             </li>
             <li data-orbit-slide="headline-2"id="headline-2" class="slide-2 slide-content">
+            <div class="large-5 slide-content-case exempt" style="width: 57%;">
               <span class="slide-content-case">
                 
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#248</h4>
               <h3>on FORTUNE's List of America's <br>500 Largest Companies</h3>
               </span>
+              </div>
             </li>
             <li data-orbit-slide="headline-3"id="headline-3" class="slide-3 slide-content">
+            <div class="large-5 slide-content-case exempt" style="width: 57%;">
             <span class="slide-content-case">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p style='margin-left: 7em;'><i>ENR TOP 400 Contractors</i></p>
             </span>
+            </div>
             </li>
             <li data-orbit-slide="headline-4"id="headline-4" class="slide-4 slide-content">
+            <div class="large-5 slide-content-case exempt" style="width: 57%;">
             <span class="slide-content-case">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p style='margin-left: 7em;'><i>ENR TOP 400 Contractors</i></p>
             </span>
+            </div>
             </li>
             <li data-orbit-slide="headline-5"id="headline-5" class="slide-5 slide-content">
+            <div class="large-5" style="width: 57%;">
             <span class="slide-content-case">
               <h2>URS Corporation</h2>
               <h4 class="large-number fl">#8</h4>
               <h3>in Power</h3>
               <p style='margin-left: 7em;'><i>ENR TOP 400 Contractors</i></p>
             </span>
+            </div>
             </li>
           </ul>  
         </div>
@@ -823,6 +841,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
               height: '167'
             });
             $('.slide-content.active').html("<div class='large-5' style='width: 37%;'><span class=' slide-content-case'><h2>URS Corporation</h2><p>is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</p><a href='indexa.html' id='slider-more-link' class='small-continue'>More about us &#9656;</a></span></div>");
+            $('.slide-content').removeClass('openDown');
             closeNews();
             closeProjects();
             closeCareer();  
@@ -839,6 +858,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
             $('.orbit-container').animate({
               height: '274'
             });
+            $('.slide-content').addClass('openDown');
 
             closeNews();
             closeProjects();
