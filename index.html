@@ -421,7 +421,7 @@ line-height: 1.2em;"><img src="images/project/right.jpg" alt=""></a>
                       <ul class="inline-list fr">
                         <li>
                           <form class="custom">
-                            <select id="customDropdown1" class="large nav-ele">
+                            <select id="customDropdown1" class="large">
                               <option>Sort by Market</option>
                             </select>
                           </form>
@@ -739,19 +739,19 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
           },
           'news' : {
             'displayEl': $('#display-news'),
-            'triggerEl': $('#clickme-news, #display-news'),
+            'triggerEl': $('#clickme-news'),
             'bodyEl': $('.news-home.widget'),
             'accordianStatus':'0' 
           },
           'project' : {
             'displayEl': $('#project-display'),
-            'triggerEl': $('#project-news, #project-display'),
+            'triggerEl': $('#project-news'),
             'bodyEl': $('.feature-widget.widget'),
             'accordianStatus':'0'
           },
           'jobs' : {
             'displayEl': $('#jobs-display'),
-            'triggerEl': $('#jobs-news, #jobs-display'),
+            'triggerEl': $('#jobs-news'),
             'bodyEl':$('.job-search-module.widget'),
             'accordianStatus':'0'
           }
@@ -791,6 +791,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
     };
 
     function closeProjects(){
+      console.log('closing the project');
       if( applicationEl.project.triggerEl.hasClass('active') ){
         applicationEl.project.displayEl.slideUp();
         applicationEl.project.triggerEl.removeClass("active");
@@ -799,6 +800,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
     };
 
     function closeCareer(){
+      console.log('closing the career');
       if( applicationEl.jobs.triggerEl.hasClass('active') ){
         applicationEl.jobs.displayEl.slideUp();
         applicationEl.jobs.triggerEl.removeClass("active");
