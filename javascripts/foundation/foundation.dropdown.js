@@ -6,7 +6,7 @@
   Foundation.libs.dropdown = {
     name : 'dropdown',
 
-    version : '4.3.0',
+    version : '4.2.0',
 
     settings : {
       activeClass: 'open',
@@ -57,7 +57,7 @@
         .on('opened.fndtn.dropdown', '[data-dropdown-content]', this.settings.opened)
         .on('closed.fndtn.dropdown', '[data-dropdown-content]', this.settings.closed);
 
-      $(document).on('click.fndtn.dropdown', function (e) {
+      $('body').on('click.fndtn.dropdown', function (e) {
         var parent = $(e.target).closest('[data-dropdown-content]');
 
         if ($(e.target).data('dropdown')) {
@@ -121,13 +121,14 @@
 
     css : function (dropdown, target) {
       var offset_parent = dropdown.offsetParent();
-      // if (offset_parent.length > 0 && /body/i.test(dropdown.offsetParent()[0].nodeName)) {
+      // temporary workaround until 4.2
+      if (offset_parent.length > 0 && /body/i.test(dropdown.offsetParent()[0].nodeName)) {
         var position = target.offset();
-        position.top -= offset_parent.offset().top;
-        position.left -= offset_parent.offset().left;
-      // } else {
-      //   var position = target.position();
-      // }
+        position.top -= dropdown.offsetParent().offset().top;
+        position.left -= dropdown.offsetParent().offset().left;
+      } else {
+        var position = target.position();
+      }
 
       if (this.small()) {
         dropdown.css({

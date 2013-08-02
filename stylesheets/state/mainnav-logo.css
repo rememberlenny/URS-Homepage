@@ -1,8 +1,12 @@
-/* line 2, ../../sass/state/mainnav-logo.scss */
+/* line 1, ../../sass/state/mainnav-logo.scss */
+.main.top-bar {
+  height: 41px;
+}
+/* line 3, ../../sass/state/mainnav-logo.scss */
 .main.top-bar .name {
-  width: 95px;
-  height: 60px;
-  background: url("../images/urs-logo.png") no-repeat center center;
+  width: 274px;
+  height: 67px;
+  background: url("../images/logo-top.png") no-repeat center center;
   position: absolute;
-  z-index: 500 !important;
+  z-index: 100;
 }

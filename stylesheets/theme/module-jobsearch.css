@@ -1,99 +1,87 @@
-/* line 22, ../../sass/base/color-definition.scss */
+/* line 21, ../../sass/base/color-definition.scss */
 #wrapper {
-  background: #f2f2f3;
+  background: white;
 }
 
-/* line 26, ../../sass/base/color-definition.scss */
+/* line 25, ../../sass/base/color-definition.scss */
 span.positive-color {
   color: #0d9900;
 }
 
-/* line 30, ../../sass/base/color-definition.scss */
+/* line 29, ../../sass/base/color-definition.scss */
 .lightest {
   color: #9e9e9e;
 }
 
-/* line 34, ../../sass/base/color-definition.scss */
+/* line 33, ../../sass/base/color-definition.scss */
 .bright-white {
   color: #fefefe !important;
 }
 
-/* line 38, ../../sass/base/color-definition.scss */
+/* line 37, ../../sass/base/color-definition.scss */
 .dark-color {
   color: #454545 !important;
 }
 
-/* line 7, ../../sass/theme/module-jobsearch.scss */
-.job-search-module h2 {
-  font-weight: 600;
-  font-size: 17px;
-  color: #214b93;
+/* line 3, ../../sass/theme/module-jobsearch.scss */
+.job-search-module {
+  width: 636px !important;
+  background: url("../images/widget/job-search-background.jpg") right bottom;
+  padding-top: .7em;
+  padding-bottom: 1em;
 }
-/* line 11, ../../sass/theme/module-jobsearch.scss */
-.job-search-module h2.main {
-  color: black;
+/* line 6, ../../sass/theme/module-jobsearch.scss */
+.job-search-module a:hover h3, .job-search-module a:hover p {
+  color: #fefefe !important;
 }
-/* line 15, ../../sass/theme/module-jobsearch.scss */
-.job-search-module img {
-  height: 120px;
+/* line 12, ../../sass/theme/module-jobsearch.scss */
+.job-search-module a.hover-bright:hover h3, .job-search-module a.hover-bright:hover p {
+  color: #fefefe !important;
 }
 /* line 18, ../../sass/theme/module-jobsearch.scss */
-.job-search-module #jobs-display {
-  margin-bottom: 1em;
+.job-search-module a.small-continue:hover {
+  color: #fefefe !important;
 }
-/* line 20, ../../sass/theme/module-jobsearch.scss */
-.job-search-module #jobs-display .news-item:first-child {
-  margin-left: 11px;
-  margin-right: -11px;
+/* line 24, ../../sass/theme/module-jobsearch.scss */
+.job-search-module h2 {
+  font-weight: 500;
 }
-/* line 26, ../../sass/theme/module-jobsearch.scss */
-.job-search-module.title {
-  padding-bottom: 0em !important;
-}
-/* line 29, ../../sass/theme/module-jobsearch.scss */
+/* line 30, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h4 {
   font-size: 18px;
 }
 /* line 33, ../../sass/theme/module-jobsearch.scss */
-.job-search-module a:hover h3, .job-search-module a:hover p {
-  color: #fefefe;
-}
-/* line 37, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h3 {
-  font-size: 11px;
+  font-size: 13px;
   margin-bottom: 0em;
 }
-/* line 40, ../../sass/theme/module-jobsearch.scss */
+/* line 36, ../../sass/theme/module-jobsearch.scss */
 .job-search-module h3 a {
-  color: black;
-  opacity: .8;
+  color: black !important;
+  opacity: .9;
 }
-/* line 45, ../../sass/theme/module-jobsearch.scss */
+/* line 41, ../../sass/theme/module-jobsearch.scss */
 .job-search-module p {
   margin-bottom: .3em;
-  font-size: 10px;
-  opacity: .8;
-  color: black;
+  font-size: 11px;
+  color: #222222;
 }
-/* line 51, ../../sass/theme/module-jobsearch.scss */
+/* line 46, ../../sass/theme/module-jobsearch.scss */
+.job-search-module input[type="button"] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  height: 21px;
+  border: 0px;
+  background: white;
+  width: 26px;
+  background: url("../images/search-icon-or.png") center right no-repeat white;
+}
+/* line 55, ../../sass/theme/module-jobsearch.scss */
 .job-search-module input[type="text"] {
-  width: 195px;
-  height: 1.95125em;
+  height: 21px;
   font-size: 0.7em;
   border: none;
-  background: url("../images/search-icon-bl.png") center right no-repeat white;
-}
-/* line 58, ../../sass/theme/module-jobsearch.scss */
-.job-search-module .act {
-  margin-left: 13px;
-}
-/* line 61, ../../sass/theme/module-jobsearch.scss */
-.job-search-module section {
-  margin-left: .4em;
-}
-/* line 64, ../../sass/theme/module-jobsearch.scss */
-.job-search-module .small-continue.fr {
-  margin-right: 1.9em;
-  margin-top: -1em;
-  font-weight: bold;
+  border-right: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
 }

@@ -1,53 +1,19 @@
-/* line 22, ../../sass/base/color-definition.scss */
+/* line 1, ../../sass/base/layout.scss */
 #wrapper {
-  background: #f2f2f3;
+  width: 1020px;
 }
 
-/* line 26, ../../sass/base/color-definition.scss */
-span.positive-color {
-  color: #0d9900;
-}
-
-/* line 30, ../../sass/base/color-definition.scss */
-.lightest {
-  color: #9e9e9e;
-}
-
-/* line 34, ../../sass/base/color-definition.scss */
-.bright-white {
-  color: #fefefe !important;
-}
-
-/* line 38, ../../sass/base/color-definition.scss */
-.dark-color {
-  color: #454545 !important;
-}
-
-/* line 2, ../../sass/base/layout.scss */
-#wrapper {
-  width: 1025px;
-  border-left: 50px solid #f2f2f3;
-  border-right: 50px solid #f2f2f3;
-}
-
-/* line 7, ../../sass/base/layout.scss */
-div.row.footer {
-  width: 1025px;
-  border-left: 50px solid #f2f2f3;
-  border-right: 50px solid #f2f2f3;
-}
-
-/* line 12, ../../sass/base/layout.scss */
+/* line 4, ../../sass/base/layout.scss */
 .fr {
   float: right !important;
 }
 
-/* line 13, ../../sass/base/layout.scss */
+/* line 5, ../../sass/base/layout.scss */
 .fl {
   float: left !important;
 }
 
-/* line 14, ../../sass/base/layout.scss */
+/* line 6, ../../sass/base/layout.scss */
 .row .row.widget {
   margin-bottom: 1em;
 }

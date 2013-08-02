@@ -9,8 +9,7 @@
     version : '4.2.2',
 
     settings : {
-      activeClass: 'active',
-      threshold: 0
+      activeClass: 'active'
     },
 
     init : function (scope, method, options) {

@@ -1,43 +1,46 @@
-/* line 22, ../../sass/base/color-definition.scss */
+/* line 21, ../../sass/base/color-definition.scss */
 #wrapper {
-  background: #f2f2f3;
+  background: white;
 }
 
-/* line 26, ../../sass/base/color-definition.scss */
+/* line 25, ../../sass/base/color-definition.scss */
 span.positive-color {
   color: #0d9900;
 }
 
-/* line 30, ../../sass/base/color-definition.scss */
+/* line 29, ../../sass/base/color-definition.scss */
 .lightest {
   color: #9e9e9e;
 }
 
-/* line 34, ../../sass/base/color-definition.scss */
+/* line 33, ../../sass/base/color-definition.scss */
 .bright-white {
   color: #fefefe !important;
 }
 
-/* line 38, ../../sass/base/color-definition.scss */
+/* line 37, ../../sass/base/color-definition.scss */
 .dark-color {
   color: #454545 !important;
 }
 
 /* line 2, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar {
-  height: 62px !important;
-  margin-bottom: 15px;
+  z-index: 500;
+  margin-bottom: 6px;
 }
 /* line 6, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right a {
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: 600;
+  line-height: 41px;
+  letter-spacing: .2em;
 }
-/* line 10, ../../sass/state/mainnav-links.scss */
+/* line 13, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button) {
-  padding: 24px 25.66667px 2px;
+  padding: 0 17.8px;
 }
-/* line 12, ../../sass/state/mainnav-links.scss */
+/* line 15, ../../sass/state/mainnav-links.scss */
 nav.main.top-bar ul.right li a:not(.button):hover {
   background: #00264e;
 }
