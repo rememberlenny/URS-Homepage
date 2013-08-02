@@ -825,7 +825,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
 
     var saveHtml;
 
-    $('#header-fix, .slide-content.active, #headline-2, #headline-3, #headline-4, #headline-5').hoverIntent(
+    $('#header-fix, .slide-content.active, #headline-2, #headline-3, #headline-4, #headline-5').click(
         function(event){
           console.log(event.target.nodeName);
           if( applicationEl.hero.triggerEl.hasClass('active') ){
@@ -871,7 +871,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
       }
     );
 
-    applicationEl.news.triggerEl.hoverIntent(function() {
+    applicationEl.news.triggerEl.click(function() {
       if(!applicationEl.news.triggerEl.hasClass('active')){
         applicationEl.news.displayEl.slideDown('slow', function() {});
         applicationEl.news.triggerEl.addClass('active');
@@ -889,7 +889,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
       }
     });
 
-    applicationEl.project.triggerEl.hoverIntent(function() {
+    applicationEl.project.triggerEl.click(function() {
       if(!applicationEl.project.triggerEl.hasClass('active')){
         applicationEl.project.displayEl.slideDown('slow', function() {});
         applicationEl.project.triggerEl.addClass('active');
@@ -907,7 +907,7 @@ line-height: 1.2em;"><img src="images/employee/ashley.jpg" alt="" class="fl"></a
        }
     });
 
-    applicationEl.jobs.triggerEl.hoverIntent(function() {
+    applicationEl.jobs.triggerEl.click(function() {
       if(!applicationEl.jobs.triggerEl.hasClass('active')){
         applicationEl.jobs.displayEl.slideDown('slow', function() {});
         applicationEl.jobs.triggerEl.addClass('active');
