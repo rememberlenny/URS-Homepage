@@ -1,0 +1,35 @@
+@import 'base/color-definition';
+.row{
+  form.custom .custom.dropdown{
+    border: 1px solid $brand-blue;
+    margin-bottom: 0em ;
+    height:1.83125em;
+    font-size: .7em;
+    font-weight: bold;
+    background: lighten($lightest-text, 20%);
+    .current, 
+    .selector{
+      color: $brand-blue ;
+      line-height: 1.8 ;
+    }
+    .current{
+    }
+    .selector{
+      height:1.83125em;
+    }
+  }
+  input[type="text"]{
+    height:1.83125em;
+    font-size: .7em;
+    margin-bottom: 0em ;
+    line-height: 1.8 ;
+  }
+}
+a.button.act{
+  height: 1.83125em;
+  font-size: .7em;
+  margin-bottom: 0em;
+  line-height: 0.7;
+  text-transform: uppercase;
+  border: none !important;
+}

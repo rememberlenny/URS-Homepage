@@ -8,8 +8,9 @@
   <meta name="viewport" content="width=device-width" />
   <title>URS Corporation</title>
 
-  <link href="/stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
-  
+  <link href="stylesheets/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800|Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+
 
   <script src="javascripts/vendor/custom.modernizr.js"></script>
 
@@ -172,13 +173,13 @@
              <section class="top-bar-section">
               <ul class="left column">
                 <li class="stock-ticker">
-                  <a href="">
-                    NYSE: URS <span class="positive-color">&#9650;</span> 46.57 (+22)
+                  <a href="indexa.html" style="color:#dedede !important">
+                    <span style="font-weight: bold; font-size: 1.1em; margin-left: -1.6em; margin-right: 1.6em">UNITED STATES</span> <span style=" font-family: 'Open Sans Condensed', sans-serif; font-weight: 700; font-size:13px">NYSE: URS</span> <span class="positive-color">&#9650;</span> 46.57 (+22)
                   </a>  
                 </li>
                 <li> 
-                  <a class="hide-for-medium" href="">
-                    <label class="lightest tbheight" >
+                  <a class="" href="indexa.html">
+                    <label class="lightest tbheight" style="font-size: 10px !important;">
                       07/24/13 at 10:30 AM (Delayed by 20 minutes)
                     </label>
                   </a>
@@ -186,14 +187,14 @@
               </ul>
               <ul class="right row">
                 <li>
-                  <a href="">Contact Us</a>
+                  <a href="indexa.html">Contact Us</a>
                 </li>
                 <li class="divider"></li>
                 <li class="has-dropdown">
-                  <a href="">Countries</a>
+                  <a href="indexa.html">Countries</a>
                   <ul class="dropdown">
                     <li class="country">
-                      <a href="#">
+                      <a href="#" onclick="return false;">
                         <img src="images/country-filler.png" alt="">
                       </a>
                     </li>
@@ -201,16 +202,16 @@
                 </li>
                 <li class="divider"></li>
                 <li>
-                  <a href="">Offices</a>
+                  <a href="indexa.html">Offices</a>
                 </li>
                 <li class="hide-for-small has-form">
-                  <form>
+                  <form  action="indexa.html">
                     <div class="row collapse">
                       <div class="small-10 large-10 columns">
                         <input type="text" placeholder="Search">
                       </div>
                       <div class="small-4 large-4 columns">
-                        <input type="button" value="" class="search-icon button postfix radius-bottom-left"></input>
+                        <input type="button" value="" class="search-icon button postfix radius-bottom-left" onclick="location.href='indexa.html'"></input>
                       </div>
                     </div>
                   </form>
@@ -229,17 +230,17 @@
              <section class="top-bar-section">
                <ul class="title-area column">
                  <li class="name"></li>
-                 <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+                 <li class="toggle-topbar menu-icon"><a href="indexa.html"><span>Menu</span></a></li>
                </ul>
               <ul class="left column">
               </ul>
               <ul class="right row">
-                <li><a href="">About</a></li>
-                <li><a href="">Markets</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Investors</a></li>
-                <li><a href="">Careers</a></li>
+                <li><a href="indexa.html">About</a></li>
+                <li id="megamenu-selector"><a href="indexa.html" onclick="return false;">Markets</a></li>
+                <li><a href="indexa.html">Services</a></li>
+                <li><a href="indexa.html">Projects</a></li>
+                <li><a href="indexa.html">Investors</a></li>
+                <li><a href="indexa.html">Careers</a></li>
               </ul>
             </section>
           </nav>
@@ -247,25 +248,88 @@
       </div>
       <!-- Main blue nav bar End  -->
       
-      <!-- Hero slider Begin  -->
+  <!-- Megamenu start -->
+          <div id="mega-menu" class="row mega-menu large-10 large-centered column" style="z-index: 840 !important;">
+            <div class="large-6 column" style="width:30%; margin-right:5%;">
+              <ul class="no-bullet">
+                <li><label for="">FEDERAL</label></li>
+                  <li><a href="indexa.html">Operations & Maintenance</a></li>
+                  <li><a href="indexa.html">Base and Range Operations / Installations Management</a></li>
+                  <li><a href="indexa.html">Military Training</a></li>
+                  <li><a href="indexa.html">CBRNE Threat Reduction</a></li>
+                  <li><a href="indexa.html">Homeland Security & Disaster Response</a></li>
+                  <li><a href="indexa.html">Military & Government Facilities</a></li>
+                  <li><a href="indexa.html">NASA and Space Operations</a></li>
+                  <li><a href="indexa.html">Technical Services</a></li>
+                  <li><a href="indexa.html">Information Technology Solutions</a></li>
+                  <li><a href="indexa.html">Environmental & Nuclear Management</a></li>
+                  <li><a href="indexa.html">International Aid Programs</a></li>
+              </ul>
+            </div>
+            <div class="large-4 column" style="width:30%; margin-right:5%;">
+              <ul class="no-bullet">
+                <li style=""><label for="">OIL & GAS</label></li>
+                <li><a href="indexa.html">Upstream</a></li>
+                <li><a href="indexa.html">Midstream</a></li>
+                <li><a href="indexa.html">Downstream</a></li>
+                <li><a href="indexa.html">Petrochemical</a></li>
+                <li><br></li>
+                <li><label for="">INFRASTRUCTURE</label></li>
+                <li><a href="indexa.html">Air Transportation</a></li>
+                <li><a href="indexa.html">Surface Transportation</a></li>
+                <li><a href="indexa.html">Rail & Mass Transit Facilities</a></li>
+                <li><a href="indexa.html">Ports & Maritime</a></li>
+                <li><a href="indexa.html">Water Resources</a></li>
+              </ul>
+            </div>
+            <div class="large-4 column" style="width:30%;">
+              <ul class="no-bullet">
+                <li style=""><label for="">POWER</label></li>
+                <li><a href="indexa.html">Nuclear</a></li>
+                <li><a href="indexa.html">Fossil Fuels</a></li>
+                <li><a href="indexa.html">Hydroelectric</a></li>
+                <li><a href="indexa.html">Alternative & Renewable</a></li>
+                <li><a href="indexa.html">Emissions Controls</a></li>
+                <li><a href="indexa.html">Transmission & Distribution</a></li>
+                <li><br></li>
+                <li><label for="">INDUSTRIAL</label></li>
+                <li><a href="indexa.html">Chemical & Pharmaceutical</a></li>
+                <li><a href="indexa.html">Commercial</a></li>
+                <li><a href="indexa.html">Manufacturing</a></li>
+                <li><a href="indexa.html">Mining</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Megamenu end -->
+
+       <!-- Hero slider Begin  -->
       <div class="row hero-slider">
         <div class="column">
-          <div class="large-10 column">
-            <div class="row">
-              <div class="large-9 column dam">
-              </div>
-              <div class="large-5 column bridge">
-              </div>
+          <div class="large-10 column grid11">
+            <div class="row bridgedam">
+              <a class="wrapdam" href="indexa.html"><div class="large-9 column dam hero-content">
+                <h3>#6 in Power in Top 500 Design Firms</h3>
+                <p class="subtitle">-Engineering news-record</p>
+              </div></a>
+              <a class="wrapbridge" href="indexa.html"><div class="large-5 column bridge hero-content">
+                <h3>#2 Design Firm and in the Top 3 for more than a decade</h3>
+                <p class="subtitle">-Engineering news-record</p>
+              </div></a>
             </div>
-            <div class="row">
-              <div class="large-7 column roof">
-              </div>
-              <div class="large-7 column hospital">
-              </div>
+            <div class="row roofhospital">
+              <a class="wraproof" href="indexa.html"><div class="large-7 column roof hero-content active">
+                <h3>URS Corporation is a leading provider of engineering, construction and technical services for public agencies and private sector companies around the world.</h3>
+              </div></a>
+              <a class="wraphospital" href="indexa.html"><div class="large-7 column hospital hero-content">
+                <h3>#1 Green Design Firm</h3>
+                <p class="subtitle">-Engineering news-record</p>
+              </div></a>
             </div>
           </div>
-          <div class="large-4 column freeway">
-          </div>
+          <a class="wrapfreeway" href="indexa.html"><div class="large-4 column freeway hero-content">
+            <h3>#1 in Bridges in Top 500 Design Firms</h3>
+            <p class="subtitle">-Engineering news-record</p>
+          </div></a>
         </div>
       </div>
       <!-- Hero slider End  -->
@@ -280,18 +344,18 @@
           <div class="row news-home widget">
             <div class="column">
               
-              <h2 class="section-title">News</h2>
+              <h2 class="section-title"><a href="indexa.html" class="dark-color dark-head">News</a></h2>
 
-              <h3><a>URS Awarded Design-Build Contract for Medical Facilities by U.S. Army</a></h3>
+              <h3><a href="indexa.html">URS Awarded Design-Build Contract for Medical Facilities by U.S. Army</a></h3>
               <p>Program has Maximum Aggregate Value of $585 Million to Seven Awardees</p>
               <hr>
-              <h3><a>URS to Participate in the Oppenheimer 8th Annual Industrial Growth Summit</a></h3>
+              <h3><a href="indexa.html">URS to Participate in the Oppenheimer 8th Annual Industrial Growth Summit</a></h3>
               <p>Program has Maximum Aggregate Value of $585 Million to Seven Awardees</p>
               <hr>
-              <h3><a>URS to Participate in the Oppenheimer 8th Annual Industrial Growth Summit</a></h3>
+              <h3><a href="indexa.html">URS to Participate in the Oppenheimer 8th Annual Industrial Growth Summit</a></h3>
               <p>Program has Maximum Aggregate Value of $585 Million to Seven Awardees</p>
               <hr class="last">
-              <a href="" class="fr small-continue">View all &#9656;</a>
+              <a href="indexa.html" class="fr small-continue">View all &#9656;</a>
             </div>
           </div>
           <!-- News End  -->
@@ -299,17 +363,17 @@
           <div class="row annual-report">
             <div class="column large-14">
               <h2 class="section-title">
-                URS 2012 Annual Report
+                <a href="indexa.html" class="dark-color dark-head">URS 2012 Annual Report</a>
               </h2>
             </div>
             <div class="column large-14">
-              <img class="fl" src="../images/widget/annual-report-thumb.jpg" alt="">
+              <a href="indexa.html"><img class="fl" src="images/widget/annual-report-thumb.jpg" alt=""></a>
               <ul class="no-bullet text-right links">
                 <li>
-                  <a href="" class=" small-continue">View Interactive &#9656;</a>
+                  <a href="indexa.html" class=" small-continue">View Interactive &#9656;</a>
                 </li>
                 <li>
-                  <a href="" class=" small-continue">View PDF &#9656;</a>
+                  <a href="indexa.html" class=" small-continue">View PDF &#9656;</a>
                 </li>
               </ul>
             </div>
@@ -327,17 +391,17 @@
             <!-- Featured project Begin  -->
             <div class="column row large-7 feature-widget">
                 <h2 class="section-title">
-                  Featured Projects
-                  <a href="" class="fr small-continue">View all &#9656;</a>
+                  <a href="indexa.html" class="dark-color dark-head" style="display: inline-block;">Featured Projects</a>
+                  <a href="indexa.html" class="fr small-continue">View all &#9656;</a>
                   </h2>
                 <section>
                   <header>
-                    <img src="/images/widget/featured-project.jpg" alt="">
+                    <a href="indexa.html"><img src="images/widget/featured-project.jpg" alt=""></a>
                   </header>
                   <footer>
                     <div class="column widget-back">
                       <p>
-                        <a href="" class="dark-color">Spaceport America</a>
+                        <a href="indexa.html" class="dark-color">Spaceport America</a>
                       </p>
                     </div>
                   </footer>
@@ -346,15 +410,15 @@
             <!-- Featured project End  -->
             <!-- History of Begin  -->
             <div class="column large-7 history feature-widget">
-              <h2 class="section-title">History of Success</h2>
+              <h2 class="section-title"><a class="dark-color dark-head" href="indexa.html">History of Success</a></h2>
               <section>
                 <header>
-                  <img src="/images/widget/history-of-success.jpg" alt="">
+                  <img src="images/widget/history-of-success.jpg" alt="">
                 </header>
                 <footer class=" widget-back">
                   <div class="column widget-back">
                     <p>
-                      <a href="" class="fr small-continue">View complete list &#9656;</a>
+                      <a href="indexa.html" class="fr small-continue">View complete list &#9656;</a>
                     </p>
                   </div>
                 </footer>
@@ -372,17 +436,27 @@
               <div class="row job-search-module">
                 <div class="large-8 column">
                   <h2 class="section-title bright-white">Job search</h2>
-                  <form action="" class="large-10">
-                    <input placeholder="Search e.g. mechanical engineering" type="text">
+                   <form action="indexa.html">
+                    <div class="row collapse">
+                      <div class="small-9 large-9 columns">
+                        <input type="text" style=" " placeholder="Search e.g. mechanical engineering">
+                      </div>
+                      <div class="small-5 large-5 columns">
+                        <input style=" "type="button" value="" class="postfix " onclick="location.href='indexa.html'"></input>
+                      </div>
+                    </div>
                   </form>
                   <h2 class="section-title bright-white">Now hiring</h2>
-                  <h3><a href="">Project Controls Manager</a></h3>
-                  <p>Houston, Texas</p>
-                  <h3><a href="">Highway Engineer</a></h3>
-                  <p>Pune, India</p>
-                  <h3><a href="">Acoustics Consultant</a></h3>
-                  <p>London, England</p>
-                  <a href="" class="small-continue">
+                  <a href="indexa.html" style="display: inline-block;"><h3>Project Controls Manager</h3>
+                  <p>Houston, Texas</p></a>
+                  <hr style="visibility: hidden; margin-top:1px!important; margin-bottom:1px!important;">
+                  <a href="indexa.html" style="display: inline-block;"><h3>Highway Engineer</h3>
+                  <p>Pune, India</p></a>
+                  <hr style="visibility: hidden; margin-top:1px!important; margin-bottom:1px!important;">
+                  <a href="indexa.html" style="display: inline-block;"><h3>Acoustics Consultant</h3>
+                  <p>London, England</p></a>
+                  <hr style="visibility: hidden; margin-top:1px!important; margin-bottom:1px!important;">
+                  <a href="indexa.html" class="small-continue" style="display: inline-block;">
                     View all jobs &#9656;
                   </a>
                 </div>
@@ -404,47 +478,63 @@
       </div>
       <!-- Main content End  -->
         <!-- Footer Begin  -->
-      <div class="row footer">
+      <div class="row footer" style="background:#4c4c4c;">
         
-        <div class="large-5 column social-feed">
-          <h2 class="section-title bright-white">Social Media Feed</h2>
-          <!-- Left End  -->    
-          <a href="">12 June 2013</a>
-          <p>Construction Under Way on the @ATLStreetcar http://bit.ly/1bw6ZDU </p>
-          <a href="">10 June 2013</a>
-          <p>RT @ExecutiveBiz Read a Q&A w/ Debbie Thurman, @URS contracts VP, on the #procurement process and her @usAirForce background #GovCon http://ow.ly/lSTv5  </p>
-          <a href="">7 June 2013</a>
-          <p>@claire2elliott Thanks for visiting with us! It was a great event. Find your next job here: http://bit.ly/18RJeGO </p>
+        <div class="large-9 column social-feed" style="line-height:16px;">
+          <p style="padding-top:.1em; margin-bottom:2.5em; line-height:16px; color:rgb(230,230,230);">URS Corporation is a leading provider of engineering, construction and technical services for public agencies and private sector companies worldwide. We offer a full range of program management; planning, design and engineering; systems engineering and technical assistance; information technology; construction and construction management; operations and maintenance; and decommissioning and closure services for federal, oil and gas, infrastructure, power and industrial projects.</p>
+          <div class="row">
+            <div class="large-8 column">
+              <ul class="no-bullet" style="margin-right:0em; color:rgb(230,230,230);">
+                <li style="k
+                "><p style="border-bottom: 1px solid rgb(230,230,230); margin-bottom: 8px; font-size:12px; padding-bottom:5px; color:rgb(230,230,230);">KEY FACTS</p> </li>
+                <li style="text-transform:capitalize; line-height:1.5em; margin-bottom:.7em; font-size:12px; color:rgb(230,230,230);"><b>Established:</b> 1951</li>
+                <li style="text-transform:capitalize; line-height:1.5em; margin-bottom:.7em; font-size:12px; color:rgb(230,230,230);"><b>Number of Employees:</b> More Than 50,000</li>
+                <li style="text-transform:capitalize; line-height:1.5em; margin-bottom:.7em; font-size:12px; color:rgb(230,230,230);"><b>FY2012 Revenues:</b> $10.97 Billion</li>
+                <li style="text-transform:capitalize; line-height:1.5em; margin-bottom:.7em; font-size:12px; color:rgb(230,230,230);"><b>NYSE Symbol:</b> URS</li>
+                <li style="text-transform:capitalize; line-height:1.5em; margin-bottom:.7em; font-size:12px; color:rgb(230,230,230);"><b>Locations:</b> Offices in nearly 50 countries</li>
+              </ul>
+            </div>
+            <div class="large-6 column" style="padding-top: 3em;">  
+            <p style="margin-bottom:2em; line-height:16px; color:rgb(230,230,230);">
+                URS CORPORATION <br>
+                600 Montgomery Street, 26th Floor <br>
+                San Francisco, CA 94111-2728 USA
+              </p>
+              <p class="terms-use copyright" style="clear:both; line-height:16px; font-weight: 200;
+    font-size: 10px;
+    text-transform: uppercase; color:rgb(210,210,210);">  
+              © 2013 URS Corporation. <br>All Rights Reserved.
+            </p>
+            </div>
+          </div>
         </div>
         <!-- Left Begin  -->
-         <div class="text-right fr">
-          <ul class="no-bullet">
-            <li><a href=""><img src="../images/icon/twitter.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/facebook.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/linkedin.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/youtube.png" alt=""></a></li>
-            <li><a href=""><img src="../images/icon/google.png" alt=""></a></li>
+        <!-- Right End  -->    
+        <div class="large-5 fr column">
+          <div class="text-right fr social-box">
+          <ul class="no-bullet" style="margin-right:0em">
+            <li><a href="indexa.html"><img src="images/icon/twitter.png" alt=""></a></li>
+            <li><a href="indexa.html"><img src="images/icon/facebook.png" alt=""></a></li>
+            <li><a href="indexa.html"><img src="images/icon/linkedin.png" alt=""></a></li>
+            <li><a href="indexa.html"><img src="images/icon/youtube.png" alt=""></a></li>
+            <li><a href="indexa.html"><img src="images/icon/google.png" alt=""></a></li>
           </ul>
         </div> 
-        <!-- Right End  -->    
-        <div class="large-5 fr column ">
-          <ul class="no-bullet">
-            <li>Press Releases</li>
-            <li>SMALL BUSINESS/SUPPLIER DIVERSITY &#9662;</li>
-            <li>CORPORATE GOVERNANCE</li>
-            <li>CONTRACT VEHICLES</li>
-            <li>SPECIALTY SITES</li>
+          <ul class="no-bullet fl">
+            <li><a href="indexa.html" style="color:rgb(230,230,230);">Press Releases</a></li>
+            <li><a href="indexa.html" style="color:rgb(230,230,230);">SMALL BUSINESS/SUPPLIER DIVERSITY<span style="font-size:.6em;"> ▼</span></a></li>
+            <li><a href="indexa.html" style="color:rgb(230,230,230);">CORPORATE GOVERNANCE</a></li>
+            <li><a href="indexa.html" style="color:rgb(230,230,230);">CONTRACT VEHICLES</a></li>
+            <li><a href="indexa.html" style="color:rgb(230,230,230);">AFFILIATED SITES</a></li>
+            <li><a href="indexa.html" style="color:rgb(230,230,230);">SUPPLIER REGISTRATION</a></li>
           </ul>
-          <p class="terms-use">
-            <a href="">TERMS OF USE </a>
+          <p class="terms-use fl" style="color:rgb(210,210,210);">
+            <a href="indexa.html" style="color:rgb(210,210,210);">TERMS OF USE </a>
             | 
-            <a href="">PRIVACY POLICY</a>
+            <a href="indexa.html" style="color:rgb(210,210,210);">PRIVACY POLICY</a>
           </p>
-          <p class="terms-use copyright">  
-            <a>© 2013 URS Corporation. <br>All Rights Reserved.</a>
-          </p>
+          
         </div>
-        <!-- Right Begin  -->
         
       </div>
     </div>
@@ -488,45 +578,107 @@
   </div>
     <!-- Footer End  -->
 
-  <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
-  </script>
-  
+
+
+  <script src="javascripts/vendor/jquery.js"></script>
+  <script src="javascripts/jQuery.hoverintent.js"></script>
+
   <script src="javascripts/foundation/foundation.js"></script>
   
-  <script src="javascripts/foundation/foundation.alerts.js"></script>
-  
-  <script src="javascripts/foundation/foundation.clearing.js"></script>
-  
-  <script src="javascripts/foundation/foundation.cookie.js"></script>
-  
   <script src="javascripts/foundation/foundation.dropdown.js"></script>
-  
-  <script src="javascripts/foundation/foundation.forms.js"></script>
-  
-  <script src="javascripts/foundation/foundation.interchange.js"></script>
-  
-  <script src="javascripts/foundation/foundation.joyride.js"></script>
-  
-  <script src="javascripts/foundation/foundation.magellan.js"></script>
-  
+
   <script src="javascripts/foundation/foundation.orbit.js"></script>
-  
-  <script src="javascripts/foundation/foundation.placeholder.js"></script>
-  
-  <script src="javascripts/foundation/foundation.reveal.js"></script>
-  
-  <script src="javascripts/foundation/foundation.section.js"></script>
-  
-  <script src="javascripts/foundation/foundation.tooltips.js"></script>
   
   <script src="javascripts/foundation/foundation.topbar.js"></script>
   
   
   <script>
     $(document).foundation();
+
+    function displayMegaMenu(){
+      $('#megamenu-selector').addClass('show');
+      $('#megamenu-selector').css('background', 'white');
+      $('#mega-menu').slideDown();
+    };    
+
+    function hideMegaMenu(){
+      $('#megamenu-selector').removeClass('show');
+      $('#mega-menu').slideUp();
+    };
+
+    // Mega menu
+    $('#megamenu-selector').mouseover( 
+      function(){
+        displayMegaMenu();
+      }
+    );
+    $('#megamenu-selector').mouseout(
+      function(){
+        console.log('mouseout true');
+        if($('#mega-menu').mouseIsOver()===false){
+          hideMegaMenu();
+          console.log('mouseover false');
+        }
+      })    
+    $('#mega-menu').mouseout( 
+      function(){
+        console.log('mouseout true');
+        if($('#mega-menu').mouseIsOver()===false){
+          hideMegaMenu();
+          console.log('mouseover false');
+        }
+      }
+    );
+
+    jQuery.fn.mouseIsOver = function () {
+        if($(this[0]).is(":hover"))
+        {
+            return true;
+        }
+        return false;
+    }; 
+    activeRoof = function(){
+      $('.hero-content.roof').removeClass('inactive');
+      $('.hero-content.roof').addClass('active');
+      console.log('active');
+    };
+    deactiveRoof = function(){
+      $('.hero-content.roof').addClass('inactive');
+      $('.hero-content.roof').removeClass('active');
+      console.log('deactive');
+    };
+    $('.hero-content.dam').mouseover(
+      function(){
+        deactiveRoof();
+      });
+    $('.hero-content.dam').delay(800).mouseout(
+      function(){
+        activeRoof();
+      });
+    $('.hero-content.bridge').mouseover(
+      function(){
+        deactiveRoof();
+      });
+    $('.hero-content.bridge').delay(800).mouseout(
+      function(){
+        activeRoof();
+      });
+    $('.hero-content.hospital').mouseover(
+      function(){
+        deactiveRoof();
+      });
+    $('.hero-content.hospital').delay(800).mouseout(
+      function(){
+        activeRoof();
+      });
+    $('.hero-content.freeway').mouseover(
+      function(){
+        deactiveRoof();
+      });
+    $('.hero-content.freeway').delay(800).mouseout(
+      function(){
+        activeRoof();
+      });
   </script>
 </body>
 </html>

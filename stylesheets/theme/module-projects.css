@@ -1,0 +1,23 @@
+/* line 3, ../../sass/theme/module-projects.scss */
+.feature-widget .row .large-offset-2 {
+  margin-left: 17.28571%;
+}
+
+/* line 9, ../../sass/theme/module-projects.scss */
+.image-case {
+  padding-bottom: .5em;
+}
+/* line 11, ../../sass/theme/module-projects.scss */
+.image-case img {
+  min-width: 219px;
+}
+
+/* line 16, ../../sass/theme/module-projects.scss */
+.description .dark-color {
+  margin-bottom: 1em;
+}
+
+/* line 20, ../../sass/theme/module-projects.scss */
+.project-nav {
+  padding-right: 1.4em !important;
+}

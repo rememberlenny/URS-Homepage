@@ -1,31 +1,89 @@
+@import 'base/color-definition';
+
+
+h4.large-number{
+  font-size: 3em;
+  margin-bottom: 0em;
+  color: $font-white;
+}
+.orbit-bullets{
+  li{
+    width: 7px;
+    height: 7px;
+    padding: 0em !important;
+    border: solid 1px rgba(255, 255, 255, 0.6) !important;
+    background: transparent !important;
+    &.active{
+      background: $font-white !important;
+    }
+  }
+}
+ol.orbit-bullets{
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+}
+#hero-news{
+  display: inline-block;
+}
 .hero-slider{
-  .dam{
-    background:url('../images/hero/dam.jpg') no-repeat center top;
-    height:188px;
-    max-width:400px;
+
+  .small-continue{
+    color: $font-white;
+    font-size:10px;
   }
-  .bridge{
-    background:url('../images/hero/bridge.jpg') no-repeat center top;
-    height:188px;
-    width:280px;
-    margin-right: 10px;
+  .slide-1{
+      background:url('../images/slide/slide1.jpg') top right;
+    }
+    .slide-2{
+      h3{
+        font-size: 1em !important;
+        margin-top: 1.6em !important;
+        margin-left: 8em !important;
+        font-weight: 400;
+      }
+      background:url('../images/slide/slide2.jpg') center right;
+    }
+    .slide-3{
+
+      background:url('../images/slide/slide3.jpg') top right;
+    }
+    .slide-4{
+      background:url('../images/slide/slide4.jpg') top right;
+    }
+    .slide-5{
+      background:url('../images/slide/slide5.jpg') top right;
+    }
+    .slide-3,
+    .slide-4,
+    .slide-5,
+    {
+      h3{
+        font-size: 1.2em !important;
+        margin-bottom: 0em;
+        margin-left: 4em;
+        margin-top: 1.4em;
+        font-weight: 400;
+      }
+      p{
+        margin-left: 7em;
+        margin-bottom: 0em;
+      }
+    }
+  h2, h3, p{
+    color: $font-white;
   }
-  .roof{
-    background:url('../images/hero/roof.jpg') no-repeat center top;
-    height:192px;
-    max-width:328px;
-    margin-top: 7px;
+  h2{
+    margin-bottom: 0.2em !important;
+    font-size: 26px;
   }
-  .hospital{
-    background:url('../images/hero/building.jpg') no-repeat center top;
-    height:192px;
-    width:360px;
-    margin-top: 7px;
-    margin-right: 6px;
+  p{
+    margin-bottom: .3em !important;
+    margin-bottom: .3em !important;
+    font-size: 11px;
+    line-height: 1.4em;
+    font-weight: 400;
   }
-  .freeway{
-    background:url('../images/hero/freeway.jpg') no-repeat center top;
-    height:388px;
-    max-width:277px;
-  }
+  margin-bottom: 1em !important;
 }

@@ -1,6 +1,7 @@
 @import '../base/color-definition';
 nav.main.top-bar{
   background: $dark-brand-blue;
+  z-index: 50;
   ul.right{
     
     li{
@@ -8,6 +9,11 @@ nav.main.top-bar{
     a{
       background: $dark-brand-blue;
       text-transform: uppercase;
+      font-weight: bold;
     }  
   }
 } 
+#mega-menu{
+  z-index: 12 !important;
+  top: 97px;
+}

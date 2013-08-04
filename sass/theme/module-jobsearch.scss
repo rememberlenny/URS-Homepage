@@ -1,32 +1,69 @@
 @import '../base/color-definition';
 
 .job-search-module{
-  width: 636px !important;
-  h2{
-    font-weight: 500;
+  //background:url('../images/tab/tab-career-big.jpg');
+  .search-widget{
   }
-  background:url('../images/widget/job-search-background.jpg') right bottom;
-  padding-top: .7em;
-  padding-bottom: 1em;
+  h2{
+    font-weight: 600;
+    font-size: 17px;
+    color: $brand-blue;
+    &.main{
+      color:black;
+    }
+  }
+  img{
+    height: 120px;
+  }
+  #jobs-display{
+    margin-bottom:1em;
+    .news-item:first-child{
+      margin-left:11px;
+      margin-right:-11px;
+    }
+
+  }
+  &.title{
+    padding-bottom: 0em !important;
+  }
   h4{
     font-size: 18px;
   }
+  a:hover{
+    h3,p{
+      color: $font-white;
+    }
+  }
   h3{
-    font-size:13px;
+    font-size:11px;
     margin-bottom:0em;
     a{
-      color: black !important;
-      opacity: .9;
+      color: black;
+      opacity: .8;
     }
   }
   p{
     margin-bottom: .3em;
-    font-size: 11px;
+    font-size: 10px;
+    opacity:.8;
+    color: black;
   }
   input[type="text"]{
+    width: 195px;
     height: 1.95125em;
     font-size: 0.7em;
     border: none;
-    background:url('../images/search-icon-or.png') center right no-repeat #fff;
+    background:url('../images/search-icon-bl.png') center right no-repeat #fff;
+  }
+  .act{
+    margin-left: 13px;
+  }
+  section{
+    margin-left: .4em;
+  }
+  .small-continue.fr{
+    margin-right: 1.9em;
+    margin-top: -1em;
+    font-weight: bold;
   }
 }

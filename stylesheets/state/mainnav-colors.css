@@ -1,28 +1,24 @@
-/* line 20, ../../sass/base/color-definition.scss */
+/* line 21, ../../sass/base/color-definition.scss */
 #wrapper {
   background: white;
 }
 
-/* line 24, ../../sass/base/color-definition.scss */
+/* line 25, ../../sass/base/color-definition.scss */
 span.positive-color {
   color: #0d9900;
 }
 
-/* line 28, ../../sass/base/color-definition.scss */
+/* line 29, ../../sass/base/color-definition.scss */
 .lightest {
   color: #9e9e9e;
 }
 
-/* line 32, ../../sass/base/color-definition.scss */
+/* line 33, ../../sass/base/color-definition.scss */
 .bright-white {
   color: #fefefe !important;
 }
-/* line 34, ../../sass/base/color-definition.scss */
-.bright-white:hover {
-  color: #214b93 !important;
-}
 
-/* line 39, ../../sass/base/color-definition.scss */
+/* line 37, ../../sass/base/color-definition.scss */
 .dark-color {
   color: #454545 !important;
 }

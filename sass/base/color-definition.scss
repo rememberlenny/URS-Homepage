@@ -1,6 +1,8 @@
 $lightest-text: #dedede;
 $positive-color: #0d9900;
 $light-grey: #f4f5f5;
+$brand-orange: #de8f1d;
+$wrapper-background: #f2f2f3;
 
 $font-white: #fefefe;
 
@@ -13,12 +15,12 @@ $grey-base: #4c4c4c;
 // Colors
 
 $primary-color: $brand-blue;
-// $secondary-color: #e9e9e9;
+$secondary-color: $brand-orange;
 // $alert-color: #c60f13;
 // $success-color: #5da423;
 
 #wrapper{
-  background: white;
+  background: $wrapper-background;
 }
 
 span.positive-color{
@@ -31,9 +33,6 @@ span.positive-color{
 
 .bright-white{
   color: $font-white !important;
-  &:hover{
-    color: $brand-blue !important;
-  }
 }
 
 .dark-color{

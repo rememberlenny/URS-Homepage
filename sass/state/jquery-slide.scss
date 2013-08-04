@@ -1,0 +1,160 @@
+@import 'base/color-definition';
+#hero-display{
+  overflow: hidden;
+}
+.orbit-container{
+  overflow: hidden;
+  ul{
+    height: 156px;
+    .slide-content{
+    }
+  }
+  background: none !important;
+  .exempt{
+    p{
+      margin-bottom: .7em !important;
+      font-weight: 600;
+    }
+    ul{
+      height: auto !important;
+      margin-left: -.25em;
+      &:first-child{
+        margin-right: -1.25em;
+      }
+      li{
+        list-style: disc!important;
+        font-weight: 600;
+        font-size: 11px;
+        padding: 0em;
+        &:before{
+          content:'\0095';
+        }
+      }
+    }
+  }
+}
+#hero-display{
+}
+
+.slide-content{
+  box-shadow: inset 390px 0px 380px -30px rgba(87, 77, 70, 0.9);
+    -webkit-transition: box-shadow 500ms ;
+    -moz-transition: box-shadow 500ms ;
+    -o-transition: box-shadow 500ms ;
+    transition: box-shadow 500ms ;
+}
+#headline-2,
+#headline-3
+{
+  box-shadow: inset 390px 0px 380px -30px rgba(0, 50, 104, 1);
+}
+.open{
+  .orbit-bullets{
+    visibility: hidden;
+  }
+  .slide-content, 
+  #headline-2,
+  #headline-3,
+  #headline-4,
+  #headline-5,
+  {
+    box-shadow: inset 360px 10px 580px -30px rgba(222, 222, 222, 1),
+      inset 640px 10px 580px -30px rgba(222, 222, 222, 0.9);
+    -webkit-transition: box-shadow 500ms ;
+    -moz-transition: box-shadow 500ms ;
+    -o-transition: box-shadow 500ms ;
+    transition: box-shadow 500ms ;
+    p,
+    h3,
+    h4,
+    a.small-continue{
+      color: #000102;
+    }
+  }
+  h2#hero-news{
+    color: #000102;
+  }
+
+}
+
+#hero-slider,
+.slide-content
+{
+  width:921px !important;
+}
+
+#display-news, 
+#project-display,
+#jobs-display{
+  display:none;
+}
+
+#clickme-news{
+  background:none;
+  &.active{
+  }
+}
+
+#project-news{
+  background:none;
+  &.active{
+  }
+}
+
+#jobs-news{
+  background:none;
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out; 
+  transition: background 1s ease-in-out;
+  transition: background 0.5s linear;
+&.active{
+  -webkit-transition: background 1s ease-in-out;
+  -moz-transition: background 1s ease-in-out;
+  -o-transition: background 1s ease-in-out;
+  -ms-transition: background 1s ease-in-out; 
+  transition: background 1s ease-in-out;
+  transition: background 0.5s linear;
+  }
+}
+
+#header-fix{
+  &.active{
+    background:url('../images/assets/minus.png') top left no-repeat;
+  }
+  background:url('../images/assets/plus.png') top left no-repeat;
+}
+
+#clickme-news,
+#project-news,
+#jobs-news{
+  h2.section-title{
+    color: $font-white;
+    -webkit-transition: color 1s linear !important;
+  }
+  &.active{
+    -webkit-transition: color 2s ease-in-out !important;
+    h2.section-title{
+      -webkit-transition: color 1s linear !important;
+      color: black !important;
+    }
+    .child{
+      background:url('../images/assets/plus.png') top left no-repeat;
+    }
+  }
+  .child{
+    background:url('../images/assets/minus.png') top left no-repeat;
+  }
+}
+
+.news-home,
+.feature-widget,
+.job-search-module{
+  box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
+  transition: box-shadow 0.5s linear;
+  &.active{
+    box-shadow: inset 880px 0 480px 260px rgba(255, 255, 255, 0);
+    transition: box-shadow 0.5s linear;
+  }
+}

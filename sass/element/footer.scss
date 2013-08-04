@@ -4,8 +4,6 @@ div.footer{
   background: $grey-base;
   padding-top: 1.5em;
   padding-bottom: 1em;
-  border-bottom: 2em solid darken($grey-base, 4%);
-
   h2{
     font-weight: 500;
     font-size: 13px;
@@ -23,7 +21,7 @@ div.footer{
     opacity: .8;
   }
   a{
-    font-weight: 600;
+    font-weight: 400;
   }
   p{
     font-weight: 200;
@@ -47,6 +45,16 @@ div.footer{
     margin-right: 2em;
     li{
         margin-bottom: .5em;
+    }
+  }
+  .social-box{
+    a{
+      opacity: .7;
+      -webkit-transition: opacity 1s !important;
+      &:hover{
+        opacity: 1;
+        -webkit-transition: opacity .2s ease !important;
+      }
     }
   }
 }

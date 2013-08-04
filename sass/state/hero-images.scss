@@ -1,0 +1,42 @@
+@import '../base/color-definition';
+.header-fix{
+  margin-bottom: -5em;
+  z-index: 800;
+  h2{
+    padding-top: 21px;
+  }
+}
+.hero-slider{
+  li{
+    padding: 1.3em 1.25em;
+  }
+}
+.slide-content{
+  h2{
+    visibility: hidden;
+  }
+}
+.hero-content{
+  -webkit-transition: background 1s !important;
+  &:hover{
+    -webkit-transition: background .02s !important;
+  }
+  h3, p{
+    -webkit-transition: opacity 1s ease !important;
+    color: $font-white;
+    opacity: 0;
+    &:hover{
+      -webkit-transition: opacity .02s ease !important;
+    }
+  }
+  p{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  &:hover{
+    background: $brand-orange !important;
+    h3, p{
+      opacity: 1;
+    }
+  }
+}

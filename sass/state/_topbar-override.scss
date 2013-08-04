@@ -1,14 +1,35 @@
+@import 'base/color-definition';
+
 @media only screen and (min-width: 58.75em){
 }
 
 nav.top-bar .left{
   overflow: hidden;
 }
+nav.top-bar{
+  &.main{
+    section.top-bar-section{
+      a{
+        &:hover{
+          color: $brand-orange!important;
+        }
+      }
+    }
+  }
+}
 section.top-bar-section {
   ul{
     background: transparent;
     &.right{
       margin-right: 20px;
+
+      a{
+        &:hover{
+          background: darken(#454545, 5%);
+          color: $font-white!important;
+        }
+        font-weight: 400;
+      }
     }
   }
   .has-dropdown>a:after {
@@ -17,6 +38,7 @@ section.top-bar-section {
   li{
     a:not(.button){
       margin-bottom: -2px;
+      
     }
   }
 }
@@ -54,10 +76,10 @@ $topbar-input-height: 26px;
 // Set the link colors and styles for top-level nav
 
 $topbar-link-color: #dedede;
-// $topbar-link-color-hover: #fff;
+$topbar-link-color-hover: $brand-orange;
 // $topbar-link-color-active: #fff;
 $topbar-link-weight: light;
-$topbar-link-font-size: 11px;
+$topbar-link-font-size: 9px;
 // $topbar-link-hover-lightness: -30%; // Darken by 30%
 // $topbar-link-bg-hover: darken($topbar-bg, 3%);
 // $topbar-link-bg-active: darken($topbar-bg, 3%);
@@ -65,7 +87,7 @@ $topbar-link-font-size: 11px;
 // $topbar-dropdown-label-color: #555;
 // $topbar-dropdown-label-text-transform: uppercase;
 // $topbar-dropdown-label-font-weight: bold;
-$topbar-dropdown-label-font-size: 10px;
+$topbar-dropdown-label-font-size: 9px;
 
 // Top menu icon styles
 
