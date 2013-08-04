@@ -1,0 +1,12 @@
+/* line 1, ../../sass/state/mainnav-logo.scss */
+.main.top-bar {
+  height: 41px;
+}
+/* line 3, ../../sass/state/mainnav-logo.scss */
+.main.top-bar .name {
+  width: 274px;
+  height: 67px;
+  background: url("../images/logo-top.png") no-repeat center center;
+  position: absolute;
+  z-index: 100;
+}

@@ -1,0 +1,5 @@
+/* line 2, ../../sass/element/topbar-divider.scss */
+.top-bar li.divider {
+  height: 21px !important;
+  margin-top: 7px;
+}

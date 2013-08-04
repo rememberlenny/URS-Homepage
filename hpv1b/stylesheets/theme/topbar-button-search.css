@@ -1,0 +1,19 @@
+/* line 2, ../../sass/theme/topbar-button-search.scss */
+.top-bar .search-icon {
+  background: url("../images/search-icon.png") no-repeat center center #eaa849;
+  width: 27px;
+  height: 27px;
+}
+
+/* line 12, ../../sass/theme/topbar-button-search.scss */
+.top-bar .has-form input {
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/* line 17, ../../sass/theme/topbar-button-search.scss */
+.top-bar .has-form input, .top-bar .has-form .button {
+  height: 25px;
+  top: 5px;
+  font-size: 10.5px;
+}

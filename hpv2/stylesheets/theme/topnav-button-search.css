@@ -1,0 +1,6 @@
+/* line 2, ../../sass/theme/topnav-button-search.scss */
+.top-nav .search-icon {
+  background: url("../images/search-icon.png") no-repeat center center;
+  width: 27px;
+  height: 27px;
+}

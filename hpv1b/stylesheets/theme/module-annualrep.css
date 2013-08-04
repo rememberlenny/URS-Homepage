@@ -1,0 +1,9 @@
+/* line 1, ../../sass/theme/module-annualrep.scss */
+.annual-report {
+  padding-top: .75em;
+}
+/* line 3, ../../sass/theme/module-annualrep.scss */
+.annual-report ul {
+  line-height: .7em !important;
+  margin-top: .5em;
+}

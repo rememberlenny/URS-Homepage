@@ -1,0 +1,11 @@
+/* line 2, ../../sass/theme/module-widget-featured.scss */
+.feature-widget p {
+  margin-bottom: 0em;
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
+/* line 8, ../../sass/theme/module-widget-featured.scss */
+.widget-back {
+  margin-bottom: 1em;
+}

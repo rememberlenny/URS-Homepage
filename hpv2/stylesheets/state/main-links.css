@@ -1,0 +1,8 @@
+/* line 1, ../../sass/state/main-links.scss */
+a.dark-head {
+  text-transform: uppercase !important;
+  color: black !important;
+  font-size: 17px !important;
+  opacity: 0.9 !important;
+  font-weight: bold !important;
+}

@@ -1,0 +1,49 @@
+/* line 22, ../../sass/base/color-definition.scss */
+#wrapper {
+  background: #f2f2f3;
+}
+
+/* line 26, ../../sass/base/color-definition.scss */
+span.positive-color {
+  color: #0d9900;
+}
+
+/* line 30, ../../sass/base/color-definition.scss */
+.lightest {
+  color: #9e9e9e;
+}
+
+/* line 34, ../../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+
+/* line 38, ../../sass/base/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
+}
+
+/* line 3, ../../sass/base/transition.scss */
+a {
+  /* HOVER OFF */
+  -webkit-transition: color 2s !important;
+  -webkit-transition: background 1s !important;
+}
+/* line 8, ../../sass/base/transition.scss */
+a:hover {
+  color: #de8f1d !important;
+  /* HOVER ON */
+  -webkit-transition: color .02s !important;
+  -webkit-transition: background .02s !important;
+}
+
+/* line 15, ../../sass/base/transition.scss */
+img {
+  /* HOVER OFF */
+  -webkit-transition: opacity 2s !important;
+}
+/* line 18, ../../sass/base/transition.scss */
+img:hover {
+  /* HOVER ON */
+  -webkit-transition: opacity .02s !important;
+}

@@ -1,0 +1,128 @@
+/* line 22, ../../sass/base/color-definition.scss */
+#wrapper {
+  background: #f2f2f3;
+}
+
+/* line 26, ../../sass/base/color-definition.scss */
+span.positive-color {
+  color: #0d9900;
+}
+
+/* line 30, ../../sass/base/color-definition.scss */
+.lightest {
+  color: #9e9e9e;
+}
+
+/* line 34, ../../sass/base/color-definition.scss */
+.bright-white {
+  color: #fefefe !important;
+}
+
+/* line 38, ../../sass/base/color-definition.scss */
+.dark-color {
+  color: #454545 !important;
+}
+
+/* line 4, ../../sass/theme/hero-slider-content.scss */
+h4.large-number {
+  font-size: 3em;
+  margin-bottom: 0em;
+  color: #fefefe;
+}
+
+/* line 10, ../../sass/theme/hero-slider-content.scss */
+.orbit-bullets li {
+  width: 7px;
+  height: 7px;
+  padding: 0em !important;
+  border: solid 1px rgba(255, 255, 255, 0.6) !important;
+  background: transparent !important;
+}
+/* line 16, ../../sass/theme/hero-slider-content.scss */
+.orbit-bullets li.active {
+  background: #fefefe !important;
+}
+
+/* line 21, ../../sass/theme/hero-slider-content.scss */
+ol.orbit-bullets {
+  position: absolute;
+  z-index: 1000;
+  right: 20px;
+  top: 20px;
+}
+
+/* line 27, ../../sass/theme/hero-slider-content.scss */
+#hero-news {
+  display: inline-block;
+}
+
+/* line 30, ../../sass/theme/hero-slider-content.scss */
+.hero-slider {
+  margin-bottom: 1em !important;
+}
+/* line 32, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .small-continue {
+  color: #fefefe;
+  font-size: 10px;
+}
+/* line 36, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-1 {
+  background: url("../images/slide/slide1.jpg") top right;
+}
+/* line 39, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-2 {
+  background: url("../images/slide/slide2.jpg") center right;
+}
+/* line 40, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-2 h3 {
+  font-size: 1em !important;
+  margin-top: 1.6em !important;
+  margin-left: 8em !important;
+  font-weight: 400;
+}
+/* line 48, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 {
+  background: url("../images/slide/slide3.jpg") top right;
+}
+/* line 52, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-4 {
+  background: url("../images/slide/slide4.jpg") top right;
+}
+/* line 55, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-5 {
+  background: url("../images/slide/slide5.jpg") top right;
+}
+/* line 62, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 h3,
+.hero-slider .slide-4 h3,
+.hero-slider .slide-5 h3 {
+  font-size: 1.2em !important;
+  margin-bottom: 0em;
+  margin-left: 4em;
+  margin-top: 1.4em;
+  font-weight: 400;
+}
+/* line 69, ../../sass/theme/hero-slider-content.scss */
+.hero-slider .slide-3 p,
+.hero-slider .slide-4 p,
+.hero-slider .slide-5 p {
+  margin-left: 7em;
+  margin-bottom: 0em;
+}
+/* line 74, ../../sass/theme/hero-slider-content.scss */
+.hero-slider h2, .hero-slider h3, .hero-slider p {
+  color: #fefefe;
+}
+/* line 77, ../../sass/theme/hero-slider-content.scss */
+.hero-slider h2 {
+  margin-bottom: 0.2em !important;
+  font-size: 26px;
+}
+/* line 81, ../../sass/theme/hero-slider-content.scss */
+.hero-slider p {
+  margin-bottom: .3em !important;
+  margin-bottom: .3em !important;
+  font-size: 11px;
+  line-height: 1.4em;
+  font-weight: 400;
+}

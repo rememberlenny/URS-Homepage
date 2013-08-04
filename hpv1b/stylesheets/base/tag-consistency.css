@@ -1,0 +1,13 @@
+/* line 1, ../../sass/base/tag-consistency.scss */
+hr {
+  margin: 0.25em 0 0.75em !important;
+}
+/* line 3, ../../sass/base/tag-consistency.scss */
+hr.last {
+  margin-bottom: .5em !important;
+}
+
+/* line 8, ../../sass/base/tag-consistency.scss */
+span.block {
+  display: block;
+}
